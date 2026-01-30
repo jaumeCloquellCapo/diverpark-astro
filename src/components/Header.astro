@@ -65,9 +65,12 @@ const currentLang = languages.find((l) => l.code === locale) ?? languages[0];
               <a href={`${basePath}/castillos-grandes`} class="block px-4 py-3 text-gray-700 hover:bg-orange-50 hover:text-orange-600 transition-colors font-semibold rounded-xl mx-2">{t(locale, 'nav.largeCastles')}</a>
               <a href={`${basePath}/castillos-tobogan`} class="block px-4 py-3 text-gray-700 hover:bg-purple-50 hover:text-purple-600 transition-colors font-semibold rounded-xl mx-2">{t(locale, 'nav.slideCastles')}</a>
               <a href={`${basePath}/castillos-acuaticos`} class="block px-4 py-3 text-gray-700 hover:bg-cyan-50 hover:text-cyan-600 transition-colors font-semibold rounded-xl mx-2">{t(locale, 'nav.waterCastles')}</a>
+              <a href={`${basePath}/colchonetas`} class="block px-4 py-3 text-gray-700 hover:bg-orange-50 hover:text-orange-600 transition-colors font-semibold rounded-xl mx-2">{t(locale, 'pages.mats.title')}</a>
             </div>
           </div>
         </div>
+
+        <a href={`${basePath}/toro-mecanico`} class="text-gray-700 hover:text-orange-500 font-bold transition-colors">{t(locale, 'nav.mechanicalBull')}</a>
 
         <!-- Servicios Dropdown -->
         <div class="relative group">
@@ -77,9 +80,7 @@ const currentLang = languages.find((l) => l.code === locale) ?? languages[0];
           </button>
           <div class="absolute top-full left-0 mt-2 w-56 bg-white rounded-2xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 border-2 border-purple-200 z-50">
             <div class="py-2">
-              <a href={`${basePath}/colchonetas`} class="block px-4 py-3 text-gray-700 hover:bg-orange-50 hover:text-orange-600 transition-colors font-semibold rounded-xl mx-2">{t(locale, 'pages.mats.title')}</a>
               <a href={`${basePath}/fiesta-agua`} class="block px-4 py-3 text-gray-700 hover:bg-purple-50 hover:text-purple-600 transition-colors font-semibold rounded-xl mx-2">{t(locale, 'nav.foamParty')}</a>
-              <a href={`${basePath}/toro-mecanico`} class="block px-4 py-3 text-gray-700 hover:bg-pink-50 hover:text-pink-600 transition-colors font-semibold rounded-xl mx-2">{t(locale, 'nav.mechanicalBull')}</a>
               <a href={`${basePath}/animaciones`} class="block px-4 py-3 text-gray-700 hover:bg-purple-50 hover:text-purple-600 transition-colors font-semibold rounded-xl mx-2">{t(locale, 'nav.animations')}</a>
               <a href={`${basePath}/comuniones`} class="block px-4 py-3 text-gray-700 hover:bg-pink-50 hover:text-pink-600 transition-colors font-semibold rounded-xl mx-2">{t(locale, 'nav.communions')}</a>
             </div>
@@ -143,12 +144,14 @@ const currentLang = languages.find((l) => l.code === locale) ?? languages[0];
               <a href={`${basePath}/castillos-grandes`} class="block text-gray-700 hover:text-orange-600 font-semibold transition-colors py-2 pl-8 hover:bg-orange-50 rounded-xl mx-2">{t(locale, 'nav.largeCastles')}</a>
               <a href={`${basePath}/castillos-tobogan`} class="block text-gray-700 hover:text-purple-600 font-semibold transition-colors py-2 pl-8 hover:bg-purple-50 rounded-xl mx-2">{t(locale, 'nav.slideCastles')}</a>
               <a href={`${basePath}/castillos-acuaticos`} class="block text-gray-700 hover:text-cyan-600 font-semibold transition-colors py-2 pl-8 hover:bg-cyan-50 rounded-xl mx-2">{t(locale, 'nav.waterCastles')}</a>
+              <a href={`${basePath}/colchonetas`} class="block text-gray-700 hover:text-orange-600 font-semibold transition-colors py-2 pl-8 hover:bg-orange-50 rounded-xl mx-2">{t(locale, 'pages.mats.title')}</a>
+            </li>
+            <li class="border-t-2 border-orange-200 pt-2">
+              <a href={`${basePath}/toro-mecanico`} class="block text-orange-600 hover:text-pink-600 font-bold transition-colors py-2 px-4 rounded-xl hover:bg-orange-50">{t(locale, 'nav.mechanicalBull')}</a>
             </li>
             <li class="border-t-2 border-purple-200 pt-2">
               <p class="text-sm font-bold text-purple-600 uppercase mb-2 px-4">{t(locale, 'nav.services')}</p>
-              <a href={`${basePath}/colchonetas`} class="block text-gray-700 hover:text-orange-600 font-semibold transition-colors py-2 pl-8 hover:bg-orange-50 rounded-xl mx-2">{t(locale, 'pages.mats.title')}</a>
               <a href={`${basePath}/fiesta-agua`} class="block text-gray-700 hover:text-purple-600 font-semibold transition-colors py-2 pl-8 hover:bg-purple-50 rounded-xl mx-2">{t(locale, 'nav.foamParty')}</a>
-              <a href={`${basePath}/toro-mecanico`} class="block text-gray-700 hover:text-pink-600 font-semibold transition-colors py-2 pl-8 hover:bg-pink-50 rounded-xl mx-2">{t(locale, 'nav.mechanicalBull')}</a>
               <a href={`${basePath}/animaciones`} class="block text-gray-700 hover:text-purple-600 font-semibold transition-colors py-2 pl-8 hover:bg-purple-50 rounded-xl mx-2">{t(locale, 'nav.animations')}</a>
               <a href={`${basePath}/comuniones`} class="block text-gray-700 hover:text-pink-600 font-semibold transition-colors py-2 pl-8 hover:bg-pink-50 rounded-xl mx-2">{t(locale, 'nav.communions')}</a>
             </li>

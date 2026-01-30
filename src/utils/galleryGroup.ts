@@ -64,7 +64,7 @@ const DISPLAY_NAMES: Record<string, string> = {
   'toro-mecanico': 'Toro Mecánico',
   'surf': 'Tabla de Surf',
   'castillo-agua': 'Castillo Acuático',
-  'catapulta': 'Castillo con Catapulta',
+  'catapulta': 'Catapulta de agua',
   'tatamis': 'Castillo con Tatamis',
   'spider': 'Castillo Spider',
   'globos': 'Castillo de Globos',
