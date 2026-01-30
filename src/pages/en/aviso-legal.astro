@@ -1,0 +1,58 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import { t } from '../../utils/i18n';
+
+const locale = 'en';
+const title = t(locale, 'legal.metaTitle');
+const description = t(locale, 'legal.metaDescription');
+---
+
+<PageLayout title={`${title} | DIVERPARK`} description={description} wrapperClass="bg-gray-50">
+  <div class="min-h-screen bg-gray-50 py-16">
+    <div class="container mx-auto px-4 max-w-4xl">
+      <h1 class="text-4xl font-bold text-gray-900 mb-8">{t(locale, 'legal.title')}</h1>
+
+      <div class="bg-white rounded-xl shadow-md p-8 space-y-6">
+        <p class="text-lg text-gray-700 leading-relaxed mb-8">
+          {t(locale, 'legal.intro')}
+        </p>
+        <section>
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">{t(locale, 'legal.identificationTitle')}</h2>
+          <p class="text-gray-700 mb-2">{t(locale, 'legal.identificationText')}</p>
+          <ul class="list-disc list-inside text-gray-700 space-y-2">
+            <li><strong>{t(locale, 'legal.businessName')}:</strong> DIVERPARK</li>
+            <li><strong>{t(locale, 'legal.nif')}:</strong> [TU NIF/CIF]</li>
+            <li><strong>{t(locale, 'legal.address')}:</strong> [TU DIRECCIÓN], Mallorca, España</li>
+            <li><strong>{t(locale, 'legal.email')}:</strong> catidiver@hotmail.com</li>
+            <li><strong>{t(locale, 'legal.phone')}:</strong> +34 625 458 704</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">{t(locale, 'legal.objectTitle')}</h2>
+          <p class="text-gray-700">{t(locale, 'legal.objectText')}</p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">{t(locale, 'legal.conditionsTitle')}</h2>
+          <p class="text-gray-700 mb-4">{t(locale, 'legal.conditionsText')}</p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">{t(locale, 'legal.intellectualTitle')}</h2>
+          <p class="text-gray-700">{t(locale, 'legal.intellectualText')}</p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">{t(locale, 'legal.responsibilityTitle')}</h2>
+          <p class="text-gray-700">{t(locale, 'legal.responsibilityText')}</p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">{t(locale, 'legal.jurisdictionTitle')}</h2>
+          <p class="text-gray-700">{t(locale, 'legal.jurisdictionText')}</p>
+        </section>
+      </div>
+    </div>
+  </div>
+</PageLayout>
