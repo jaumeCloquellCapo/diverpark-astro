@@ -13,6 +13,7 @@ const keywords = t(locale, 'pages.home.meta.keywords');
 const ogImage = 'https://diverpark.net/images/castillos-grandes/castillo-hinchable-grande-avion-5.jpg';
 
 const baseUrl = 'https://diverpark.net';
+const phoneNumber = '+34625458704';
 const jsonLdGraph = [
   {
     '@context': 'https://schema.org',
@@ -26,9 +27,16 @@ const jsonLdGraph = [
     address: { '@type': 'PostalAddress', addressLocality: 'Palma de Mallorca', addressRegion: 'Illes Balears', postalCode: '07000', addressCountry: 'ES' },
     areaServed: { '@type': 'City', name: 'Mallorca' },
     priceRange: '€€',
-    telephone: '+34625458704',
+    telephone: phoneNumber,
     email: 'catidiver@hotmail.com',
     sameAs: ['https://wa.me/34625458704', 'https://www.google.com/maps/place/?q=place_id:ChIJLcOE6CozlhIRoDeycUwZrKw', 'https://www.facebook.com/people/Diverpark-Diverpark/pfbid03rq6rN8aMjuaPjEXBneMxH9ZNJjAHgY2MhBGdubBENUu2ZX19cRrV1HZzaaEyrfhl/'],
+    contactPoint: {
+      '@type': 'ContactPoint',
+      telephone: phoneNumber,
+      contactType: 'customer service',
+      areaServed: 'ES',
+      availableLanguage: ['Spanish', 'Catalan', 'English'],
+    },
   },
   {
     '@context': 'https://schema.org',
