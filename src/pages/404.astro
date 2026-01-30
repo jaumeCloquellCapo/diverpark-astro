@@ -1,0 +1,37 @@
+---
+import PageLayout from '../layouts/PageLayout.astro';
+import { t } from '../utils/i18n';
+
+const locale = 'es';
+const title = t(locale, 'error.notFound');
+const description = t(locale, 'error.notFoundMessage');
+---
+
+<PageLayout title={`${title} | DIVERPARK`} description={description} wrapperClass="bg-white">
+  <div class="flex items-center justify-center px-4 py-20">
+      <section class="max-w-xl mx-auto text-center">
+        <p class="text-8xl md:text-9xl font-bold text-orange-400/80 font-display leading-none">404</p>
+        <h1 class="mt-6 text-3xl md:text-4xl font-bold text-gray-900 font-display">
+          {t(locale, 'error.notFound')}
+        </h1>
+        <p class="mt-4 text-lg text-gray-600">
+          {t(locale, 'error.notFoundMessage')}
+        </p>
+        <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <a href="/" class="btn-primary inline-flex items-center gap-2 px-8 py-4">
+            {t(locale, 'error.goHome')}
+          </a>
+          <a href="/contacto" class="btn-secondary inline-flex items-center gap-2 px-8 py-4">
+            {t(locale, 'nav.contact')}
+          </a>
+        </div>
+        <p class="mt-10 text-sm text-gray-500">
+          {t('es', 'nav.home')} · <a href="/" class="text-orange-500 hover:underline">ES</a>
+          {' | '}
+          <a href="/ca" class="text-orange-500 hover:underline">CA</a>
+          {' | '}
+          <a href="/en" class="text-orange-500 hover:underline">EN</a>
+        </p>
+      </section>
+  </div>
+</PageLayout>

@@ -1,0 +1,462 @@
+{
+  "castillos-pequenos": [
+    {
+      "old": "imgi_10_castillos-pequeños%2FmultiMarino-1.jpg",
+      "new": "castillo-hinchable-pequeno-multimarino-1.jpg"
+    },
+    {
+      "old": "imgi_11_castillos-pequeños%2FmultiMarino-2.jpg",
+      "new": "castillo-hinchable-pequeno-multimarino-2.jpg"
+    },
+    {
+      "old": "imgi_12_castillos-pequeños%2FmultiMarino.jpg",
+      "new": "castillo-hinchable-pequeno-multimarino-3.jpg"
+    },
+    {
+      "old": "imgi_13_castillos-pequeños%2FpressingCatch-1.jpg",
+      "new": "castillo-hinchable-pequeno-pressingcatch-1-4.jpg"
+    },
+    {
+      "old": "imgi_14_castillos-pequeños%2FpressingCatch.jpg",
+      "new": "castillo-hinchable-pequeno-pressingcatch-6.jpg"
+    },
+    {
+      "old": "imgi_15_castillos-pequeños%2Fsafari-park.jpg",
+      "new": "castillo-hinchable-pequeno-safari-park-9.jpg"
+    },
+    {
+      "old": "imgi_16_castillos-pequeños%2Fspider-1.jpg",
+      "new": "castillo-hinchable-pequeno-spider-1-10.jpg"
+    },
+    {
+      "old": "imgi_17_castillos-pequeños%2Fspider.jpg",
+      "new": "castillo-hinchable-pequeno-spider-12.jpg"
+    },
+    {
+      "old": "imgi_1_castillos-pequeños%2Fspider-2.jpg",
+      "new": "castillo-hinchable-pequeno-spider-2-15.jpg"
+    },
+    {
+      "old": "imgi_23_castillos-pequeños%2Fspider-2.jpg",
+      "new": "castillo-hinchable-pequeno-spider-2-15.jpg"
+    },
+    {
+      "old": "imgi_24_castillos-pequeños%2Fbob-1.jpg",
+      "new": "castillo-hinchable-pequeno-bob-17.jpg"
+    },
+    {
+      "old": "imgi_25_castillos-pequeños%2Fbob.jpg",
+      "new": "castillo-hinchable-pequeno-bob-18.jpg"
+    },
+    {
+      "old": "imgi_26_castillos-pequeños%2Fcaramelo.jpg",
+      "new": "castillo-hinchable-pequeno-caramelo-20.jpg"
+    },
+    {
+      "old": "imgi_2_castillos-pequeños%2Fbob-1.jpg",
+      "new": "castillo-hinchable-pequeno-bob-27.jpg"
+    },
+    {
+      "old": "imgi_30_castillos-pequeños%2Fkity-1.jpg",
+      "new": "castillo-hinchable-pequeno-kity-28.jpg"
+    },
+    {
+      "old": "imgi_31_castillos-pequeños%2Fkity.jpg",
+      "new": "castillo-hinchable-pequeno-kity-29.jpg"
+    },
+    {
+      "old": "imgi_32_castillos-pequeños%2FmultiMarino-1.jpg",
+      "new": "castillo-hinchable-pequeno-multimarino-1.jpg"
+    },
+    {
+      "old": "imgi_33_castillos-pequeños%2FmultiMarino-2.jpg",
+      "new": "castillo-hinchable-pequeno-multimarino-2.jpg"
+    },
+    {
+      "old": "imgi_34_castillos-pequeños%2FmultiMarino.jpg",
+      "new": "castillo-hinchable-pequeno-multimarino-3.jpg"
+    },
+    {
+      "old": "imgi_35_castillos-pequeños%2FpressingCatch-1.jpg",
+      "new": "castillo-hinchable-pequeno-pressingcatch-1-4.jpg"
+    },
+    {
+      "old": "imgi_36_castillos-pequeños%2FpressingCatch.jpg",
+      "new": "castillo-hinchable-pequeno-pressingcatch-6.jpg"
+    },
+    {
+      "old": "imgi_37_castillos-pequeños%2Fsafari-park.jpg",
+      "new": "castillo-hinchable-pequeno-safari-park-38.jpg"
+    },
+    {
+      "old": "imgi_38_castillos-pequeños%2Fspider-1.jpg",
+      "new": "castillo-hinchable-pequeno-spider-1-10.jpg"
+    },
+    {
+      "old": "imgi_39_castillos-pequeños%2Fspider.jpg",
+      "new": "castillo-hinchable-pequeno-spider-12.jpg"
+    },
+    {
+      "old": "imgi_3_castillos-pequeños%2Fbob.jpg",
+      "new": "castillo-hinchable-pequeno-bob-43.jpg"
+    },
+    {
+      "old": "imgi_4_castillos-pequeños%2Fcaramelo.jpg",
+      "new": "castillo-hinchable-pequeno-caramelo-45.jpg"
+    },
+    {
+      "old": "imgi_5_castillos-pequeños%2Fglobos-1.jpg",
+      "new": "castillo-hinchable-pequeno-globos-1-21.jpg"
+    },
+    {
+      "old": "imgi_6_castillos-pequeños%2Fglobos-2.jpg",
+      "new": "castillo-hinchable-pequeno-globos-2-23.jpg"
+    },
+    {
+      "old": "imgi_8_castillos-pequeños%2Fkity-1.jpg",
+      "new": "castillo-hinchable-pequeno-kity-52.jpg"
+    },
+    {
+      "old": "imgi_9_castillos-pequeños%2Fkity.jpg",
+      "new": "castillo-hinchable-pequeno-kity-53.jpg"
+    }
+  ],
+  "castillos-grandes": [
+    {
+      "old": "imgi_10_castillos-grandes%2Fromano-2.jpg",
+      "new": "castillo-hinchable-grande-romano-1.jpg"
+    },
+    {
+      "old": "imgi_11_castillos-grandes%2Fromano-3.jpg",
+      "new": "castillo-hinchable-grande-romano-2.jpg"
+    },
+    {
+      "old": "imgi_12_castillos-grandes%2Fromano.jpg",
+      "new": "castillo-hinchable-grande-romano-3.jpg"
+    },
+    {
+      "old": "imgi_13_castillos-grandes%2Ftoro-dragonKan.jpg",
+      "new": "castillo-hinchable-grande-toro-dragonkan-4.jpg"
+    },
+    {
+      "old": "imgi_19_castillos-grandes%2Favion-1.jpg",
+      "new": "castillo-hinchable-grande-avion-5.jpg"
+    },
+    {
+      "old": "imgi_1_castillos-grandes%2Favion-1.jpg",
+      "new": "castillo-hinchable-grande-avion-6.jpg"
+    },
+    {
+      "old": "imgi_20_castillos-grandes%2Favion.jpg",
+      "new": "castillo-hinchable-grande-avion-7.jpg"
+    },
+    {
+      "old": "imgi_21_castillos-grandes%2Fbarco-1.jpg",
+      "new": "castillo-hinchable-grande-barco-8.jpg"
+    },
+    {
+      "old": "imgi_22_castillos-grandes%2Fbarco-2.jpg",
+      "new": "castillo-hinchable-grande-barco-9.jpg"
+    },
+    {
+      "old": "imgi_23_castillos-grandes%2Fbarco.jpg",
+      "new": "castillo-hinchable-grande-barco-10.jpg"
+    },
+    {
+      "old": "imgi_24_castillos-grandes%2FdragonKan-1.jpg",
+      "new": "castillo-hinchable-grande-dragonkan-11.jpg"
+    },
+    {
+      "old": "imgi_25_castillos-grandes%2FdragonKan-2.jpg",
+      "new": "castillo-hinchable-grande-dragonkan-12.jpg"
+    },
+    {
+      "old": "imgi_26_castillos-grandes%2FdragonKan.jpg",
+      "new": "castillo-hinchable-grande-dragonkan-13.jpg"
+    },
+    {
+      "old": "imgi_27_castillos-grandes%2Fgalactico.jpg",
+      "new": "castillo-hinchable-grande-galactico-14.jpg"
+    },
+    {
+      "old": "imgi_28_castillos-grandes%2Frodeo.jpg",
+      "new": "castillo-hinchable-grande-rodeo-15.jpg"
+    },
+    {
+      "old": "imgi_29_castillos-grandes%2Fromano-1.jpg",
+      "new": "castillo-hinchable-grande-romano-16.jpg"
+    },
+    {
+      "old": "imgi_30_castillos-grandes%2Fromano-2.jpg",
+      "new": "castillo-hinchable-grande-romano-17.jpg"
+    },
+    {
+      "old": "imgi_31_castillos-grandes%2Fromano-3.jpg",
+      "new": "castillo-hinchable-grande-romano-18.jpg"
+    },
+    {
+      "old": "imgi_32_castillos-grandes%2Fromano.jpg",
+      "new": "castillo-hinchable-grande-romano-19.jpg"
+    },
+    {
+      "old": "imgi_33_castillos-grandes%2Ftoro-dragonKan.jpg",
+      "new": "castillo-hinchable-grande-toro-dragonkan-20.jpg"
+    },
+    {
+      "old": "imgi_3_castillos-grandes%2Fbarco.jpg",
+      "new": "castillo-hinchable-grande-barco-21.jpg"
+    },
+    {
+      "old": "imgi_4_castillos-grandes%2FdragonKan-1.jpg",
+      "new": "castillo-hinchable-grande-dragonkan-22.jpg"
+    },
+    {
+      "old": "imgi_5_castillos-grandes%2FdragonKan-2.jpg",
+      "new": "castillo-hinchable-grande-dragonkan-23.jpg"
+    },
+    {
+      "old": "imgi_6_castillos-grandes%2FdragonKan.jpg",
+      "new": "castillo-hinchable-grande-dragonkan-24.jpg"
+    },
+    {
+      "old": "imgi_7_castillos-grandes%2Fgalactico.jpg",
+      "new": "castillo-hinchable-grande-galactico-25.jpg"
+    },
+    {
+      "old": "imgi_8_castillos-grandes%2Frodeo.jpg",
+      "new": "castillo-hinchable-grande-rodeo-26.jpg"
+    },
+    {
+      "old": "imgi_9_castillos-grandes%2Fromano-1.jpg",
+      "new": "castillo-hinchable-grande-romano-27.jpg"
+    }
+  ],
+  "castillos-acuaticos": [
+    {
+      "old": "imgi_11_castillos-agua%2Fcastillo-agua6.jpg",
+      "new": "castillo-hinchable-acuatico-castillo-agua-1.jpg"
+    },
+    {
+      "old": "imgi_12_castillos-agua%2Fcastillo-agua7.jpg",
+      "new": "castillo-hinchable-acuatico-castillo-agua-2.jpg"
+    },
+    {
+      "old": "imgi_13_castillos-agua%2FcastilloAgua.jpg",
+      "new": "castillo-hinchable-acuatico-castilloagua-3.jpg"
+    },
+    {
+      "old": "imgi_14_castillos-agua%2Fcatapulta-1.jpg",
+      "new": "castillo-hinchable-acuatico-catapulta-4.jpg"
+    },
+    {
+      "old": "imgi_15_castillos-agua%2Fcatapulta-2.jpg",
+      "new": "castillo-hinchable-acuatico-catapulta-5.jpg"
+    },
+    {
+      "old": "imgi_16_castillos-agua%2Fcatapulta.jpg",
+      "new": "castillo-hinchable-acuatico-catapulta-6.jpg"
+    },
+    {
+      "old": "imgi_17_castillos-agua%2Ftatamis-1.jpg",
+      "new": "castillo-hinchable-acuatico-tatamis-7.jpg"
+    },
+    {
+      "old": "imgi_18_castillos-agua%2Ftatamis.jpg",
+      "new": "castillo-hinchable-acuatico-tatamis-8.jpg"
+    },
+    {
+      "old": "imgi_24_castillos-agua%2Fcastillo-agua1.jpg",
+      "new": "castillo-hinchable-acuatico-castillo-agua-9.jpg"
+    },
+    {
+      "old": "imgi_2_castillos-agua%2F06a8280f-b7ef-4cb9-8480-18787279b0b2.jpg",
+      "new": "castillo-hinchable-acuatico-06a8280f-b7ef-4cb9-8480-18787279b0b-13.jpg"
+    },
+    {
+      "old": "imgi_30_castillos-agua%2Fcastillo-agua3.jpg",
+      "new": "castillo-hinchable-acuatico-castillo-agua-14.jpg"
+    },
+    {
+      "old": "imgi_32_castillos-agua%2Fcastillo-agua5.jpg",
+      "new": "castillo-hinchable-acuatico-castillo-agua-16.jpg"
+    },
+    {
+      "old": "imgi_3_castillos-agua%2F7efd36a7-9f36-4983-954c-8fff7eebb576.jpg",
+      "new": "castillo-hinchable-acuatico-7efd36a7-9f36-4983-954c-8fff7eebb-24.jpg"
+    },
+    {
+      "old": "imgi_5_castillos-agua%2Fcastillo-agua.jpg",
+      "new": "castillo-hinchable-acuatico-castillo-agua-26.jpg"
+    },
+    {
+      "old": "imgi_9_castillos-agua%2Fcastillo-agua4.jpg",
+      "new": "castillo-hinchable-acuatico-castillo-agua-27.jpg"
+    }
+  ],
+  "castillos-tobogan": [
+    {
+      "old": "imgi_10_castillos-medianos%2Fformula.jpg",
+      "new": "castillo-hinchable-tobogan-formula-1.jpg"
+    },
+    {
+      "old": "imgi_11_castillos-medianos%2Fgranja.jpg",
+      "new": "castillo-hinchable-tobogan-granja-2.jpg"
+    },
+    {
+      "old": "imgi_12_castillos-medianos%2Fgranja1.jpg",
+      "new": "castillo-hinchable-tobogan-granja-3.jpg"
+    },
+    {
+      "old": "imgi_13_castillos-medianos%2Fola-1.jpg",
+      "new": "castillo-hinchable-tobogan-ola-4.jpg"
+    },
+    {
+      "old": "imgi_14_castillos-medianos%2Fola.jpg",
+      "new": "castillo-hinchable-tobogan-ola-5.jpg"
+    },
+    {
+      "old": "imgi_15_castillos-medianos%2Frobot-1.jpg",
+      "new": "castillo-hinchable-tobogan-robot-6.jpg"
+    },
+    {
+      "old": "imgi_16_castillos-medianos%2Frobot-2.jpg",
+      "new": "castillo-hinchable-tobogan-robot-7.jpg"
+    },
+    {
+      "old": "imgi_17_castillos-medianos%2Frobot.jpg",
+      "new": "castillo-hinchable-tobogan-robot-8.jpg"
+    },
+    {
+      "old": "imgi_1_castillos-medianos%2Fformula.jpg",
+      "new": "castillo-hinchable-tobogan-formula-9.jpg"
+    },
+    {
+      "old": "imgi_23_castillos-medianos%2Fformula.jpg",
+      "new": "castillo-hinchable-tobogan-formula-10.jpg"
+    },
+    {
+      "old": "imgi_24_castillos-medianos%2Fdragon-1.jpg",
+      "new": "castillo-hinchable-tobogan-dragon-11.jpg"
+    },
+    {
+      "old": "imgi_25_castillos-medianos%2Fdragon-2.jpg",
+      "new": "castillo-hinchable-tobogan-dragon-12.jpg"
+    },
+    {
+      "old": "imgi_26_castillos-medianos%2Fdragon.jpg",
+      "new": "castillo-hinchable-tobogan-dragon-13.jpg"
+    },
+    {
+      "old": "imgi_27_castillos-medianos%2Ffantasia-1.jpg",
+      "new": "castillo-hinchable-tobogan-fantasia-14.jpg"
+    },
+    {
+      "old": "imgi_28_castillos-medianos%2Ffantasia-2.jpg",
+      "new": "castillo-hinchable-tobogan-fantasia-15.jpg"
+    },
+    {
+      "old": "imgi_29_castillos-medianos%2Ffantasia.jpg",
+      "new": "castillo-hinchable-tobogan-fantasia-16.jpg"
+    },
+    {
+      "old": "imgi_2_castillos-medianos%2Fdragon-1.jpg",
+      "new": "castillo-hinchable-tobogan-dragon-17.jpg"
+    },
+    {
+      "old": "imgi_30_castillos-medianos%2Fformula-1.jpg",
+      "new": "castillo-hinchable-tobogan-formula-18.jpg"
+    },
+    {
+      "old": "imgi_31_castillos-medianos%2Fformula-2.jpg",
+      "new": "castillo-hinchable-tobogan-formula-19.jpg"
+    },
+    {
+      "old": "imgi_32_castillos-medianos%2Fgranja.jpg",
+      "new": "castillo-hinchable-tobogan-granja-20.jpg"
+    },
+    {
+      "old": "imgi_33_castillos-medianos%2Fgranja1.jpg",
+      "new": "castillo-hinchable-tobogan-granja-21.jpg"
+    },
+    {
+      "old": "imgi_34_castillos-medianos%2Fola-1.jpg",
+      "new": "castillo-hinchable-tobogan-ola-22.jpg"
+    },
+    {
+      "old": "imgi_35_castillos-medianos%2Fola.jpg",
+      "new": "castillo-hinchable-tobogan-ola-23.jpg"
+    },
+    {
+      "old": "imgi_36_castillos-medianos%2Frobot-1.jpg",
+      "new": "castillo-hinchable-tobogan-robot-24.jpg"
+    },
+    {
+      "old": "imgi_37_castillos-medianos%2Frobot-2.jpg",
+      "new": "castillo-hinchable-tobogan-robot-25.jpg"
+    },
+    {
+      "old": "imgi_38_castillos-medianos%2Frobot.jpg",
+      "new": "castillo-hinchable-tobogan-robot-26.jpg"
+    },
+    {
+      "old": "imgi_3_castillos-medianos%2Fdragon-2.jpg",
+      "new": "castillo-hinchable-tobogan-dragon-27.jpg"
+    },
+    {
+      "old": "imgi_4_castillos-medianos%2Fdragon.jpg",
+      "new": "castillo-hinchable-tobogan-dragon-28.jpg"
+    },
+    {
+      "old": "imgi_5_castillos-medianos%2Ffantasia-1.jpg",
+      "new": "castillo-hinchable-tobogan-fantasia-29.jpg"
+    },
+    {
+      "old": "imgi_6_castillos-medianos%2Ffantasia-2.jpg",
+      "new": "castillo-hinchable-tobogan-fantasia-30.jpg"
+    },
+    {
+      "old": "imgi_7_castillos-medianos%2Ffantasia.jpg",
+      "new": "castillo-hinchable-tobogan-fantasia-31.jpg"
+    },
+    {
+      "old": "imgi_8_castillos-medianos%2Fformula-1.jpg",
+      "new": "castillo-hinchable-tobogan-formula-32.jpg"
+    },
+    {
+      "old": "imgi_9_castillos-medianos%2Fformula-2.jpg",
+      "new": "castillo-hinchable-tobogan-formula-33.jpg"
+    }
+  ],
+  "fiesta-espuma": [
+    {
+      "old": "imgi_10_espuma%2F2e40b1bf-4237-4acf-a361-7d8f0de8cf86.jpg",
+      "new": "fiesta-espuma-2e40b1bf-4237-4acf-a361-7d8f0de8cf-1.jpg"
+    },
+    {
+      "old": "imgi_11_espuma%2Ffe3fafa5-c782-4261-aa1c-9ae4d5a727ae.jpg",
+      "new": "fiesta-espuma-fe3fafa5-c782-4261-aa1c-9ae4d5a727ae-2.jpg"
+    },
+    {
+      "old": "imgi_1_espuma%2Fespuma.jpg",
+      "new": "fiesta-espuma-espuma-3.jpg"
+    },
+    {
+      "old": "imgi_2_espuma%2F2e40b1bf-4237-4acf-a361-7d8f0de8cf86.jpg",
+      "new": "fiesta-espuma-2e40b1bf-4237-4acf-a361-7d8f0de8cf-4.jpg"
+    },
+    {
+      "old": "imgi_3_espuma%2Ffe3fafa5-c782-4261-aa1c-9ae4d5a727ae.jpg",
+      "new": "fiesta-espuma-fe3fafa5-c782-4261-aa1c-9ae4d5a727ae-5.jpg"
+    },
+    {
+      "old": "imgi_9_espuma%2Fespuma.jpg",
+      "new": "fiesta-espuma-espuma-6.jpg"
+    }
+  ],
+  "animaciones": [
+    {
+      "old": "imgi_11_background%2Fanmadoras.jpg",
+      "new": "animacion-infantil-anmadoras-1.jpg"
+    }
+  ]
+}

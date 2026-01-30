@@ -1,0 +1,230 @@
+---
+import { t } from '../utils/i18n';
+
+interface Props {
+  locale: string;
+  basePath: string;
+}
+
+const { locale, basePath } = Astro.props;
+
+const whatsappMessage = (serviceName: string) =>
+  `https://wa.me/34625458704?text=${encodeURIComponent(`Hola! Estoy interesado en: ${serviceName}`)}`;
+
+const servicesList = [
+  { to: '/castillos-pequenos', icon: '🎈', titleKey: 'home.services.smallCastles.title', descKey: 'home.services.smallCastles.description', descParams: ['about.rental', 'about.events'], image: '/images/castillos-pequenos/castillo-hinchable-pequeno-spider-1-10.jpg' },
+  { to: '/castillos-grandes', icon: '🏰', titleKey: 'home.services.largeCastles.title', descKey: 'home.services.largeCastles.description', descParams: ['about.rental', 'about.events'], image: '/images/castillos-grandes/castillo-hinchable-grande-dragonkan-11.jpg' },
+  { to: '/castillos-acuaticos', icon: '🌊', titleKey: 'services.waterCastles.title', descKey: 'pages.waterCastles.intro', descParams: [], image: '/images/castillos-acuaticos/castillo-hinchable-acuatico-castillo-agua-1.jpg' },
+  { to: '/castillos-tobogan', icon: '🎢', titleKey: 'home.services.slideCastles.title', descKey: 'home.services.slideCastles.description', descParams: ['about.rental', 'about.events'], image: '/images/castillos-tobogan/castillo-hinchable-tobogan-robot-8.jpg' },
+  { to: '/toro-mecanico', icon: '🐂', titleKey: 'home.services.mechanicalBull.title', descKey: 'home.services.mechanicalBull.description', descParams: ['about.rental', 'about.events'], image: '/images/toro-mecanico/toro-mecanico_toro-mecanico5.jpg' },
+  { to: '/animaciones', icon: '🎭', titleKey: 'home.services.animations.title', descKey: 'home.services.animations.description', descParams: ['nav.animations', 'about.events'], image: '/images/animaciones/animacion-infantil-anmadoras-1.jpg' },
+];
+
+const stats = [
+  { value: '+10.000', labelKey: 'home.experience.eventsCount', sublabelKey: 'experience.events' },
+  { value: '+40', labelKey: 'home.experience.castlesCount', sublabelKey: 'services.title' },
+  { value: '+2.500', labelKey: 'home.experience.clientsCount', sublabelKey: 'experience.satisfied' },
+];
+---
+
+<!-- Sobre Nosotros -->
+<section id="sobre-nosotros" class="section-padding bg-gradient-to-br from-yellow-50 via-orange-50 to-pink-50 relative overflow-hidden">
+  <div class="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-orange-300/20 to-pink-300/20 rounded-full blur-3xl"></div>
+  <div class="container-custom relative z-10">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <div class="relative order-2 lg:order-1">
+        <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+          <img src="/images/castillos-pequenos/castillo-hinchable-pequeno-spider-1-10.jpg" alt="Alquiler de castillos hinchables pequeños en Mallorca para fiestas infantiles y comuniones - Diverpark" width="600" height="400" loading="lazy" class="w-full h-[400px] object-cover" />
+        </div>
+        <div class="absolute -bottom-4 -left-4 badge-colorful badge-yellow">✨ {t(locale, 'hero.title')}</div>
+      </div>
+      <div class="order-1 lg:order-2">
+        <div class="mb-4"><span class="badge-colorful badge-orange text-xs">{t(locale, 'about.title').toUpperCase()}</span></div>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight font-display">{t(locale, 'pages.about.subtitle')}</h2>
+        <p class="text-xl text-gray-700 mb-6 leading-relaxed">{t(locale, 'home.about.intro', t(locale, 'about.rental'), t(locale, 'about.events'))}</p>
+        <p class="text-lg text-gray-600 leading-relaxed">{t(locale, 'home.about.description', t(locale, 'about.rental'), t(locale, 'about.events'), t(locale, 'about.foamParties'))}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Seguridad -->
+<section class="section-padding bg-gradient-to-br from-green-50 via-teal-50 to-cyan-50 relative overflow-hidden">
+  <div class="absolute top-10 left-10 w-64 h-64 bg-gradient-to-br from-green-300/20 to-teal-300/20 rounded-full blur-3xl"></div>
+  <div class="container-custom relative z-10">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center mb-16">
+        <div class="mb-4">
+          <span class="inline-block px-5 py-2 bg-gradient-to-r from-green-400 to-teal-500 text-white rounded-full text-sm font-bold shadow-md">🛡️ SEGURIDAD PRIMERO</span>
+        </div>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight font-display">
+          Seguridad garantizada, <span class="bg-gradient-to-r from-green-600 to-teal-600 bg-clip-text text-transparent">siempre</span>
+        </h2>
+        <p class="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
+          Para DiverPark no hay nada más importante que la seguridad, especialmente trabajando con niños y menores. Por ello, sometemos nuestros <strong>castillos hinchables</strong> a estrictas revisiones para garantizar la calidad y seguridad en todas las fiestas en Mallorca.
+        </p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="card text-center hover:border-green-300 bg-white">
+          <div class="text-6xl mb-4">🛡️</div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3 font-display">{t(locale, 'safety.norm')}</h3>
+          <p class="text-gray-600">{t(locale, 'pages.about.safety.item2')}</p>
+        </div>
+        <div class="card text-center hover:border-teal-300 bg-white">
+          <div class="text-6xl mb-4">✅</div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3 font-display">{t(locale, 'pages.about.safety.item3')}</h3>
+          <p class="text-gray-600">{t(locale, 'pages.about.safety.item3')}</p>
+        </div>
+        <div class="card text-center hover:border-cyan-300 bg-white">
+          <div class="text-6xl mb-4">🔒</div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3 font-display">{t(locale, 'pages.about.safety.item1')}</h3>
+          <p class="text-gray-600">{t(locale, 'pages.about.safety.item1')}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Estadísticas -->
+<section class="section-padding bg-gradient-to-br from-purple-600 via-pink-600 to-orange-600 text-white relative overflow-hidden">
+  <div class="absolute inset-0 opacity-10">
+    <div class="absolute top-10 left-10 w-32 h-32 border-4 border-white rounded-full"></div>
+    <div class="absolute bottom-20 right-20 w-48 h-48 border-4 border-white rounded-full"></div>
+    <div class="absolute top-1/2 right-1/3 w-24 h-24 border-4 border-white rounded-full"></div>
+  </div>
+  <div class="container-custom relative z-10">
+    <div class="text-center mb-16">
+      <div class="mb-4">
+        <span class="inline-block px-6 py-2 bg-white/20 backdrop-blur-sm rounded-full text-sm font-bold text-white">📊 {t(locale, 'experience.title').toUpperCase()}</span>
+      </div>
+      <h2 class="text-3xl md:text-4xl font-bold mb-6 text-white font-display">{t(locale, 'experience.title')}</h2>
+      <p class="text-lg text-white/90 max-w-2xl mx-auto">{t(locale, 'home.experience.description', t(locale, 'home.experience.events'), t(locale, 'home.experience.castles'))}</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+      {stats.map((stat) => (
+        <div class="bg-white/20 backdrop-blur-md rounded-3xl p-8 text-center border-2 border-white/30 hover:bg-white/30 hover:scale-105 transition-all duration-300">
+          <div class="text-6xl font-bold text-white mb-3">{stat.value}</div>
+          <div class="text-2xl font-semibold text-white mb-2">{t(locale, stat.labelKey)}</div>
+          <div class="text-white/90 font-medium">{t(locale, stat.sublabelKey)}</div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<!-- Servicios -->
+<section id="servicios" class="section-padding bg-white relative overflow-hidden">
+  <div class="container-custom relative z-10">
+    <div class="text-center mb-16">
+      <div class="mb-4"><span class="badge-colorful badge-purple">🎪 {t(locale, 'services.title').toUpperCase()}</span></div>
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight font-display">{t(locale, 'home.services.title')}</h2>
+      <p class="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">{t(locale, 'home.services.description', t(locale, 'about.rental'), t(locale, 'about.events'), t(locale, 'about.foamParties'))}</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {servicesList.map((service) => {
+        const title = t(locale, service.titleKey);
+        const desc = service.descParams.length
+          ? t(locale, service.descKey, ...service.descParams.map((k) => t(locale, k)))
+          : t(locale, service.descKey);
+        return (
+          <div class="card group overflow-hidden relative flex flex-col h-full hover:border-orange-300">
+            <a href={`${basePath}${service.to}`} class="block">
+              <div class="relative h-48 mb-6 rounded-2xl overflow-hidden">
+                <img src={service.image} alt={`Alquiler de ${title} en Mallorca - Diverpark`} width="400" height="300" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                <div class="absolute inset-0 bg-gradient-to-t from-orange-600/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                <div class="absolute top-4 right-4 text-5xl opacity-90 group-hover:scale-125 transition-transform">{service.icon}</div>
+                <div class="absolute bottom-4 left-4 right-4 md:opacity-0 md:group-hover:opacity-100 transition-opacity">
+                  <div class="bg-gradient-to-r from-orange-500 to-pink-500 backdrop-blur-sm rounded-xl px-4 py-2 text-center shadow-lg">
+                    <span class="text-sm font-bold text-white flex items-center justify-center gap-2">📸 Ver galería completa</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <div class="flex flex-col flex-grow">
+              <a href={`${basePath}${service.to}`}>
+                <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-orange-600 transition-colors font-display">{title}</h3>
+                <p class="text-gray-600 mb-4">{desc}</p>
+              </a>
+              <div class="flex gap-3 mt-auto pt-4 border-t-2 border-orange-100">
+                <a href={`${basePath}${service.to}`} class="flex-1 bg-gradient-to-r from-orange-500 to-pink-500 text-white font-bold py-3 px-4 rounded-2xl text-center text-sm hover:shadow-lg hover:scale-105 transition-all duration-300">📸 Ver Galería</a>
+                <a href={whatsappMessage(title)} target="_blank" rel="noopener noreferrer" class="btn-whatsapp text-sm whitespace-nowrap flex items-center gap-2">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                  Reservar
+                </a>
+              </div>
+            </div>
+          </div>
+        );
+      })}
+
+      <!-- Comuniones card -->
+      <div class="card group overflow-hidden relative flex flex-col h-full hover:border-purple-300">
+        <a href={`${basePath}/comuniones`} class="block">
+          <div class="relative h-48 mb-6 rounded-2xl overflow-hidden">
+            <img src="/images/castillos-grandes/castillo-hinchable-grande-avion-5.jpg" alt="Alquiler de castillos hinchables para comuniones en Mallorca - Diverpark" width="400" height="300" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+            <div class="absolute inset-0 bg-gradient-to-t from-purple-600/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            <div class="absolute top-4 right-4 text-5xl opacity-90 group-hover:scale-125 transition-transform">⛪</div>
+            <div class="absolute bottom-4 left-4 right-4 md:opacity-0 md:group-hover:opacity-100 transition-opacity">
+              <div class="bg-gradient-to-r from-purple-500 to-pink-500 backdrop-blur-sm rounded-xl px-4 py-2 text-center shadow-lg">
+                <span class="text-sm font-bold text-white flex items-center justify-center gap-2">📸 Ver galería completa</span>
+              </div>
+            </div>
+          </div>
+        </a>
+        <div class="flex flex-col flex-grow">
+          <a href={`${basePath}/comuniones`}>
+            <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-purple-600 transition-colors font-display">{t(locale, 'home.services.communions.title')}</h3>
+            <p class="text-gray-600 mb-4">{t(locale, 'home.services.communions.description')}</p>
+          </a>
+          <div class="flex gap-3 mt-auto pt-4 border-t-2 border-purple-100">
+            <a href={`${basePath}/comuniones`} class="flex-1 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-bold py-3 px-4 rounded-2xl text-center text-sm hover:shadow-lg hover:scale-105 transition-all duration-300">📸 Ver Galería</a>
+            <a href={whatsappMessage(t(locale, 'home.services.communions.title'))} target="_blank" rel="noopener noreferrer" class="btn-whatsapp text-sm whitespace-nowrap flex items-center gap-2">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+              Reservar
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="section-padding bg-white relative overflow-hidden border-t border-gray-100">
+  <div class="container-custom relative z-10">
+    <div class="max-w-3xl mx-auto">
+      <div class="text-center mb-12">
+        <span class="badge-colorful badge-orange text-xs">❓ FAQ</span>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-4 mb-4 font-display">{t(locale, 'home.faq.title')}</h2>
+      </div>
+      <ul class="space-y-4">
+        {[1, 2, 3, 4, 5].map((i) => (
+          <li class="border border-gray-200 rounded-2xl overflow-hidden bg-gray-50/50 hover:bg-gray-50 transition-colors">
+            <details class="group">
+              <summary class="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer list-none font-semibold text-gray-900 text-left">
+                <span>{t(locale, `home.faq.q${i}`)}</span>
+                <span class="shrink-0 w-8 h-8 flex items-center justify-center rounded-full bg-orange-100 text-orange-600 group-open:rotate-180 transition-transform">▼</span>
+              </summary>
+              <div class="px-6 pb-4 pt-0">
+                <p class="text-gray-600 leading-relaxed">{t(locale, `home.faq.a${i}`)}</p>
+              </div>
+            </details>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Contacto -->
+<section class="section-padding bg-gradient-to-br from-pink-50 via-orange-50 to-yellow-50 relative overflow-hidden">
+  <div class="absolute top-0 left-0 w-72 h-72 bg-gradient-to-br from-pink-300/20 to-orange-300/20 rounded-full blur-3xl"></div>
+  <div class="container-custom relative z-10">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 font-display">{t(locale, 'home.contact.title')}</h2>
+      <p class="text-lg text-gray-600 mb-8 leading-relaxed">{t(locale, 'home.contact.ready')}</p>
+      <a href={`${basePath}/contacto`} class="btn-primary inline-flex items-center gap-3 text-lg px-10 py-4">📞 {t(locale, 'nav.contact')}</a>
+    </div>
+  </div>
+</section>

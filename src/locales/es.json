@@ -1,0 +1,493 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "castles": "Castillos",
+    "attractions": "Atracciones",
+    "services": "Servicios",
+    "aboutUs": "Sobre Nosotros",
+    "smallCastles": "Castillos Pequeños",
+    "largeCastles": "Castillos Grandes",
+    "waterCastles": "Castillos Acuáticos",
+    "slideCastles": "Castillos con Tobogán",
+    "foamParty": "Fiesta de Agua",
+    "mechanicalBull": "Toro Mecánico",
+    "animations": "Animaciones",
+    "communions": "Comuniones",
+    "townHallParties": "Fiestas Ayuntamiento",
+    "contact": "Contactar"
+  },
+  "hero": {
+    "title": "DIVERPARK",
+    "subtitle": "Alquiler de Castillos Hinchables en Mallorca",
+    "description": "Fiestas de Espuma, Comuniones y Fiestas de Ayuntamiento | Más de 15 años de experiencia",
+    "reserve": "Reservar Ahora",
+    "viewServices": "Ver Servicios"
+  },
+  "about": {
+    "title": "¿Quiénes somos?",
+    "intro": "Uep! Com anam… Si has llegado hasta aquí es porque quieres divertirte. ¿Nos presentamos? Somos la empresa líder en {0} para {1} y todo tipo de celebraciones. Nuestro principal objetivo es hacerle sentir la esencia de la niñez.",
+    "description": "Somos una empresa dedicada principalmente al {0}. Ofrecemos servicios para {1} y eventos especiales. También disponemos de {2} y un equipo especializado en espectáculos de entretenimiento para los más pequeños en toda Mallorca.",
+    "rental": "alquiler de castillos hinchables en Mallorca",
+    "events": "comuniones, fiestas de ayuntamiento, fiestas infantiles",
+    "foamParties": "fiestas de espuma"
+  },
+  "safety": {
+    "title": "Seguridad Garantizada",
+    "description": "Para DiverPark no hay nada más importante que la seguridad, especialmente trabajando con niños y menores. Por ello, sometemos nuestros castillos a estrictas revisiones para garantizar la calidad y seguridad. Además, contamos con seguros de responsabilidad civil, normas para la seguridad, homologación y con certificados cumpliendo con la normativa {0}.",
+    "norm": "UNE14960"
+  },
+  "experience": {
+    "title": "Nuestra experiencia nos avala",
+    "years": "Años de experiencia",
+    "events": "Eventos realizados",
+    "satisfied": "Clientes satisfechos"
+  },
+  "services": {
+    "title": "Nuestros Servicios",
+    "subtitle": "Descubre todas nuestras opciones para hacer tu evento inolvidable",
+    "smallCastles": {
+      "title": "Castillos Pequeños",
+      "description": "Perfectos para los más pequeños"
+    },
+    "largeCastles": {
+      "title": "Castillos Grandes",
+      "description": "Diversión a lo grande"
+    },
+    "waterCastles": {
+      "title": "Castillos Acuáticos",
+      "description": "Refrescante diversión"
+    },
+    "slideCastles": {
+      "title": "Con Tobogán",
+      "description": "Emoción y adrenalina"
+    },
+    "foamParty": {
+      "title": "Fiesta de Espuma",
+      "description": "Diversión garantizada"
+    },
+    "animations": {
+      "title": "Animaciones",
+      "description": "Entretenimiento profesional"
+    },
+    "communions": {
+      "title": "Comuniones",
+      "description": "Celebra tu comunión con nosotros"
+    },
+    "townHallParties": {
+      "title": "Fiestas de Ayuntamiento",
+      "description": "Eventos municipales"
+    }
+  },
+  "footer": {
+    "description": "Castillos hinchables y animaciones infantiles en Mallorca",
+    "castles": "Castillos Hinchables",
+    "attractions": "Atracciones",
+    "contact": "Contacto",
+    "contactUs": "Contacta con nosotros",
+    "aboutUs": "Sobre nosotros",
+    "followUs": "Síguenos en Redes Sociales",
+    "rights": "© {0} Diverpark. Todos los derechos reservados.",
+    "legal": "Aviso Legal",
+    "privacy": "Política de Privacidad",
+    "cookies": "Política de Cookies"
+  },
+  "common": {
+    "learnMore": "Saber más",
+    "book": "Reservar",
+    "contact": "Contactar",
+    "readyToBook": "¿Listo para reservar?",
+    "contactWhatsApp": "Contactar por WhatsApp",
+    "requestQuote": "Solicitar Presupuesto",
+    "idealFor": "Ideal para",
+    "features": "Características",
+    "ourGallery": "Nuestra Galería"
+  },
+  "pages": {
+    "home": {
+      "meta": {
+        "title": "Alquiler de castillos hinchables y toro mecánico en Mallorca | Diverpark",
+        "description": "Alquiler de castillos hinchables en Mallorca para fiestas y comuniones. Más de 15 años de experiencia. ¡Reserva ahora en Palma y toda la isla!",
+        "keywords": "toro mecánico mallorca, alquiler toro mecánico, castillos hinchables mallorca, castillos hinchables fiestas, fiestas de espuma mallorca, comuniones mallorca, fiestas de ayuntamiento mallorca, alquiler castillos hinchables comuniones, fiestas infantiles mallorca, castillos hinchables palma"
+      }
+    },
+    "waterParty": {
+      "title": "Fiesta de Agua",
+      "subtitle": "La diversión más refrescante para tus eventos en Mallorca",
+      "intro": "En DiverPark ofrecemos fiestas de agua en Mallorca para todo tipo de eventos: comuniones, fiestas de ayuntamiento, fiestas infantiles y celebraciones especiales. Nuestras atracciones acuáticas son perfectas para refrescarse y disfrutar al máximo en los calurosos días de verano en Mallorca.",
+      "galleryTitle": "Nuestras Atracciones de Agua",
+      "tatamis": {
+        "title": "Tatamis",
+        "item1": "Colchonetas acuáticas",
+        "item2": "Diversión en el agua",
+        "item3": "Seguras y resistentes",
+        "item4": "Para todas las edades"
+      },
+      "catapult": {
+        "title": "Catapulta de Agua",
+        "item1": "Saltos acuáticos",
+        "item2": "Adrenalina garantizada",
+        "item3": "Sistema seguro",
+        "item4": "Materiales certificados"
+      },
+      "foamCannon": {
+        "title": "Cañón de Espuma",
+        "item1": "Cañones profesionales",
+        "item2": "Espuma biodegradable",
+        "item3": "Sistema de agua seguro",
+        "item4": "Diversión para todos"
+      },
+      "waterCastles": {
+        "title": "Castillos Acuáticos",
+        "item1": "Castillos hinchables con agua",
+        "item2": "Refrescante diversión",
+        "item3": "Perfectos para el verano",
+        "item4": "Ideal para eventos al aire libre"
+      },
+      "meta": {
+        "title": "Fiesta de Agua y Castillos Acuáticos en Mallorca | Tatamis, Catapulta, Cañón de Espuma y Castillos",
+        "description": "Fiesta de agua y castillos acuáticos en Mallorca para comuniones, fiestas de ayuntamiento y fiestas infantiles. Alquiler de tatamis, catapulta de agua, cañón de espuma y castillos hinchables acuáticos."
+      }
+    },
+    "animations": {
+      "title": "Animaciones Infantiles",
+      "subtitle": "Entretenimiento profesional para tus eventos en Mallorca",
+      "intro": "En DiverPark contamos con los mejores animadores y artistas para tus eventos en Mallorca. Magos, payasos, espectáculos musicales y mucho más para comuniones, fiestas de ayuntamiento y celebraciones especiales.",
+      "galleryTitle": "Nuestros Artistas",
+      "meta": {
+        "title": "Animaciones Infantiles en Mallorca | Magos y Espectáculos",
+        "description": "Animaciones infantiles profesionales en Mallorca para comuniones, fiestas de ayuntamiento y fiestas. Magos, payasos y espectáculos."
+      }
+    },
+    "mats": {
+      "title": "Colchonetas Hinchables",
+      "subtitle": "Diversión segura para fiestas y eventos",
+      "intro": "Alquiler de colchonetas hinchables en Mallorca para fiestas infantiles, eventos y celebraciones. Una opción divertida y segura para complementar tu evento con Diverpark.",
+      "castlesSectionTitle": "Nuestros castillos hinchables",
+      "castlesSectionDescription": "Aquí tienes todos los castillos que tenemos (pequeños, grandes, con tobogán y acuáticos).",
+      "fullGalleryTitle": "Galería completa",
+      "castlesGalleryAlt": "Castillos hinchables en Mallorca - Diverpark",
+      "ctaTitle": "¿Quieres colchonetas hinchables para tu evento?",
+      "ctaDescription": "Escríbenos por WhatsApp y te informamos de disponibilidad, montaje y opciones según tu fiesta.",
+      "meta": {
+        "title": "Alquiler de Colchonetas Hinchables en Mallorca | Diverpark",
+        "description": "Alquiler de colchonetas hinchables en Mallorca para fiestas infantiles y eventos. Montaje profesional y diversión segura con Diverpark."
+      }
+    },
+    "smallCastles": {
+      "title": "Castillos Hinchables Pequeños",
+      "subtitle": "Perfectos para los más pequeños de la casa",
+      "intro": "Nuestros castillos hinchables pequeños son ideales para fiestas infantiles, comuniones y eventos donde los protagonistas son los más pequeños. Seguros, divertidos y perfectos para espacios reducidos.",
+      "galleryTitle": "Nuestros Castillos Pequeños",
+      "meta": {
+        "title": "Castillos Hinchables Pequeños en Mallorca | Alquiler para Fiestas",
+        "description": "Alquiler de castillos hinchables pequeños en Mallorca para fiestas infantiles, comuniones y eventos. Perfectos para los más pequeños."
+      }
+    },
+    "largeCastles": {
+      "title": "Castillos Hinchables Grandes",
+      "subtitle": "Diversión a lo grande para tus eventos",
+      "intro": "Nuestros castillos hinchables grandes son perfectos para fiestas de ayuntamiento, comuniones y grandes eventos. Mayor diversión, mayor capacidad y máxima seguridad.",
+      "galleryTitle": "Nuestros Castillos Grandes",
+      "meta": {
+        "title": "Castillos Hinchables Grandes en Mallorca | Alquiler para Eventos",
+        "description": "Alquiler de castillos hinchables grandes en Mallorca para fiestas de ayuntamiento, comuniones y grandes eventos."
+      }
+    },
+    "waterCastles": {
+      "title": "Castillos Hinchables Acuáticos",
+      "subtitle": "Refrescante diversión para el verano",
+      "intro": "Nuestros castillos hinchables acuáticos son perfectos para los días calurosos de verano en Mallorca. Ideales para comuniones, fiestas de ayuntamiento y eventos al aire libre.",
+      "galleryTitle": "Nuestros Castillos Acuáticos",
+      "meta": {
+        "title": "Castillos Hinchables Acuáticos en Mallorca | Alquiler para Fiestas",
+        "description": "Alquiler de castillos hinchables acuáticos en Mallorca para fiestas de verano, comuniones y eventos al aire libre."
+      }
+    },
+    "slideCastles": {
+      "title": "Castillos Hinchables con Tobogán",
+      "subtitle": "Emoción y adrenalina garantizadas",
+      "intro": "Nuestros castillos hinchables con tobogán combinan diversión y emoción. Perfectos para comuniones, fiestas de ayuntamiento y todo tipo de eventos en Mallorca.",
+      "galleryTitle": "Nuestros Castillos con Tobogán",
+      "meta": {
+        "title": "Castillos Hinchables con Tobogán en Mallorca | Alquiler",
+        "description": "Alquiler de castillos hinchables con tobogán en Mallorca para comuniones, fiestas de ayuntamiento y eventos."
+      },
+      "ctaTitle": "¿Listo para reservar?",
+      "ctaParagraph": "Contáctanos por WhatsApp y te ayudaremos a elegir el castillo perfecto",
+      "viewGallery": "Ver Galería ↓",
+      "reserveNow": "Reservar Ahora",
+      "contactWhatsApp": "Contactar por WhatsApp"
+    },
+    "mechanicalBull": {
+      "title": "Toro Mecánico",
+      "subtitle": "Diversión y adrenalina para todas las edades",
+      "intro": "Nuestro toro mecánico es la atracción perfecta para añadir emoción y diversión a tus eventos en Mallorca. Ideal para comuniones, fiestas de ayuntamiento, celebraciones y todo tipo de eventos. ¡Demuestra tu equilibrio y resistencia!",
+      "galleryTitle": "Nuestro Toro Mecánico",
+      "mechanicalBullGalleryTitle": "Toro Mecánico",
+      "surfBoardGalleryTitle": "Tabla de Surf",
+      "meta": {
+        "title": "Toro Mecánico en Mallorca | Alquiler para Fiestas y Eventos",
+        "description": "Alquiler de toro mecánico en Mallorca para comuniones, fiestas de ayuntamiento, celebraciones y eventos. Diversión y adrenalina garantizadas."
+      }
+    },
+    "communions": {
+      "title": "Comuniones en Mallorca",
+      "subtitle": "Haz que la comunión de tu hijo sea inolvidable",
+      "intro": "En DiverPark ofrecemos el servicio más completo para comuniones en Mallorca: castillos hinchables, fiestas de agua y animaciones infantiles. Todo lo necesario para que la comunión de tu hijo sea inolvidable.",
+      "galleryTitle": "Comuniones con DiverPark",
+      "meta": {
+        "title": "Comuniones en Mallorca | Castillos Hinchables y Animaciones",
+        "description": "Servicio completo para comuniones en Mallorca. Castillos hinchables, fiestas de agua y animaciones infantiles."
+      }
+    },
+    "townHallParties": {
+      "title": "Fiestas de Ayuntamiento",
+      "subtitle": "Servicio profesional para fiestas municipales",
+      "intro": "En DiverPark ofrecemos servicio profesional para fiestas de ayuntamiento en Mallorca. Castillos hinchables grandes, fiestas de agua y animaciones para fiestas municipales.",
+      "galleryTitle": "Fiestas Municipales",
+      "meta": {
+        "title": "Fiestas de Ayuntamiento en Mallorca | Castillos Hinchables",
+        "description": "Servicio profesional para fiestas de ayuntamiento en Mallorca. Castillos hinchables grandes y animaciones."
+      }
+    },
+    "about": {
+      "title": "Sobre Nosotros",
+      "subtitle": "Más de 15 años creando momentos mágicos en Mallorca",
+      "whoWeAre": "¿Quiénes Somos?",
+      "intro1": "Somos una empresa dedicada principalmente al alquiler de Castillos Hinchables en Mallorca. También disponemos a parte de los castillos hinchables un equipo especializado en espectáculos de entretenimiento para los más pequeños.",
+      "intro2": "Desde animación con disfraces de sus personajes de dibujos animados favoritos, hasta sesión de pinta caras donde se lo pasarán en grande tanto los pequeños como los mayores. Procuramos seriedad y profesionalidad en nuestros servicios, para que la diversión siempre vaya de la mano de la seguridad. Nuestro principal objetivo es ofrecer a nuestros clientes el mejor servicio, con precios muy competitivos. Nos desplazamos a toda la isla.",
+      "intro3": "Puedes confiar en nosotros para tu fiesta: castillos hinchables, animaciones y fiestas de agua en toda Mallorca.",
+      "stats": {
+        "years": "Años de Experiencia",
+        "events": "Eventos Realizados",
+        "castles": "Castillos Disponibles",
+        "rating": "Valoración"
+      },
+      "safety": {
+        "title": "Seguro de Responsabilidad Civil y Revisiones Continuas",
+        "description": "Para Mallorca DiverPark no hay nada más importante que la seguridad, especialmente por trabajar con niños y menores, con lo que todos nuestros castillos cuentan con seguros de responsabilidad civil, normas para la seguridad y bienestar de los niños, y sometemos nuestros castillos a estrictas revisiones para garantizar la calidad y seguridad. Además contamos con experiencia en el cuidado y control de niños, siendo un elemento de seguridad para evitar cualquier daño o problema que pueda surgir mientras los niños juegan con los castillos.",
+        "item1": "Seguro de responsabilidad civil en todos los castillos",
+        "item2": "Certificado UNE14960 - Normativa europea de seguridad",
+        "item3": "Revisiones estrictas para garantizar calidad y seguridad",
+        "item4": "Experiencia en el cuidado y control de niños"
+      },
+      "servicesTitle": "Nuestros Servicios",
+      "services": {
+        "castles": {
+          "title": "Castillos Hinchables",
+          "description": "Pequeños, grandes, con tobogán y acuáticos. Variedad para todos los gustos y edades."
+        },
+        "entertainment": {
+          "title": "Animaciones Infantiles",
+          "description": "Disfraces, pintacaras, espectáculos y mucho más para entretener a los más pequeños."
+        },
+        "water": {
+          "title": "Fiestas de Agua",
+          "description": "Tatamis, catapultas, cañones de espuma y castillos acuáticos para el verano."
+        },
+        "events": {
+          "title": "Eventos Especiales",
+          "description": "Comuniones, fiestas de ayuntamiento y celebraciones especiales en toda Mallorca."
+        }
+      },
+      "coverage": {
+        "title": "Cobertura en Toda Mallorca",
+        "description": "Nos desplazamos a cualquier punto de la isla para tu evento"
+      },
+      "meta": {
+        "title": "Sobre Nosotros - DIVERPARK | Castillos Hinchables Mallorca",
+        "description": "Más de 15 años ofreciendo alquiler de castillos hinchables en Mallorca. Seriedad, profesionalidad y seguridad garantizada. Nos desplazamos a toda la isla."
+      }
+    },
+    "contactPage": {
+      "title": "Contacto",
+      "meta": {
+        "title": "Contacto - DIVERPARK | Castillos Hinchables Mallorca",
+        "description": "Contacta con DiverPark para reservar castillos hinchables, toro mecánico o animaciones en Mallorca. Presupuesto sin compromiso."
+      }
+    }
+  },
+  "home": {
+    "about": {
+      "intro": "Uep! Com anam… Si has llegado hasta aquí es porque quieres divertirte. ¿Nos presentamos? Somos la empresa líder en {0} para {1} y todo tipo de celebraciones. Nuestro principal objetivo es hacerle sentir la esencia de la niñez.",
+      "description": "Somos una empresa dedicada principalmente al {0}. Ofrecemos servicios para {1} y eventos especiales. También disponemos de {2} y un equipo especializado en espectáculos de entretenimiento para los más pequeños en toda Mallorca."
+    },
+    "experience": {
+      "description": "Más de 15 años nos avalan abordando todo tipo de eventos en Mallorca: {0} y celebraciones especiales. Ofrecemos nuestra amplia gama de {1} y animaciones infantiles para eventos en toda Mallorca.",
+      "events": "comuniones, fiestas de ayuntamiento, fiestas infantiles",
+      "castles": "castillos hinchables, fiestas de espuma",
+      "eventsCount": "Eventos",
+      "castlesCount": "Castillos Hinchables",
+      "clientsCount": "Clientes"
+    },
+    "services": {
+      "title": "¿Qué ofrecemos?",
+      "description": "Ofrecemos {0} para todo tipo de eventos: {1} y celebraciones especiales. También disponemos de {2} y animaciones infantiles para hacer tu evento inolvidable.",
+      "smallCastles": {
+        "title": "Castillos Pequeños",
+        "description": "{0} perfectos para {1} en Mallorca. Los más pequeños de la casa disfrutarán a sus anchas en nuestros castillos pensados especialmente para ellos."
+      },
+      "largeCastles": {
+        "title": "Castillos Gigantes",
+        "description": "{0} ideales para {1} en Mallorca. Más siempre es más cuando se trata de disfrutar."
+      },
+      "waterCastles": {
+        "title": "Castillos Acuáticos",
+        "description": "{0} para {1} en Mallorca. ¡Al agua pato! Castillos donde el agua es la protagonista."
+      },
+      "slideCastles": {
+        "title": "Castillos con Tobogán",
+        "description": "{0} para {1} en Mallorca. El tamaño perfecto de la diversión."
+      },
+      "waterParty": {
+        "title": "Fiesta de Agua y Castillos Acuáticos",
+        "description": "{0} para {1}. La diversión más refrescante con tatamis, catapulta de agua, cañón de espuma y castillos acuáticos."
+      },
+      "mechanicalBull": {
+        "title": "Toro Mecánico",
+        "description": "{0} para {1}. Diversión y adrenalina garantizadas para todas las edades."
+      },
+      "animations": {
+        "title": "Animaciones",
+        "description": "{0} para {1}. Magos profesionales y espectáculos de entretenimiento."
+      },
+      "communions": {
+        "title": "Comuniones",
+        "description": "Alquiler de castillos hinchables para comuniones en Mallorca. Fiestas de espuma y animaciones para hacer que la comunión de tu hijo sea inolvidable."
+      },
+      "townHallParties": {
+        "title": "Fiestas de Ayuntamiento",
+        "description": "Castillos hinchables para fiestas de ayuntamiento en Mallorca. Servicio profesional para fiestas municipales con castillos gigantes y fiestas de espuma."
+      }
+    },
+    "faq": {
+      "title": "Preguntas frecuentes",
+      "q1": "¿En qué zonas realizáis el servicio?",
+      "a1": "Nos desplazamos a toda la isla de Mallorca: Palma, Calvià, Llucmajor, Manacor, Inca y cualquier municipio. El montaje y desmontaje están incluidos.",
+      "q2": "¿Los castillos incluyen seguro?",
+      "a2": "Sí. Todos nuestros castillos cuentan con seguro de responsabilidad civil y cumplen la normativa de seguridad (UNE14960).",
+      "q3": "¿Cuánto cuesta alquilar un castillo hinchable?",
+      "a3": "El precio depende del modelo, la duración y la ubicación. Solicita presupuesto sin compromiso por WhatsApp o mediante el formulario de contacto.",
+      "q4": "¿Ofrecéis animaciones y fiestas de agua?",
+      "a4": "Sí. Además de castillos hinchables ofrecemos fiestas de espuma, toro mecánico, animaciones infantiles (magos, payasos) y comuniones completas.",
+      "q5": "¿Cómo reservo?",
+      "a5": "Puedes contactarnos por WhatsApp, por el formulario de esta web o por teléfono. Te enviamos presupuesto y confirmamos la reserva."
+    },
+    "contact": {
+      "title": "Contacta con nosotros",
+      "subtitle": "Planifica tu fiesta perfecta con DIVERPARK",
+      "ready": "¿Listo para hacer que tu evento sea inolvidable?",
+      "description": "Contáctanos para más información sobre nuestros servicios de {0} para {1} y todo tipo de celebraciones. Más de 15 años haciendo que los eventos en Mallorca sean inolvidables.",
+      "whatsapp": "📱 Contactar por WhatsApp",
+      "formTitle": "Solicitar presupuesto",
+      "formName": "Nombre",
+      "formNamePlaceholder": "Tu nombre",
+      "formEmail": "Email",
+      "formEmailPlaceholder": "tu@email.com",
+      "formPhone": "Teléfono",
+      "formPhonePlaceholder": "600 000 000",
+      "formService": "Servicio de interés",
+      "formMessage": "Mensaje",
+      "formMessagePlaceholder": "Cuéntanos tu evento, fecha, ubicación...",
+      "formSubmit": "Enviar",
+      "formSuccess": "Mensaje enviado. Te contestaremos pronto.",
+      "formError": "Error al enviar. Prueba por WhatsApp.",
+      "formSending": "Enviando..."
+    }
+  },
+  "gallery": {
+    "imagesOfCastle": "{count} imágenes de este castillo",
+    "reserve": "Reservar",
+    "viewImages": "Ver {count} imágenes",
+    "imagesAvailable": "{count} imágenes disponibles"
+  },
+  "cookieBanner": {
+    "message": "Utilizamos cookies propias y de terceros para mejorar nuestros servicios. Si continúa navegando, consideramos que acepta su uso.",
+    "learnMore": "Política de cookies",
+    "accept": "Aceptar",
+    "reject": "Rechazar"
+  },
+  "legal": {
+    "title": "Aviso Legal",
+    "metaTitle": "Aviso Legal - DIVERPARK",
+    "metaDescription": "Aviso legal de DIVERPARK - Alquiler de castillos hinchables en Mallorca",
+    "identificationTitle": "1. Identificación",
+    "identificationText": "En cumplimiento de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y de Comercio Electrónico, le informamos que:",
+    "businessName": "Razón social",
+    "nif": "NIF/CIF",
+    "address": "Dirección",
+    "email": "Email",
+    "phone": "Teléfono",
+    "objectTitle": "2. Objeto",
+    "objectText": "El presente aviso legal regula el uso del sitio web diverpark.net. La navegación por el sitio web atribuye la condición de usuario y conlleva su aceptación plena de todas las condiciones incluidas en este Aviso Legal.",
+    "conditionsTitle": "3. Condiciones de Uso",
+    "conditionsText": "El usuario se compromete a hacer un uso adecuado de los contenidos que se ofrecen en este sitio web y a no emplearlos para incurrir en actividades ilícitas o contrarias a la buena fe y al ordenamiento legal.",
+    "intellectualTitle": "4. Propiedad Intelectual e Industrial",
+    "intellectualText": "Todos los contenidos del sitio web, incluyendo sin carácter limitativo, textos, fotografías, gráficos, imágenes, iconos, tecnología, software, así como su diseño gráfico y códigos fuente, son propiedad de DIVERPARK, sin que puedan entenderse cedidos al usuario ninguno de los derechos de explotación reconocidos por la normativa vigente en materia de propiedad intelectual sobre los mismos.",
+    "responsibilityTitle": "5. Limitación de Responsabilidad",
+    "responsibilityText": "DIVERPARK no se hace responsable de los daños y perjuicios que pudieran derivarse de la utilización de la información del sitio web o de la contenida en las redes sociales de DIVERPARK.",
+    "jurisdictionTitle": "6. Legislación Aplicable y Jurisdicción",
+    "jurisdictionText": "Las presentes condiciones se rigen por la legislación española. Para la resolución de cualquier conflicto o discrepancia relativa a la interpretación o aplicación de las presentes condiciones, las partes acuerdan someterse expresamente a la jurisdicción de los juzgados y tribunales de Palma de Mallorca."
+  },
+  "privacy": {
+    "title": "Política de Privacidad",
+    "intro": "En DIVERPARK nos comprometemos a proteger sus datos personales. A continuación le informamos sobre el tratamiento de la información que nos facilita.",
+    "metaTitle": "Política de Privacidad - DIVERPARK",
+    "metaDescription": "Política de privacidad y protección de datos de DIVERPARK",
+    "responsibleTitle": "1. Responsable del Tratamiento",
+    "responsible": "Responsable",
+    "nif": "NIF/CIF",
+    "address": "Dirección",
+    "email": "Email",
+    "phone": "Teléfono",
+    "purposeTitle": "2. Finalidad del Tratamiento",
+    "purposeText": "Los datos personales que nos facilite serán tratados con las siguientes finalidades:",
+    "purpose1": "Gestionar las consultas y solicitudes de información sobre nuestros servicios.",
+    "purpose2": "Enviar información comercial sobre nuestros servicios (solo si ha dado su consentimiento).",
+    "purpose3": "Gestionar la contratación de nuestros servicios de alquiler de castillos hinchables.",
+    "legitimationTitle": "3. Legitimación",
+    "legitimationText": "La base legal para el tratamiento de sus datos es su consentimiento, que podrá retirar en cualquier momento.",
+    "conservationTitle": "4. Conservación de los Datos",
+    "conservationText": "Los datos se conservarán durante el tiempo necesario para cumplir con la finalidad para la que se recabaron y para determinar las posibles responsabilidades que se pudieran derivar de dicha finalidad y del tratamiento de los datos.",
+    "recipientsTitle": "5. Destinatarios",
+    "recipientsText": "No se cederán datos a terceros, salvo obligación legal.",
+    "rightsTitle": "6. Derechos del Usuario",
+    "rightsText": "Puede ejercer los siguientes derechos:",
+    "right1": "Derecho de acceso a sus datos personales.",
+    "right2": "Derecho de rectificación de datos inexactos.",
+    "right3": "Derecho de supresión cuando los datos ya no sean necesarios.",
+    "right4": "Derecho de limitación del tratamiento.",
+    "right5": "Derecho de portabilidad de los datos.",
+    "rightsContact": "Para ejercer estos derechos, puede enviarnos un email a {'catidiver@hotmail.com'}.",
+    "whatsappTitle": "7. Contacto por WhatsApp",
+    "whatsappText": "Al contactarnos por WhatsApp, sus datos serán tratados por Meta (WhatsApp Ireland Limited). Le recomendamos consultar la política de privacidad de WhatsApp."
+  },
+  "cookies": {
+    "title": "Política de Cookies",
+    "intro": "Utilizamos cookies para mejorar su experiencia en nuestro sitio web. En esta página le explicamos qué son y cómo las usamos.",
+    "metaTitle": "Política de Cookies - DIVERPARK",
+    "metaDescription": "Información sobre el uso de cookies en DIVERPARK",
+    "whatAreTitle": "¿Qué son las cookies?",
+    "whatAreText": "Las cookies son pequeños archivos de texto que se almacenan en su navegador cuando visita nuestro sitio web. Permiten que el sitio web recuerde sus acciones y preferencias durante un período de tiempo.",
+    "typesTitle": "Tipos de Cookies que Utilizamos",
+    "technicalTitle": "Cookies Técnicas (Necesarias)",
+    "technicalText": "Estas cookies son esenciales para el funcionamiento del sitio web y no requieren su consentimiento. Se utilizan para recordar su idioma preferido y sus preferencias de cookies.",
+    "analyticsTitle": "Cookies Analíticas (Opcionales)",
+    "analyticsText": "Estas cookies nos ayudan a entender cómo interactúa con nuestro sitio web y mejorar su experiencia. Estas cookies requieren su consentimiento.",
+    "usedTitle": "Cookies que Utilizamos",
+    "cookieName": "Nombre",
+    "purpose": "Finalidad",
+    "duration": "Duración",
+    "languagePurpose": "Recordar el idioma seleccionado",
+    "consentPurpose": "Recordar su elección sobre las cookies",
+    "year": "año",
+    "disableTitle": "Cómo Deshabilitar las Cookies",
+    "disableText": "Puede configurar su navegador para rechazar cookies. Los enlaces a continuación le muestran cómo hacerlo en los navegadores más populares:"
+  },
+  "error": {
+    "notFound": "Página no encontrada",
+    "notFoundMessage": "Lo sentimos, la página que buscas no existe.",
+    "general": "Algo salió mal",
+    "goHome": "Volver al inicio"
+  }
+}

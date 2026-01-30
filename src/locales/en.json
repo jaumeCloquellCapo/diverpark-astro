@@ -1,0 +1,493 @@
+{
+  "nav": {
+    "home": "Home",
+    "castles": "Castles",
+    "attractions": "Attractions",
+    "services": "Services",
+    "aboutUs": "About Us",
+    "smallCastles": "Small Bouncy Castles",
+    "largeCastles": "Large Bouncy Castles",
+    "waterCastles": "Water Bouncy Castles",
+    "slideCastles": "Castles with Slide",
+    "foamParty": "Water Party",
+    "mechanicalBull": "Mechanical Bull",
+    "animations": "Animations",
+    "communions": "Communions",
+    "townHallParties": "Town Hall Parties",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "DIVERPARK",
+    "subtitle": "Bouncy Castle Rental in Mallorca",
+    "description": "Foam Parties, Communions and Town Hall Parties | Over 15 years of experience",
+    "reserve": "Book Now",
+    "viewServices": "View Services"
+  },
+  "about": {
+    "title": "Who are we?",
+    "intro": "Hi! How are you doing... If you've come this far it's because you want to have fun. Shall we introduce ourselves? We are the leading company in {0} for {1} and all kinds of celebrations. Our main goal is to make you feel the essence of childhood.",
+    "description": "We are a company mainly dedicated to {0}. We offer services for {1} and special events. We also have {2} and a specialized team in entertainment shows for the little ones throughout Mallorca.",
+    "rental": "bouncy castle rental in Mallorca",
+    "events": "communions, town hall parties, children's parties",
+    "foamParties": "foam parties"
+  },
+  "safety": {
+    "title": "Guaranteed Safety",
+    "description": "For DiverPark there is nothing more important than safety, especially when working with children and minors. That's why we subject our castles to strict reviews to guarantee quality and safety. In addition, we have civil liability insurance, safety standards, homologation and certificates complying with the {0} standard.",
+    "norm": "UNE14960"
+  },
+  "experience": {
+    "title": "Our experience speaks for us",
+    "years": "Years of experience",
+    "events": "Events completed",
+    "satisfied": "Satisfied customers"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Discover all our options to make your event unforgettable",
+    "smallCastles": {
+      "title": "Small Bouncy Castles",
+      "description": "Perfect for the little ones"
+    },
+    "largeCastles": {
+      "title": "Large Bouncy Castles",
+      "description": "Big fun"
+    },
+    "waterCastles": {
+      "title": "Water Bouncy Castles",
+      "description": "Refreshing fun"
+    },
+    "slideCastles": {
+      "title": "With Slide",
+      "description": "Excitement and adrenaline"
+    },
+    "foamParty": {
+      "title": "Foam Party",
+      "description": "Guaranteed fun"
+    },
+    "animations": {
+      "title": "Animations",
+      "description": "Professional entertainment"
+    },
+    "communions": {
+      "title": "Communions",
+      "description": "Celebrate your communion with us"
+    },
+    "townHallParties": {
+      "title": "Town Hall Parties",
+      "description": "Municipal events"
+    }
+  },
+  "footer": {
+    "description": "Bouncy castles and children's entertainment in Mallorca",
+    "castles": "Bouncy Castles",
+    "attractions": "Attractions",
+    "contact": "Contact",
+    "contactUs": "Contact us",
+    "aboutUs": "About us",
+    "followUs": "Follow Us on Social Media",
+    "rights": "© {0} Diverpark. All rights reserved.",
+    "legal": "Legal Notice",
+    "privacy": "Privacy Policy",
+    "cookies": "Cookie Policy"
+  },
+  "common": {
+    "learnMore": "Learn more",
+    "book": "Book",
+    "contact": "Contact",
+    "readyToBook": "Ready to book?",
+    "contactWhatsApp": "Contact via WhatsApp",
+    "requestQuote": "Request Quote",
+    "idealFor": "Ideal for",
+    "features": "Features",
+    "ourGallery": "Our Gallery"
+  },
+  "pages": {
+    "home": {
+      "meta": {
+        "title": "Bouncy Castle and Mechanical Bull Rental in Mallorca | Diverpark",
+        "description": "Bouncy castle rental in Mallorca for parties and communions. Over 15 years of experience. Book now in Palma and across the island!",
+        "keywords": "mechanical bull mallorca, mechanical bull rental mallorca, bouncy castle rental mallorca, inflatable castles mallorca, kids parties mallorca, foam party mallorca, communions mallorca, town hall parties mallorca, bouncy castles palma"
+      }
+    },
+    "waterParty": {
+      "title": "Water Party",
+      "subtitle": "The most refreshing fun for your events in Mallorca",
+      "intro": "At DiverPark we offer water parties in Mallorca for all types of events: communions, town hall parties, children's parties and special celebrations. Our water attractions are perfect for cooling off and having maximum fun on hot summer days in Mallorca.",
+      "galleryTitle": "Our Water Attractions",
+      "tatamis": {
+        "title": "Tatamis",
+        "item1": "Water mats",
+        "item2": "Fun in the water",
+        "item3": "Safe and resistant",
+        "item4": "For all ages"
+      },
+      "catapult": {
+        "title": "Water Catapult",
+        "item1": "Water jumps",
+        "item2": "Guaranteed adrenaline",
+        "item3": "Safe system",
+        "item4": "Certified materials"
+      },
+      "foamCannon": {
+        "title": "Foam Cannon",
+        "item1": "Professional cannons",
+        "item2": "Biodegradable foam",
+        "item3": "Safe water system",
+        "item4": "Fun for everyone"
+      },
+      "waterCastles": {
+        "title": "Water Castles",
+        "item1": "Inflatable castles with water",
+        "item2": "Refreshing fun",
+        "item3": "Perfect for summer",
+        "item4": "Ideal for outdoor events"
+      },
+      "meta": {
+        "title": "Water Party and Water Castles in Mallorca | Tatamis, Catapult, Foam Cannon and Castles",
+        "description": "Water party and water castles in Mallorca for communions, town hall parties and children's parties. Rental of tatamis, water catapult, foam cannon and inflatable water castles."
+      }
+    },
+    "animations": {
+      "title": "Children's Entertainment",
+      "subtitle": "Professional entertainment for your events in Mallorca",
+      "intro": "At DiverPark we have the best entertainers and artists for your events in Mallorca. Magicians, clowns, musical shows and much more for communions, town hall parties and special celebrations.",
+      "galleryTitle": "Our Artists",
+      "meta": {
+        "title": "Children's Entertainment in Mallorca | Magicians and Shows",
+        "description": "Professional children's entertainment in Mallorca for communions, town hall parties and parties. Magicians, clowns and shows."
+      }
+    },
+    "mats": {
+      "title": "Inflatable Mats",
+      "subtitle": "Safe fun for parties and events",
+      "intro": "Inflatable mats rental in Mallorca for kids' parties, events and celebrations. A fun and safe add‑on to complement your event with Diverpark.",
+      "castlesSectionTitle": "Our bouncy castles",
+      "castlesSectionDescription": "Here are all the bouncy castles we have (small, large, with slide and water).",
+      "fullGalleryTitle": "Full gallery",
+      "castlesGalleryAlt": "Bouncy castles in Mallorca - Diverpark",
+      "ctaTitle": "Need inflatable mats for your event?",
+      "ctaDescription": "Message us on WhatsApp and we'll tell you availability, setup and options for your party.",
+      "meta": {
+        "title": "Inflatable Mats Rental in Mallorca | Diverpark",
+        "description": "Inflatable mats rental in Mallorca for kids' parties and events. Professional setup and safe fun with Diverpark."
+      }
+    },
+    "smallCastles": {
+      "title": "Small Bouncy Castles",
+      "subtitle": "Perfect for the little ones",
+      "intro": "Our small bouncy castles are ideal for children's parties, communions and events where the little ones are the stars. Safe, fun and perfect for small spaces.",
+      "galleryTitle": "Our Small Castles",
+      "meta": {
+        "title": "Small Bouncy Castles in Mallorca | Party Rental",
+        "description": "Small bouncy castle rental in Mallorca for children's parties, communions and events. Perfect for the little ones."
+      }
+    },
+    "largeCastles": {
+      "title": "Large Bouncy Castles",
+      "subtitle": "Big fun for your events",
+      "intro": "Our large bouncy castles are perfect for town hall parties, communions and big events. More fun, more capacity and maximum safety.",
+      "galleryTitle": "Our Large Castles",
+      "meta": {
+        "title": "Large Bouncy Castles in Mallorca | Event Rental",
+        "description": "Large bouncy castle rental in Mallorca for town hall parties, communions and big events."
+      }
+    },
+    "waterCastles": {
+      "title": "Water Bouncy Castles",
+      "subtitle": "Refreshing fun for summer",
+      "intro": "Our water bouncy castles are perfect for hot summer days in Mallorca. Ideal for communions, town hall parties and outdoor events.",
+      "galleryTitle": "Our Water Castles",
+      "meta": {
+        "title": "Water Bouncy Castles in Mallorca | Party Rental",
+        "description": "Water bouncy castle rental in Mallorca for summer parties, communions and outdoor events."
+      }
+    },
+    "slideCastles": {
+      "title": "Bouncy Castles with Slide",
+      "subtitle": "Excitement and adrenaline guaranteed",
+      "intro": "Our bouncy castles with slide combine fun and excitement. Perfect for communions, town hall parties and all types of events in Mallorca.",
+      "galleryTitle": "Our Castles with Slide",
+      "meta": {
+        "title": "Bouncy Castles with Slide in Mallorca | Rental",
+        "description": "Bouncy castle with slide rental in Mallorca for communions, town hall parties and events."
+      },
+      "ctaTitle": "Ready to book?",
+      "ctaParagraph": "Contact us on WhatsApp and we'll help you choose the perfect castle",
+      "viewGallery": "View Gallery ↓",
+      "reserveNow": "Book Now",
+      "contactWhatsApp": "Contact via WhatsApp"
+    },
+    "mechanicalBull": {
+      "title": "Mechanical Bull",
+      "subtitle": "Fun and adrenaline for all ages",
+      "intro": "Our mechanical bull is the perfect attraction to add excitement and fun to your events in Mallorca. Ideal for communions, town hall parties, celebrations and all types of events. Show your balance and resistance!",
+      "galleryTitle": "Our Mechanical Bull",
+      "mechanicalBullGalleryTitle": "Mechanical Bull",
+      "surfBoardGalleryTitle": "Surf Board",
+      "meta": {
+        "title": "Mechanical Bull in Mallorca | Rental for Parties and Events",
+        "description": "Mechanical bull rental in Mallorca for communions, town hall parties, celebrations and events. Fun and adrenaline guaranteed."
+      }
+    },
+    "communions": {
+      "title": "Communions in Mallorca",
+      "subtitle": "Make your child's communion unforgettable",
+      "intro": "At DiverPark we offer the most complete service for communions in Mallorca: bouncy castles, water parties and children's entertainment. Everything you need to make your child's communion unforgettable.",
+      "galleryTitle": "Communions with DiverPark",
+      "meta": {
+        "title": "Communions in Mallorca | Bouncy Castles and Entertainment",
+        "description": "Complete service for communions in Mallorca. Bouncy castles, water parties and children's entertainment."
+      }
+    },
+    "townHallParties": {
+      "title": "Town Hall Parties",
+      "subtitle": "Professional service for municipal parties",
+      "intro": "At DiverPark we offer professional service for town hall parties in Mallorca. Large bouncy castles, water parties and entertainment for municipal parties.",
+      "galleryTitle": "Municipal Parties",
+      "meta": {
+        "title": "Town Hall Parties in Mallorca | Bouncy Castles",
+        "description": "Professional service for town hall parties in Mallorca. Large bouncy castles and entertainment."
+      }
+    },
+    "about": {
+      "title": "About Us",
+      "subtitle": "Over 15 years creating magical moments in Mallorca",
+      "whoWeAre": "Who We Are?",
+      "intro1": "We are a company mainly dedicated to Bouncy Castle rental in Mallorca. We also have a specialized team in entertainment shows for the little ones.",
+      "intro2": "From animation with costumes of their favorite cartoon characters, to face painting sessions where both children and adults will have a great time. We ensure seriousness and professionalism in our services, so that fun always goes hand in hand with safety. Our main objective is to offer our clients the best service, with very competitive prices. We travel throughout the island.",
+      "intro3": "You can trust us for your party: bouncy castles, entertainment and water parties throughout Mallorca.",
+      "stats": {
+        "years": "Years of Experience",
+        "events": "Events Completed",
+        "castles": "Available Castles",
+        "rating": "Rating"
+      },
+      "safety": {
+        "title": "Liability Insurance and Continuous Inspections",
+        "description": "For Mallorca DiverPark there is nothing more important than safety, especially when working with children and minors, so all our castles have liability insurance, safety and welfare rules for children, and we subject our castles to strict inspections to guarantee quality and safety. We also have experience in the care and control of children, being a safety element to avoid any damage or problem that may arise while children play with the castles.",
+        "item1": "Liability insurance on all castles",
+        "item2": "UNE14960 Certificate - European safety standard",
+        "item3": "Strict inspections to guarantee quality and safety",
+        "item4": "Experience in the care and control of children"
+      },
+      "servicesTitle": "Our Services",
+      "services": {
+        "castles": {
+          "title": "Bouncy Castles",
+          "description": "Small, large, with slide and water castles. Variety for all tastes and ages."
+        },
+        "entertainment": {
+          "title": "Children's Entertainment",
+          "description": "Costumes, face painting, shows and much more to entertain the little ones."
+        },
+        "water": {
+          "title": "Water Parties",
+          "description": "Tatamis, catapults, foam cannons and water castles for summer."
+        },
+        "events": {
+          "title": "Special Events",
+          "description": "Communions, town hall parties and special celebrations throughout Mallorca."
+        }
+      },
+      "coverage": {
+        "title": "Coverage Throughout Mallorca",
+        "description": "We travel to any point on the island for your event"
+      },
+      "meta": {
+        "title": "About Us - DIVERPARK | Bouncy Castles Mallorca",
+        "description": "Over 15 years offering bouncy castle rental in Mallorca. Seriousness, professionalism and guaranteed safety. We travel throughout the island."
+      }
+    },
+    "contactPage": {
+      "title": "Contact",
+      "meta": {
+        "title": "Contact - DIVERPARK | Bouncy Castles Mallorca",
+        "description": "Contact DiverPark to book bouncy castles, mechanical bull or entertainment in Mallorca. No obligation quote."
+      }
+    }
+  },
+  "home": {
+    "about": {
+      "intro": "Hi! How are you doing... If you've come this far it's because you want to have fun. Shall we introduce ourselves? We are the leading company in {0} for {1} and all kinds of celebrations. Our main goal is to make you feel the essence of childhood.",
+      "description": "We are a company mainly dedicated to {0}. We offer services for {1} and special events. We also have {2} and a specialized team in entertainment shows for the little ones throughout Mallorca."
+    },
+    "experience": {
+      "description": "Over 15 years of experience addressing all types of events in Mallorca: {0} and special celebrations. We offer our wide range of {1} and children's entertainment for events throughout Mallorca.",
+      "events": "communions, town hall parties, children's parties",
+      "castles": "bouncy castles, foam parties",
+      "eventsCount": "Events",
+      "castlesCount": "Bouncy Castles",
+      "clientsCount": "Clients"
+    },
+    "services": {
+      "title": "What do we offer?",
+      "description": "We offer {0} for all types of events: {1} and special celebrations. We also have {2} and children's entertainment to make your event unforgettable.",
+      "smallCastles": {
+        "title": "Small Bouncy Castles",
+        "description": "{0} perfect for {1} in Mallorca. The little ones will enjoy themselves in our castles designed especially for them."
+      },
+      "largeCastles": {
+        "title": "Large Bouncy Castles",
+        "description": "{0} ideal for {1} in Mallorca. More is always more when it comes to having fun."
+      },
+      "waterCastles": {
+        "title": "Water Bouncy Castles",
+        "description": "{0} for {1} in Mallorca. Into the water, duck! Castles where water is the protagonist."
+      },
+      "slideCastles": {
+        "title": "Bouncy Castles with Slide",
+        "description": "{0} for {1} in Mallorca. The perfect size of fun."
+      },
+      "waterParty": {
+        "title": "Water Party and Water Castles",
+        "description": "{0} for {1}. The most refreshing fun with tatamis, water catapult, foam cannon and water castles."
+      },
+      "mechanicalBull": {
+        "title": "Mechanical Bull",
+        "description": "{0} for {1}. Fun and adrenaline guaranteed for all ages."
+      },
+      "animations": {
+        "title": "Animations",
+        "description": "{0} for {1}. Professional magicians and entertainment shows."
+      },
+      "communions": {
+        "title": "Communions",
+        "description": "Bouncy castle rental for communions in Mallorca. Foam parties and entertainment to make your child's communion unforgettable."
+      },
+      "townHallParties": {
+        "title": "Town Hall Parties",
+        "description": "Bouncy castles for town hall parties in Mallorca. Professional service for municipal parties with large castles and foam parties."
+      }
+    },
+    "faq": {
+      "title": "Frequently asked questions",
+      "q1": "Which areas do you cover?",
+      "a1": "We travel across the island of Mallorca: Palma, Calvià, Llucmajor, Manacor, Inca and any municipality. Setup and takedown are included.",
+      "q2": "Do the castles include insurance?",
+      "a2": "Yes. All our castles have liability insurance and comply with safety standards (UNE14960).",
+      "q3": "How much does it cost to hire a bouncy castle?",
+      "a3": "The price depends on the model, duration and location. Request a no-obligation quote via WhatsApp or the contact form.",
+      "q4": "Do you offer entertainment and water parties?",
+      "a4": "Yes. As well as bouncy castles we offer foam parties, mechanical bull, children's entertainment (magicians, clowns) and full communions.",
+      "q5": "How do I book?",
+      "a5": "You can contact us by WhatsApp, via the website form or by phone. We will send you a quote and confirm the booking."
+    },
+    "contact": {
+      "title": "Contact us",
+      "subtitle": "Plan your perfect party with DIVERPARK",
+      "ready": "Ready to make your event unforgettable?",
+      "description": "Contact us for more information about our {0} services for {1} and all kinds of celebrations. Over 15 years making events in Mallorca unforgettable.",
+      "whatsapp": "📱 Contact via WhatsApp",
+      "formTitle": "Request a quote",
+      "formName": "Name",
+      "formNamePlaceholder": "Your name",
+      "formEmail": "Email",
+      "formEmailPlaceholder": "you@email.com",
+      "formPhone": "Phone",
+      "formPhonePlaceholder": "600 000 000",
+      "formService": "Service of interest",
+      "formMessage": "Message",
+      "formMessagePlaceholder": "Tell us about your event, date, location...",
+      "formSubmit": "Send",
+      "formSuccess": "Message sent. We will reply soon.",
+      "formError": "Error sending. Try via WhatsApp.",
+      "formSending": "Sending..."
+    }
+  },
+  "gallery": {
+    "imagesOfCastle": "{count} images of this castle",
+    "reserve": "Reserve",
+    "viewImages": "View {count} images",
+    "imagesAvailable": "{count} images available"
+  },
+  "cookieBanner": {
+    "message": "We use our own and third-party cookies to improve our services. If you continue browsing, we consider that you accept their use.",
+    "learnMore": "Cookie policy",
+    "accept": "Accept",
+    "reject": "Reject"
+  },
+  "legal": {
+    "title": "Legal Notice",
+    "metaTitle": "Legal Notice - DIVERPARK",
+    "metaDescription": "Legal notice of DIVERPARK - Bouncy castle rental in Mallorca",
+    "identificationTitle": "1. Identification",
+    "identificationText": "In compliance with Law 34/2002, of July 11, on Services of the Information Society and Electronic Commerce, we inform you that:",
+    "businessName": "Company name",
+    "nif": "Tax ID",
+    "address": "Address",
+    "email": "Email",
+    "phone": "Phone",
+    "objectTitle": "2. Purpose",
+    "objectText": "This legal notice regulates the use of the website diverpark.net. Browsing the website grants you the status of user and implies your full acceptance of all the conditions included in this Legal Notice.",
+    "conditionsTitle": "3. Terms of Use",
+    "conditionsText": "The user agrees to make proper use of the contents offered on this website and not to use them to engage in illegal activities or activities contrary to good faith and the legal system.",
+    "intellectualTitle": "4. Intellectual and Industrial Property",
+    "intellectualText": "All website contents, including but not limited to, texts, photographs, graphics, images, icons, technology, software, as well as its graphic design and source codes, are the property of DIVERPARK, without any exploitation rights recognized by current legislation on intellectual property being understood as transferred to the user.",
+    "responsibilityTitle": "5. Limitation of Liability",
+    "responsibilityText": "DIVERPARK is not responsible for damages that may arise from the use of the information on the website or contained in DIVERPARK's social networks.",
+    "jurisdictionTitle": "6. Applicable Law and Jurisdiction",
+    "jurisdictionText": "These conditions are governed by Spanish law. For the resolution of any conflict or discrepancy relating to the interpretation or application of these conditions, the parties expressly agree to submit to the jurisdiction of the courts and tribunals of Palma de Mallorca."
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "intro": "At DIVERPARK we are committed to protecting your personal data. Below we inform you about how we process the information you provide.",
+    "metaTitle": "Privacy Policy - DIVERPARK",
+    "metaDescription": "Privacy and data protection policy of DIVERPARK",
+    "responsibleTitle": "1. Data Controller",
+    "responsible": "Controller",
+    "nif": "Tax ID",
+    "address": "Address",
+    "email": "Email",
+    "phone": "Phone",
+    "purposeTitle": "2. Purpose of Processing",
+    "purposeText": "The personal data you provide will be processed for the following purposes:",
+    "purpose1": "Manage inquiries and requests for information about our services.",
+    "purpose2": "Send commercial information about our services (only if you have given your consent).",
+    "purpose3": "Manage the contracting of our bouncy castle rental services.",
+    "legitimationTitle": "3. Legal Basis",
+    "legitimationText": "The legal basis for processing your data is your consent, which you can withdraw at any time.",
+    "conservationTitle": "4. Data Retention",
+    "conservationText": "Data will be kept for the time necessary to fulfill the purpose for which it was collected and to determine any responsibilities that may arise from that purpose and from data processing.",
+    "recipientsTitle": "5. Recipients",
+    "recipientsText": "Data will not be transferred to third parties, except by legal obligation.",
+    "rightsTitle": "6. User Rights",
+    "rightsText": "You can exercise the following rights:",
+    "right1": "Right of access to your personal data.",
+    "right2": "Right to rectification of inaccurate data.",
+    "right3": "Right to erasure when data is no longer necessary.",
+    "right4": "Right to restriction of processing.",
+    "right5": "Right to data portability.",
+    "rightsContact": "To exercise these rights, you can send us an email to {'catidiver@hotmail.com'}.",
+    "whatsappTitle": "7. Contact via WhatsApp",
+    "whatsappText": "When contacting us via WhatsApp, your data will be processed by Meta (WhatsApp Ireland Limited). We recommend reviewing WhatsApp's privacy policy."
+  },
+  "cookies": {
+    "title": "Cookie Policy",
+    "intro": "We use cookies to improve your experience on our website. On this page we explain what they are and how we use them.",
+    "metaTitle": "Cookie Policy - DIVERPARK",
+    "metaDescription": "Information about the use of cookies on DIVERPARK",
+    "whatAreTitle": "What are cookies?",
+    "whatAreText": "Cookies are small text files that are stored in your browser when you visit our website. They allow the website to remember your actions and preferences over a period of time.",
+    "typesTitle": "Types of Cookies We Use",
+    "technicalTitle": "Technical Cookies (Necessary)",
+    "technicalText": "These cookies are essential for the website to function and do not require your consent. They are used to remember your preferred language and cookie preferences.",
+    "analyticsTitle": "Analytics Cookies (Optional)",
+    "analyticsText": "These cookies help us understand how you interact with our website and improve your experience. These cookies require your consent.",
+    "usedTitle": "Cookies We Use",
+    "cookieName": "Name",
+    "purpose": "Purpose",
+    "duration": "Duration",
+    "languagePurpose": "Remember selected language",
+    "consentPurpose": "Remember your cookie choice",
+    "year": "year",
+    "disableTitle": "How to Disable Cookies",
+    "disableText": "You can configure your browser to reject cookies. The links below show you how to do this in the most popular browsers:"
+  },
+  "error": {
+    "notFound": "Page not found",
+    "notFoundMessage": "Sorry, the page you are looking for does not exist.",
+    "general": "Something went wrong",
+    "goHome": "Go back home"
+  }
+}

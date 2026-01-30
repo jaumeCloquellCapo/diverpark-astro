@@ -1,0 +1,63 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import Hero from '../../components/Hero.astro';
+import HomeContent from '../../components/HomeContent.astro';
+import { Schema } from 'astro-seo-schema';
+import { t } from '../../utils/i18n';
+
+const locale = 'ca';
+const basePath = '/ca';
+const title = t(locale, 'pages.home.meta.title');
+const description = t(locale, 'pages.home.meta.description');
+const keywords = t(locale, 'pages.home.meta.keywords');
+const ogImage = 'https://diverpark.net/images/castillos-grandes/castillo-hinchable-grande-avion-5.jpg';
+
+const baseUrl = 'https://diverpark.net';
+const jsonLdGraph = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'LocalBusiness',
+    '@id': `${baseUrl}#organization`,
+    name: 'Diverpark',
+    alternateName: 'Diverpark Mallorca',
+    description: "Lloguer de castells inflables a Mallorca per a festes, comunions i festes d'ajuntament. Festes d'aigua i animacions infantils.",
+    url: baseUrl,
+    image: [`${baseUrl}/images/castillos-pequenos/castillo-hinchable-pequeno-spider-1-10.jpg`, `${baseUrl}/images/castillos-grandes/castillo-hinchable-grande-dragonkan-11.jpg`],
+    address: { '@type': 'PostalAddress', addressLocality: 'Palma de Mallorca', addressRegion: 'Illes Balears', postalCode: '07000', addressCountry: 'ES' },
+    areaServed: { '@type': 'City', name: 'Mallorca' },
+    priceRange: '€€',
+    telephone: '+34625458704',
+    email: 'catidiver@hotmail.com',
+    sameAs: ['https://wa.me/34625458704', 'https://www.google.com/maps/place/?q=place_id:ChIJLcOE6CozlhIRoDeycUwZrKw', 'https://www.facebook.com/people/Diverpark-Diverpark/pfbid03rq6rN8aMjuaPjEXBneMxH9ZNJjAHgY2MhBGdubBENUu2ZX19cRrV1HZzaaEyrfhl/'],
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    '@id': `${baseUrl}#website`,
+    url: baseUrl,
+    name: "Diverpark - Lloguer de castells inflables i tor mecànic a Mallorca",
+    publisher: { '@id': `${baseUrl}#organization` },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [1, 2, 3, 4, 5].map((i) => ({
+      '@type': 'Question',
+      name: t(locale, `home.faq.q${i}`),
+      acceptedAnswer: { '@type': 'Answer', text: t(locale, `home.faq.a${i}`) },
+    })),
+  },
+];
+
+const schemaItem = { '@context': 'https://schema.org' as const, '@graph': jsonLdGraph };
+---
+
+<PageLayout title={title} description={description}>
+  <Fragment slot="head">
+    <meta name="keywords" content={keywords} />
+    <meta property="og:image" content={ogImage} />
+    <Schema item={schemaItem} />
+  </Fragment>
+  <Hero locale={locale} basePath={basePath} />
+  <HomeContent locale={locale} basePath={basePath} />
+</PageLayout>

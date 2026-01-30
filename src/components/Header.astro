@@ -1,0 +1,166 @@
+---
+import { t } from '../utils/i18n';
+
+interface Props {
+  locale: string;
+}
+
+const { locale } = Astro.props;
+const basePath = locale === 'es' ? '' : `/${locale}`;
+
+// Ruta actual sin prefijo de idioma para construir enlaces a la misma página en cada idioma
+const pathname = Astro.url.pathname.replace(/\/$/, '') || '/';
+let pathWithoutLocale = '';
+if (pathname === '/') {
+  pathWithoutLocale = '';
+} else if (locale === 'es') {
+  pathWithoutLocale = pathname.slice(1);
+} else {
+  const prefix = `/${locale}`;
+  if (pathname === prefix) {
+    pathWithoutLocale = '';
+  } else if (pathname.startsWith(prefix + '/')) {
+    pathWithoutLocale = pathname.slice(prefix.length + 1);
+  } else {
+    pathWithoutLocale = pathname.slice(1);
+  }
+}
+
+const languageUrls = {
+  es: pathWithoutLocale === '' ? '/' : `/${pathWithoutLocale}`,
+  ca: pathWithoutLocale === '' ? '/ca' : `/ca/${pathWithoutLocale}`,
+  en: pathWithoutLocale === '' ? '/en' : `/en/${pathWithoutLocale}`,
+};
+
+const languages = [
+  { code: 'es', name: 'Español', flag: '🇪🇸' },
+  { code: 'ca', name: 'Català', flag: '🏝️' },
+  { code: 'en', name: 'English', flag: '🇬🇧' },
+];
+const currentLang = languages.find((l) => l.code === locale) ?? languages[0];
+---
+
+<header class="bg-white/95 backdrop-blur-md shadow-md sticky top-0 z-50 border-b-4 border-orange-400">
+  <nav class="container mx-auto px-4 py-4">
+    <div class="flex items-center justify-between">
+      <a href={basePath || '/'} class="flex items-center space-x-2 group" aria-label={`DIVERPARK - ${t(locale, 'nav.home')}`}>
+        <span class="text-2xl md:text-3xl font-bold group-hover:scale-105 transition-transform font-display tracking-tight" role="img" aria-hidden="true">
+          <span style="color: #E5533D;">D</span><span style="color: #2C7BE5;">I</span><span style="color: #4CAF50;">V</span><span style="color: #F39C12;">E</span><span style="color: #E5533D;">R</span><span style="color: #2C7BE5;">P</span><span style="color: #4CAF50;">A</span><span style="color: #F39C12;">R</span><span style="color: #E5533D;">K</span>
+        </span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <div class="hidden md:flex items-center gap-6">
+        <a href={basePath || '/'} class="text-gray-700 hover:text-orange-500 font-bold transition-colors">{t(locale, 'nav.home')}</a>
+
+        <!-- Castillos Dropdown -->
+        <div class="relative group">
+          <button type="button" class="text-gray-700 hover:text-orange-500 font-bold transition-colors flex items-center gap-1">
+            {t(locale, 'nav.castles')}
+            <span class="text-xs">▼</span>
+          </button>
+          <div class="absolute top-full left-0 mt-2 w-56 bg-white rounded-2xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 border-2 border-orange-200 z-50">
+            <div class="py-2">
+              <a href={`${basePath}/castillos-pequenos`} class="block px-4 py-3 text-gray-700 hover:bg-orange-50 hover:text-orange-600 transition-colors font-semibold rounded-xl mx-2">{t(locale, 'nav.smallCastles')}</a>
+              <a href={`${basePath}/castillos-grandes`} class="block px-4 py-3 text-gray-700 hover:bg-orange-50 hover:text-orange-600 transition-colors font-semibold rounded-xl mx-2">{t(locale, 'nav.largeCastles')}</a>
+              <a href={`${basePath}/castillos-tobogan`} class="block px-4 py-3 text-gray-700 hover:bg-purple-50 hover:text-purple-600 transition-colors font-semibold rounded-xl mx-2">{t(locale, 'nav.slideCastles')}</a>
+              <a href={`${basePath}/castillos-acuaticos`} class="block px-4 py-3 text-gray-700 hover:bg-cyan-50 hover:text-cyan-600 transition-colors font-semibold rounded-xl mx-2">{t(locale, 'nav.waterCastles')}</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Servicios Dropdown -->
+        <div class="relative group">
+          <button type="button" class="text-purple-600 hover:text-pink-600 font-bold transition-colors flex items-center gap-1">
+            {t(locale, 'nav.services')}
+            <span class="text-xs">▼</span>
+          </button>
+          <div class="absolute top-full left-0 mt-2 w-56 bg-white rounded-2xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 border-2 border-purple-200 z-50">
+            <div class="py-2">
+              <a href={`${basePath}/colchonetas`} class="block px-4 py-3 text-gray-700 hover:bg-orange-50 hover:text-orange-600 transition-colors font-semibold rounded-xl mx-2">{t(locale, 'pages.mats.title')}</a>
+              <a href={`${basePath}/fiesta-agua`} class="block px-4 py-3 text-gray-700 hover:bg-purple-50 hover:text-purple-600 transition-colors font-semibold rounded-xl mx-2">{t(locale, 'nav.foamParty')}</a>
+              <a href={`${basePath}/toro-mecanico`} class="block px-4 py-3 text-gray-700 hover:bg-pink-50 hover:text-pink-600 transition-colors font-semibold rounded-xl mx-2">{t(locale, 'nav.mechanicalBull')}</a>
+              <a href={`${basePath}/animaciones`} class="block px-4 py-3 text-gray-700 hover:bg-purple-50 hover:text-purple-600 transition-colors font-semibold rounded-xl mx-2">{t(locale, 'nav.animations')}</a>
+              <a href={`${basePath}/comuniones`} class="block px-4 py-3 text-gray-700 hover:bg-pink-50 hover:text-pink-600 transition-colors font-semibold rounded-xl mx-2">{t(locale, 'nav.communions')}</a>
+            </div>
+          </div>
+        </div>
+
+        <a href={`${basePath}/sobre-nosotros`} class="text-gray-700 hover:text-orange-500 font-bold transition-colors">{t(locale, 'nav.aboutUs')}</a>
+        <a href={`${basePath}/contacto`} class="btn-primary text-base py-3 px-6">{t(locale, 'nav.contact')}</a>
+
+        <!-- Language Selector Desktop -->
+        <div class="relative group language-selector-desktop">
+          <button type="button" class="flex items-center gap-2 px-4 py-2 bg-white border-2 border-gray-200 rounded-xl hover:border-orange-400 transition-all duration-200 font-bold text-sm peer">
+            <span class="text-2xl">{currentLang.flag}</span>
+            <span class="text-gray-700">{locale.toUpperCase()}</span>
+            <svg class="w-4 h-4 text-gray-500 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="absolute top-full right-0 mt-2 w-40 bg-white rounded-2xl shadow-xl border-2 border-gray-100 overflow-hidden z-[60] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+            <a href={languageUrls.es} class="flex items-center gap-3 px-4 py-3 hover:bg-orange-50 transition-colors text-left font-bold text-sm {locale === 'es' ? 'bg-orange-50 text-orange-600' : 'text-gray-700'}">
+              <span class="text-2xl">🇪🇸</span>
+              <span>Español</span>
+            </a>
+            <a href={languageUrls.ca} class="flex items-center gap-3 px-4 py-3 hover:bg-orange-50 transition-colors text-left font-bold text-sm {locale === 'ca' ? 'bg-orange-50 text-orange-600' : 'text-gray-700'}">
+              <span class="text-2xl">🏝️</span>
+              <span>Català</span>
+            </a>
+            <a href={languageUrls.en} class="flex items-center gap-3 px-4 py-3 hover:bg-orange-50 transition-colors text-left font-bold text-sm {locale === 'en' ? 'bg-orange-50 text-orange-600' : 'text-gray-700'}">
+              <span class="text-2xl">🇬🇧</span>
+              <span>English</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile: language dropdown + hamburger menu -->
+      <div class="flex items-center gap-4 md:hidden">
+        <details class="relative language-selector-mobile group">
+          <summary class="flex items-center gap-1.5 px-3 py-1.5 bg-white border-2 border-gray-200 rounded-xl hover:border-orange-400 transition-all duration-200 font-bold text-xs cursor-pointer list-none">
+            <span class="text-xl">{currentLang.flag}</span>
+            <span class="text-gray-700">{locale.toUpperCase()}</span>
+            <svg class="w-3 h-3 text-gray-500 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </summary>
+          <div class="absolute top-full right-0 mt-2 w-36 bg-white rounded-xl shadow-2xl border-2 border-gray-100 overflow-hidden z-[60]">
+            <a href={languageUrls.es} class="flex items-center gap-2 px-4 py-3 hover:bg-orange-50 transition-colors text-left font-bold text-xs {locale === 'es' ? 'bg-orange-50 text-orange-600' : 'text-gray-700'}">🇪🇸 Español</a>
+            <a href={languageUrls.ca} class="flex items-center gap-2 px-4 py-3 hover:bg-orange-50 transition-colors text-left font-bold text-xs {locale === 'ca' ? 'bg-orange-50 text-orange-600' : 'text-gray-700'}">🏝️ Català</a>
+            <a href={languageUrls.en} class="flex items-center gap-2 px-4 py-3 hover:bg-orange-50 transition-colors text-left font-bold text-xs {locale === 'en' ? 'bg-orange-50 text-orange-600' : 'text-gray-700'}">🇬🇧 English</a>
+          </div>
+        </details>
+        <details class="md:hidden group/menu">
+          <summary class="list-none text-3xl bg-gradient-to-r from-orange-500 to-pink-500 bg-clip-text text-transparent font-bold cursor-pointer" aria-label="Menú">☰</summary>
+          <ul class="flex flex-col space-y-4 mt-4 pb-4 border-t-4 border-orange-400 pt-4 bg-gradient-to-br from-orange-50/50 via-pink-50/50 to-purple-50/50 rounded-b-2xl">
+            <li>
+              <a href={basePath || '/'} class="block text-orange-600 hover:text-pink-600 font-bold transition-colors py-2 px-4 rounded-xl hover:bg-orange-50">{t(locale, 'nav.home')}</a>
+            </li>
+            <li class="border-t-2 border-orange-200 pt-2">
+              <p class="text-sm font-bold text-orange-600 uppercase mb-2 px-4">{t(locale, 'nav.castles')}</p>
+              <a href={`${basePath}/castillos-pequenos`} class="block text-gray-700 hover:text-orange-600 font-semibold transition-colors py-2 pl-8 hover:bg-orange-50 rounded-xl mx-2">{t(locale, 'nav.smallCastles')}</a>
+              <a href={`${basePath}/castillos-grandes`} class="block text-gray-700 hover:text-orange-600 font-semibold transition-colors py-2 pl-8 hover:bg-orange-50 rounded-xl mx-2">{t(locale, 'nav.largeCastles')}</a>
+              <a href={`${basePath}/castillos-tobogan`} class="block text-gray-700 hover:text-purple-600 font-semibold transition-colors py-2 pl-8 hover:bg-purple-50 rounded-xl mx-2">{t(locale, 'nav.slideCastles')}</a>
+              <a href={`${basePath}/castillos-acuaticos`} class="block text-gray-700 hover:text-cyan-600 font-semibold transition-colors py-2 pl-8 hover:bg-cyan-50 rounded-xl mx-2">{t(locale, 'nav.waterCastles')}</a>
+            </li>
+            <li class="border-t-2 border-purple-200 pt-2">
+              <p class="text-sm font-bold text-purple-600 uppercase mb-2 px-4">{t(locale, 'nav.services')}</p>
+              <a href={`${basePath}/colchonetas`} class="block text-gray-700 hover:text-orange-600 font-semibold transition-colors py-2 pl-8 hover:bg-orange-50 rounded-xl mx-2">{t(locale, 'pages.mats.title')}</a>
+              <a href={`${basePath}/fiesta-agua`} class="block text-gray-700 hover:text-purple-600 font-semibold transition-colors py-2 pl-8 hover:bg-purple-50 rounded-xl mx-2">{t(locale, 'nav.foamParty')}</a>
+              <a href={`${basePath}/toro-mecanico`} class="block text-gray-700 hover:text-pink-600 font-semibold transition-colors py-2 pl-8 hover:bg-pink-50 rounded-xl mx-2">{t(locale, 'nav.mechanicalBull')}</a>
+              <a href={`${basePath}/animaciones`} class="block text-gray-700 hover:text-purple-600 font-semibold transition-colors py-2 pl-8 hover:bg-purple-50 rounded-xl mx-2">{t(locale, 'nav.animations')}</a>
+              <a href={`${basePath}/comuniones`} class="block text-gray-700 hover:text-pink-600 font-semibold transition-colors py-2 pl-8 hover:bg-pink-50 rounded-xl mx-2">{t(locale, 'nav.communions')}</a>
+            </li>
+            <li class="border-t-2 border-orange-200 pt-2">
+              <a href={`${basePath}/sobre-nosotros`} class="block text-orange-600 hover:text-pink-600 font-bold transition-colors py-2 px-4 rounded-xl hover:bg-orange-50">{t(locale, 'nav.aboutUs')}</a>
+            </li>
+            <li class="border-t-2 border-orange-200 pt-2 px-4">
+              <a href={`${basePath}/contacto`} class="btn-primary inline-block w-full text-center">{t(locale, 'nav.contact')}</a>
+            </li>
+          </ul>
+        </details>
+      </div>
+    </div>
+  </nav>
+</header>

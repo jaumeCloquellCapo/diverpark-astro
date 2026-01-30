@@ -1,0 +1,117 @@
+---
+import PageLayout from '../layouts/PageLayout.astro';
+import { Schema } from 'astro-seo-schema';
+import { t } from '../utils/i18n';
+
+const locale = Astro.currentLocale ?? 'es';
+const title = t(locale, 'pages.smallCastles.meta.title');
+const description = t(locale, 'pages.smallCastles.meta.description');
+const ogImage = 'https://diverpark.net/images/castillos-pequenos/castillo-hinchable-pequeno-spider-1-10.jpg';
+const whatsappMessage = 'Hola! Me interesan los castillos pequeños';
+const whatsappHref = `https://wa.me/34625458704?text=${encodeURIComponent(whatsappMessage)}`;
+
+const imageFiles = [
+  'castillo-hinchable-pequeno-bob-17.jpg', 'castillo-hinchable-pequeno-bob-18.jpg', 'castillo-hinchable-pequeno-bob-27.jpg', 'castillo-hinchable-pequeno-bob-43.jpg',
+  'castillo-hinchable-pequeno-caramelo-19.jpg', 'castillo-hinchable-pequeno-caramelo-20.jpg', 'castillo-hinchable-pequeno-caramelo-44.jpg', 'castillo-hinchable-pequeno-caramelo-45.jpg',
+  'castillo-hinchable-pequeno-globos-1-21.jpg', 'castillo-hinchable-pequeno-globos-2-23.jpg',
+  'castillo-hinchable-pequeno-kity-28.jpg', 'castillo-hinchable-pequeno-kity-29.jpg', 'castillo-hinchable-pequeno-kity-52.jpg', 'castillo-hinchable-pequeno-kity-53.jpg',
+  'castillo-hinchable-pequeno-multimarino-1.jpg', 'castillo-hinchable-pequeno-multimarino-2.jpg', 'castillo-hinchable-pequeno-multimarino-3.jpg',
+  'castillo-hinchable-pequeno-pressingcatch-1-4.jpg', 'castillo-hinchable-pequeno-pressingcatch-6.jpg',
+  'castillo-hinchable-pequeno-safari-park-37.jpg', 'castillo-hinchable-pequeno-safari-park-38.jpg', 'castillo-hinchable-pequeno-safari-park-8.jpg', 'castillo-hinchable-pequeno-safari-park-9.jpg',
+  'castillo-hinchable-pequeno-spider-1-10.jpg', 'castillo-hinchable-pequeno-spider-12.jpg', 'castillo-hinchable-pequeno-spider-2-15.jpg',
+];
+const images = imageFiles.map((f) => `/images/castillos-pequenos/${f}`);
+
+const baseUrl = 'https://diverpark.net';
+const path = '/castillos-pequenos';
+const pageUrl = `${baseUrl}${path}`;
+const homeUrl = baseUrl;
+const jsonLdGraph = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    '@id': `${pageUrl}#service`,
+    name: t(locale, 'pages.smallCastles.title'),
+    description,
+    provider: { '@type': 'LocalBusiness', '@id': `${baseUrl}#organization`, name: 'Diverpark', url: baseUrl, telephone: '+34625458704', email: 'catidiver@hotmail.com' },
+    areaServed: { '@type': 'City', name: 'Mallorca', '@id': 'https://www.wikidata.org/wiki/Q8828' },
+    serviceType: locale === 'es' ? 'Alquiler de castillos hinchables pequeños' : locale === 'ca' ? 'Lloguer de castells inflables petits' : 'Small bouncy castle rental',
+    image: [`${baseUrl}/images/castillos-pequenos/castillo-hinchable-pequeno-spider-1-10.jpg`, `${baseUrl}/images/castillos-pequenos/castillo-hinchable-pequeno-globos-1-21.jpg`, `${baseUrl}/images/castillos-pequenos/castillo-hinchable-pequeno-caramelo-19.jpg`],
+    url: pageUrl,
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: t(locale, 'nav.home'), item: homeUrl },
+      { '@type': 'ListItem', position: 2, name: t(locale, 'pages.smallCastles.title'), item: pageUrl },
+    ],
+  },
+];
+
+const schemaItem = { '@context': 'https://schema.org' as const, '@graph': jsonLdGraph };
+const imagesAvailableText = t(locale, 'gallery.imagesAvailable').replace('{count}', String(images.length));
+---
+
+<PageLayout title={`${title} | DIVERPARK`} description={description} wrapperClass="bg-white">
+  <Fragment slot="head">
+    <meta property="og:image" content={ogImage} />
+    <Schema item={schemaItem} />
+  </Fragment>
+  <section class="relative py-24 md:py-32 overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-pink-50 via-purple-50 to-blue-50"></div>
+    <div class="container mx-auto px-4 relative z-10">
+      <div class="max-w-4xl mx-auto text-center">
+        <div class="inline-block mb-6">
+          <span class="px-4 py-2 bg-white rounded-full text-sm font-semibold text-purple-600 shadow-sm border border-purple-100">{t(locale, 'nav.castles')}</span>
+        </div>
+        <h1 class="text-5xl md:text-7xl font-bold text-gray-900 mb-6 tracking-tight font-display">{t(locale, 'pages.smallCastles.title')}</h1>
+        <p class="text-xl md:text-2xl text-gray-600 mb-10 leading-relaxed max-w-3xl mx-auto">{t(locale, 'pages.smallCastles.subtitle')}</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <a href={whatsappHref} target="_blank" rel="noopener noreferrer" class="btn-whatsapp text-lg px-8 py-4 inline-flex items-center gap-3">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            {t(locale, 'hero.reserve')}
+          </a>
+          <a href="#galeria" class="text-lg px-8 py-4 bg-white hover:bg-gray-50 text-gray-900 font-semibold rounded-xl border-2 border-gray-200 hover:border-gray-300 transition-all duration-300 hover:shadow-md">{t(locale, 'pages.slideCastles.viewGallery')}</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 border-t border-gray-100">
+    <div class="container mx-auto px-4">
+      <div class="max-w-3xl mx-auto">
+        <p class="text-lg md:text-xl text-gray-600 leading-relaxed text-center">{t(locale, 'pages.smallCastles.intro')}</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="galeria" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4 font-display">{t(locale, 'pages.smallCastles.galleryTitle')}</h2>
+        <p class="text-lg text-gray-600">{imagesAvailableText}</p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
+        {images.map((src) => (
+          <div class="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+            <img src={src} alt={description} width="400" height="300" loading="lazy" class="w-full h-full object-cover" />
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 bg-white border-t border-gray-100">
+    <div class="container mx-auto px-4">
+      <div class="max-w-3xl mx-auto text-center">
+        <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 font-display">{t(locale, 'common.readyToBook')}</h3>
+        <p class="text-lg text-gray-600 mb-8">{t(locale, 'pages.slideCastles.ctaParagraph')}</p>
+        <a href={whatsappHref} target="_blank" rel="noopener noreferrer" class="btn-whatsapp text-lg px-10 py-4 inline-flex items-center gap-3">
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          {t(locale, 'common.contactWhatsApp')}
+        </a>
+      </div>
+    </div>
+  </section>
+</PageLayout>

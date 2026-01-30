@@ -1,0 +1,493 @@
+{
+  "nav": {
+    "home": "Inici",
+    "castles": "Castells",
+    "attractions": "Atraccions",
+    "services": "Serveis",
+    "aboutUs": "Sobre Nosaltres",
+    "smallCastles": "Castells Petits",
+    "largeCastles": "Castells Grans",
+    "waterCastles": "Castells Aquàtics",
+    "slideCastles": "Castells amb Tobogan",
+    "foamParty": "Festa d'Aigua",
+    "mechanicalBull": "Toro Mecànic",
+    "animations": "Animacions",
+    "communions": "Comunions",
+    "townHallParties": "Festes Ajuntament",
+    "contact": "Contactar"
+  },
+  "hero": {
+    "title": "DIVERPARK",
+    "subtitle": "Lloguer de Castells Inflables a Mallorca",
+    "description": "Festes d'Espuma, Comunions i Festes d'Ajuntament | Més de 15 anys d'experiència",
+    "reserve": "Reservar Ara",
+    "viewServices": "Veure Serveis"
+  },
+  "about": {
+    "title": "Qui som?",
+    "intro": "Uep! Com anam… Si has arribat fins aquí és perquè vols divertir-te. Ens presentem? Som l'empresa líder en {0} per a {1} i tot tipus de celebracions. El nostre objectiu principal és fer-te sentir l'essència de la infantesa.",
+    "description": "Som una empresa dedicada principalment al {0}. Oferim serveis per a {1} i esdeveniments especials. També disposem de {2} i un equip especialitzat en espectacles d'entreteniment per als més petits a tota Mallorca.",
+    "rental": "lloguer de castells inflables a Mallorca",
+    "events": "comunions, festes d'ajuntament, festes infantils",
+    "foamParties": "festes d'espuma"
+  },
+  "safety": {
+    "title": "Seguretat Garantida",
+    "description": "Per a DiverPark no hi ha res més important que la seguretat, especialment treballant amb nens i menors. Per això, sotmetem els nostres castells a estrictes revisions per garantir la qualitat i seguretat. A més, comptem amb assegurances de responsabilitat civil, normes per a la seguretat, homologació i amb certificats complint amb la normativa {0}.",
+    "norm": "UNE14960"
+  },
+  "experience": {
+    "title": "La nostra experiència ens avala",
+    "years": "Anys d'experiència",
+    "events": "Esdeveniments realitzats",
+    "satisfied": "Clients satisfets"
+  },
+  "services": {
+    "title": "Els Nostres Serveis",
+    "subtitle": "Descobreix totes les nostres opcions per fer el teu esdeveniment inoblidable",
+    "smallCastles": {
+      "title": "Castells Petits",
+      "description": "Perfectes per als més petits"
+    },
+    "largeCastles": {
+      "title": "Castells Grans",
+      "description": "Diversió a lo gran"
+    },
+    "waterCastles": {
+      "title": "Castells Aquàtics",
+      "description": "Diversió refrescant"
+    },
+    "slideCastles": {
+      "title": "Amb Tobogan",
+      "description": "Emoció i adrenalina"
+    },
+    "foamParty": {
+      "title": "Festa d'Espuma",
+      "description": "Diversió garantida"
+    },
+    "animations": {
+      "title": "Animacions",
+      "description": "Entreteniment professional"
+    },
+    "communions": {
+      "title": "Comunions",
+      "description": "Celebra la teva comunió amb nosaltres"
+    },
+    "townHallParties": {
+      "title": "Festes d'Ajuntament",
+      "description": "Esdeveniments municipals"
+    }
+  },
+  "footer": {
+    "description": "Castells inflables i animacions infantils a Mallorca",
+    "castles": "Castells Inflables",
+    "attractions": "Atraccions",
+    "contact": "Contacte",
+    "contactUs": "Contacta amb nosaltres",
+    "aboutUs": "Sobre nosaltres",
+    "followUs": "Segueix-nos a les Xarxes Socials",
+    "rights": "© {0} Diverpark. Tots els drets reservats.",
+    "legal": "Avís Legal",
+    "privacy": "Política de Privacitat",
+    "cookies": "Política de Cookies"
+  },
+  "common": {
+    "learnMore": "Saber més",
+    "book": "Reservar",
+    "contact": "Contactar",
+    "readyToBook": "A punt per reservar?",
+    "contactWhatsApp": "Contactar per WhatsApp",
+    "requestQuote": "Sol·licitar Pressupost",
+    "idealFor": "Ideal per a",
+    "features": "Característiques",
+    "ourGallery": "La Nostra Galeria"
+  },
+  "pages": {
+    "home": {
+      "meta": {
+        "title": "Lloguer de castells inflables i tor mecànic a Mallorca | Diverpark",
+        "description": "Lloguer de castells inflables a Mallorca per a festes i comunions. Més de 15 anys d'experiència. Reserva ara a Palma i a tota l'illa!",
+        "keywords": "tor mecànic mallorca, lloguer tor mecànic, castells inflables mallorca, castells inflables festes, festes d'espuma mallorca, comunions mallorca, festes d'ajuntament mallorca, lloguer castells inflables comunions, festes infantils mallorca, castells inflables palma"
+      }
+    },
+    "waterParty": {
+      "title": "Festa d'Aigua",
+      "subtitle": "La diversió més refrescant per als teus esdeveniments a Mallorca",
+      "intro": "A DiverPark oferim festes d'aigua a Mallorca per a tot tipus d'esdeveniments: comunions, festes d'ajuntament, festes infantils i celebracions especials. Les nostres atraccions aquàtiques són perfectes per refrescar-se i gaudir al màxim als dies calorosos d'estiu a Mallorca.",
+      "galleryTitle": "Les Nostres Atraccions d'Aigua",
+      "tatamis": {
+        "title": "Tatamis",
+        "item1": "Matalassos aquàtics",
+        "item2": "Diversió a l'aigua",
+        "item3": "Segurs i resistents",
+        "item4": "Per a totes les edats"
+      },
+      "catapult": {
+        "title": "Catapulta d'Aigua",
+        "item1": "Salts aquàtics",
+        "item2": "Adrenalina garantida",
+        "item3": "Sistema segur",
+        "item4": "Materials certificats"
+      },
+      "foamCannon": {
+        "title": "Canó d'Espuma",
+        "item1": "Canons professionals",
+        "item2": "Espuma biodegradable",
+        "item3": "Sistema d'aigua segur",
+        "item4": "Diversió per a tots"
+      },
+      "waterCastles": {
+        "title": "Castells Aquàtics",
+        "item1": "Castells inflables amb aigua",
+        "item2": "Diversió refrescant",
+        "item3": "Perfectes per a l'estiu",
+        "item4": "Ideal per a esdeveniments a l'aire lliure"
+      },
+      "meta": {
+        "title": "Festa d'Aigua i Castells Aquàtics a Mallorca | Tatamis, Catapulta, Canó d'Espuma i Castells",
+        "description": "Festa d'aigua i castells aquàtics a Mallorca per a comunions, festes d'ajuntament i festes infantils. Lloguer de tatamis, catapulta d'aigua, canó d'espuma i castells inflables aquàtics."
+      }
+    },
+    "animations": {
+      "title": "Animacions Infantils",
+      "subtitle": "Entreteniment professional per als teus esdeveniments a Mallorca",
+      "intro": "A DiverPark comptem amb els millors animadors i artistes per als teus esdeveniments a Mallorca. Mags, pallassos, espectacles musicals i molt més per a comunions, festes d'ajuntament i celebracions especials.",
+      "galleryTitle": "Els Nostres Artistes",
+      "meta": {
+        "title": "Animacions Infantils a Mallorca | Mags i Espectacles",
+        "description": "Animacions infantils professionals a Mallorca per a comunions, festes d'ajuntament i festes. Mags, pallassos i espectacles."
+      }
+    },
+    "mats": {
+      "title": "Matalassos Inflables",
+      "subtitle": "Diversió segura per a festes i esdeveniments",
+      "intro": "Lloguer de matalassos inflables a Mallorca per a festes infantils, esdeveniments i celebracions. Una opció divertida i segura per completar el teu esdeveniment amb Diverpark.",
+      "castlesSectionTitle": "Els nostres castells inflables",
+      "castlesSectionDescription": "Aquí tens tots els castells que tenim (petits, grans, amb tobogan i aquàtics).",
+      "fullGalleryTitle": "Galeria completa",
+      "castlesGalleryAlt": "Castells inflables a Mallorca - Diverpark",
+      "ctaTitle": "Vols matalassos inflables per al teu esdeveniment?",
+      "ctaDescription": "Escriu-nos per WhatsApp i t'informem de disponibilitat, muntatge i opcions segons la teva festa.",
+      "meta": {
+        "title": "Lloguer de Matalassos Inflables a Mallorca | Diverpark",
+        "description": "Lloguer de matalassos inflables a Mallorca per a festes infantils i esdeveniments. Muntatge professional i diversió segura amb Diverpark."
+      }
+    },
+    "smallCastles": {
+      "title": "Castells Inflables Petits",
+      "subtitle": "Perfectes per als més petits de la casa",
+      "intro": "Els nostres castells inflables petits són ideals per a festes infantils, comunions i esdeveniments on els protagonistes són els més petits. Segurs, divertits i perfectes per a espais reduïts.",
+      "galleryTitle": "Els Nostres Castells Petits",
+      "meta": {
+        "title": "Castells Inflables Petits a Mallorca | Lloguer per a Festes",
+        "description": "Lloguer de castells inflables petits a Mallorca per a festes infantils, comunions i esdeveniments. Perfectes per als més petits."
+      }
+    },
+    "largeCastles": {
+      "title": "Castells Inflables Grans",
+      "subtitle": "Diversió a lo gran per als teus esdeveniments",
+      "intro": "Els nostres castells inflables grans són perfectes per a festes d'ajuntament, comunions i grans esdeveniments. Major diversió, major capacitat i màxima seguretat.",
+      "galleryTitle": "Els Nostres Castells Grans",
+      "meta": {
+        "title": "Castells Inflables Grans a Mallorca | Lloguer per a Esdeveniments",
+        "description": "Lloguer de castells inflables grans a Mallorca per a festes d'ajuntament, comunions i grans esdeveniments."
+      }
+    },
+    "waterCastles": {
+      "title": "Castells Inflables Aquàtics",
+      "subtitle": "Diversió refrescant per a l'estiu",
+      "intro": "Els nostres castells inflables aquàtics són perfectes per als dies calorosos d'estiu a Mallorca. Ideals per a comunions, festes d'ajuntament i esdeveniments a l'aire lliure.",
+      "galleryTitle": "Els Nostres Castells Aquàtics",
+      "meta": {
+        "title": "Castells Inflables Aquàtics a Mallorca | Lloguer per a Festes",
+        "description": "Lloguer de castells inflables aquàtics a Mallorca per a festes d'estiu, comunions i esdeveniments a l'aire lliure."
+      }
+    },
+    "slideCastles": {
+      "title": "Castells Inflables amb Tobogan",
+      "subtitle": "Emoció i adrenalina garantides",
+      "intro": "Els nostres castells inflables amb tobogan combinen diversió i emoció. Perfectes per a comunions, festes d'ajuntament i tot tipus d'esdeveniments a Mallorca.",
+      "galleryTitle": "Els Nostres Castells amb Tobogan",
+      "meta": {
+        "title": "Castells Inflables amb Tobogan a Mallorca | Lloguer",
+        "description": "Lloguer de castells inflables amb tobogan a Mallorca per a comunions, festes d'ajuntament i esdeveniments."
+      },
+      "ctaTitle": "Preparat per reservar?",
+      "ctaParagraph": "Contacta'ns per WhatsApp i et ajudarem a triar el castell perfecte",
+      "viewGallery": "Veure Galeria ↓",
+      "reserveNow": "Reservar Ara",
+      "contactWhatsApp": "Contactar per WhatsApp"
+    },
+    "mechanicalBull": {
+      "title": "Toro Mecànic",
+      "subtitle": "Diversió i adrenalina per a totes les edats",
+      "intro": "El nostre toro mecànic és l'atracció perfecta per afegir emoció i diversió als teus esdeveniments a Mallorca. Ideal per a comunions, festes d'ajuntament, celebracions i tot tipus d'esdeveniments. Demostra el teu equilibri i resistència!",
+      "galleryTitle": "El Nostre Toro Mecànic",
+      "mechanicalBullGalleryTitle": "Toro Mecànic",
+      "surfBoardGalleryTitle": "Taula de Surf",
+      "meta": {
+        "title": "Toro Mecànic a Mallorca | Lloguer per a Festes i Esdeveniments",
+        "description": "Lloguer de toro mecànic a Mallorca per a comunions, festes d'ajuntament, celebracions i esdeveniments. Diversió i adrenalina garantides."
+      }
+    },
+    "communions": {
+      "title": "Comunions a Mallorca",
+      "subtitle": "Fes que la comunió del teu fill sigui inoblidable",
+      "intro": "A DiverPark oferim el servei més complet per a comunions a Mallorca: castells inflables, festes d'aigua i animacions infantils. Tot el necessari perquè la comunió del teu fill sigui inoblidable.",
+      "galleryTitle": "Comunions amb DiverPark",
+      "meta": {
+        "title": "Comunions a Mallorca | Castells Inflables i Animacions",
+        "description": "Servei complet per a comunions a Mallorca. Castells inflables, festes d'aigua i animacions infantils."
+      }
+    },
+    "townHallParties": {
+      "title": "Festes d'Ajuntament",
+      "subtitle": "Servei professional per a festes municipals",
+      "intro": "A DiverPark oferim servei professional per a festes d'ajuntament a Mallorca. Castells inflables grans, festes d'aigua i animacions per a festes municipals.",
+      "galleryTitle": "Festes Municipals",
+      "meta": {
+        "title": "Festes d'Ajuntament a Mallorca | Castells Inflables",
+        "description": "Servei professional per a festes d'ajuntament a Mallorca. Castells inflables grans i animacions."
+      }
+    },
+    "about": {
+      "title": "Sobre Nosaltres",
+      "subtitle": "Més de 15 anys creant moments màgics a Mallorca",
+      "whoWeAre": "Qui Som?",
+      "intro1": "Som una empresa dedicada principalment al lloguer de Castells Inflables a Mallorca. També disposem a part dels castells inflables un equip especialitzat en espectacles d'entreteniment per als més petits.",
+      "intro2": "Des d'animació amb disfresses dels seus personatges de dibuixos animats favorits, fins a sessió de pinta cares on s'ho passaran en gran tant els petits com els grans. Procurem serietat i professionalitat en els nostres serveis, perquè la diversió sempre vagi de la mà de la seguretat. El nostre principal objectiu és oferir als nostres clients el millor servei, amb preus molt competitius. Ens desplacem a tota l'illa.",
+      "intro3": "Pots confiar en nosaltres per a la teva festa: castells inflables, animacions i festes d'aigua a tota Mallorca.",
+      "stats": {
+        "years": "Anys d'Experiència",
+        "events": "Esdeveniments Realitzats",
+        "castles": "Castells Disponibles",
+        "rating": "Valoració"
+      },
+      "safety": {
+        "title": "Assegurança de Responsabilitat Civil i Revisions Contínues",
+        "description": "Per a Mallorca DiverPark no hi ha res més important que la seguretat, especialment per treballar amb nens i menors, amb la qual cosa tots els nostres castells compten amb assegurances de responsabilitat civil, normes per a la seguretat i benestar dels nens, i sotmetem els nostres castells a estrictes revisions per garantir la qualitat i seguretat. A més comptem amb experiència en la cura i control de nens, sent un element de seguretat per evitar qualsevol dany o problema que pugui sorgir mentre els nens juguen amb els castells.",
+        "item1": "Assegurança de responsabilitat civil en tots els castells",
+        "item2": "Certificat UNE14960 - Normativa europea de seguretat",
+        "item3": "Revisions estrictes per garantir qualitat i seguretat",
+        "item4": "Experiència en la cura i control de nens"
+      },
+      "servicesTitle": "Els Nostres Serveis",
+      "services": {
+        "castles": {
+          "title": "Castells Inflables",
+          "description": "Petits, grans, amb tobogan i aquàtics. Varietat per a tots els gustos i edats."
+        },
+        "entertainment": {
+          "title": "Animacions Infantils",
+          "description": "Disfresses, pintacares, espectacles i molt més per entretenir els més petits."
+        },
+        "water": {
+          "title": "Festes d'Aigua",
+          "description": "Tatamis, catapultes, canons d'escuma i castells aquàtics per a l'estiu."
+        },
+        "events": {
+          "title": "Esdeveniments Especials",
+          "description": "Comunions, festes d'ajuntament i celebracions especials a tota Mallorca."
+        }
+      },
+      "coverage": {
+        "title": "Cobertura a Tota Mallorca",
+        "description": "Ens desplacem a qualsevol punt de l'illa per al teu esdeveniment"
+      },
+      "meta": {
+        "title": "Sobre Nosaltres - DIVERPARK | Castells Inflables Mallorca",
+        "description": "Més de 15 anys oferint lloguer de castells inflables a Mallorca. Serietat, professionalitat i seguretat garantida. Ens desplacem a tota l'illa."
+      }
+    },
+    "contactPage": {
+      "title": "Contacte",
+      "meta": {
+        "title": "Contacte - DIVERPARK | Castells Inflables Mallorca",
+        "description": "Contacta amb DiverPark per reservar castells inflables, toro mecànic o animacions a Mallorca. Pressupost sense compromís."
+      }
+    }
+  },
+  "home": {
+    "about": {
+      "intro": "Uep! Com anam… Si has arribat fins aquí és perquè vols divertir-te. Ens presentem? Som l'empresa líder en {0} per a {1} i tot tipus de celebracions. El nostre objectiu principal és fer-te sentir l'essència de la infantesa.",
+      "description": "Som una empresa dedicada principalment al {0}. Oferim serveis per a {1} i esdeveniments especials. També disposem de {2} i un equip especialitzat en espectacles d'entreteniment per als més petits a tota Mallorca."
+    },
+    "experience": {
+      "description": "Més de 15 anys ens avalen abordant tot tipus d'esdeveniments a Mallorca: {0} i celebracions especials. Oferim la nostra àmplia gamma de {1} i animacions infantils per a esdeveniments a tota Mallorca.",
+      "events": "comunions, festes d'ajuntament, festes infantils",
+      "castles": "castells inflables, festes d'espuma",
+      "eventsCount": "Esdeveniments",
+      "castlesCount": "Castells Inflables",
+      "clientsCount": "Clients"
+    },
+    "services": {
+      "title": "Què oferim?",
+      "description": "Oferim {0} per a tot tipus d'esdeveniments: {1} i celebracions especials. També disposem de {2} i animacions infantils per fer el teu esdeveniment inoblidable.",
+      "smallCastles": {
+        "title": "Castells Petits",
+        "description": "{0} perfectes per a {1} a Mallorca. Els més petits de la casa gaudiran a les seves aigües als nostres castells pensats especialment per a ells."
+      },
+      "largeCastles": {
+        "title": "Castells Gegants",
+        "description": "{0} ideals per a {1} a Mallorca. Més sempre és més quan es tracta de gaudir."
+      },
+      "waterCastles": {
+        "title": "Castells Aquàtics",
+        "description": "{0} per a {1} a Mallorca. A l'aigua ànec! Castells on l'aigua és la protagonista."
+      },
+      "slideCastles": {
+        "title": "Castells amb Tobogan",
+        "description": "{0} per a {1} a Mallorca. La mida perfecta de la diversió."
+      },
+      "waterParty": {
+        "title": "Festa d'Aigua i Castells Aquàtics",
+        "description": "{0} per a {1}. La diversió més refrescant amb tatamis, catapulta d'aigua, canó d'espuma i castells aquàtics."
+      },
+      "mechanicalBull": {
+        "title": "Toro Mecànic",
+        "description": "{0} per a {1}. Diversió i adrenalina garantides per a totes les edats."
+      },
+      "animations": {
+        "title": "Animacions",
+        "description": "{0} per a {1}. Mags professionals i espectacles d'entreteniment."
+      },
+      "communions": {
+        "title": "Comunions",
+        "description": "Lloguer de castells inflables per a comunions a Mallorca. Festes d'espuma i animacions per fer que la comunió del teu fill sigui inoblidable."
+      },
+      "townHallParties": {
+        "title": "Festes d'Ajuntament",
+        "description": "Castells inflables per a festes d'ajuntament a Mallorca. Servei professional per a festes municipals amb castells gegants i festes d'espuma."
+      }
+    },
+    "faq": {
+      "title": "Preguntes freqüents",
+      "q1": "En quines zones realitzeu el servei?",
+      "a1": "Ens desplacem a tota l'illa de Mallorca: Palma, Calvià, Llucmajor, Manacor, Inca i qualsevol municipi. El muntatge i desmuntatge estan inclosos.",
+      "q2": "Els castells inclouen assegurança?",
+      "a2": "Sí. Tots els nostres castells compten amb assegurança de responsabilitat civil i compleixen la normativa de seguretat (UNE14960).",
+      "q3": "Quant costa llogar un castell inflable?",
+      "a3": "El preu depèn del model, la durada i la ubicació. Sol·licita pressupost sense compromís per WhatsApp o mitjançant el formulari de contacte.",
+      "q4": "Oferiu animacions i festes d'aigua?",
+      "a4": "Sí. A més de castells inflables oferim festes d'espuma, toro mecànic, animacions infantils (mags, pallassos) i comunions completes.",
+      "q5": "Com reservo?",
+      "a5": "Pots contactar-nos per WhatsApp, pel formulari d'aquesta web o per telèfon. Et enviem pressupost i confirmem la reserva."
+    },
+    "contact": {
+      "title": "Contacta amb nosaltres",
+      "subtitle": "Planifica la teva festa perfecta amb DIVERPARK",
+      "ready": "Preparat per fer que el teu esdeveniment sigui inoblidable?",
+      "description": "Contacta'ns per a més informació sobre els nostres serveis de {0} per a {1} i tot tipus de celebracions. Més de 15 anys fent que els esdeveniments a Mallorca siguin inobliables.",
+      "whatsapp": "📱 Contactar per WhatsApp",
+      "formTitle": "Sol·licitar pressupost",
+      "formName": "Nom",
+      "formNamePlaceholder": "El teu nom",
+      "formEmail": "Email",
+      "formEmailPlaceholder": "el_teu@email.com",
+      "formPhone": "Telèfon",
+      "formPhonePlaceholder": "600 000 000",
+      "formService": "Servei d'interès",
+      "formMessage": "Missatge",
+      "formMessagePlaceholder": "Explica'ns el teu esdeveniment, data, ubicació...",
+      "formSubmit": "Enviar",
+      "formSuccess": "Missatge enviat. Et contestarem aviat.",
+      "formError": "Error en enviar. Prova per WhatsApp.",
+      "formSending": "Enviant..."
+    }
+  },
+  "gallery": {
+    "imagesOfCastle": "{count} imatges d'aquest castell",
+    "reserve": "Reservar",
+    "viewImages": "Veure {count} imatges",
+    "imagesAvailable": "{count} imatges disponibles"
+  },
+  "cookieBanner": {
+    "message": "Utilitzem cookies pròpies i de tercers per millorar els nostres serveis. Si continua navegant, considerem que n'accepta l'ús.",
+    "learnMore": "Política de galetes",
+    "accept": "Acceptar",
+    "reject": "Rebutjar"
+  },
+  "legal": {
+    "title": "Avís Legal",
+    "metaTitle": "Avís Legal - DIVERPARK",
+    "metaDescription": "Avís legal de DIVERPARK - Lloguer de castells inflables a Mallorca",
+    "identificationTitle": "1. Identificació",
+    "identificationText": "En compliment de la Llei 34/2002, d'11 de juliol, de Serveis de la Societat de la Informació i de Comerç Electrònic, us informem que:",
+    "businessName": "Raó social",
+    "nif": "NIF/CIF",
+    "address": "Adreça",
+    "email": "Email",
+    "phone": "Telèfon",
+    "objectTitle": "2. Objecte",
+    "objectText": "Aquest avís legal regula l'ús del lloc web diverpark.net. La navegació pel lloc web atribueix la condició d'usuari i comporta l'acceptació plena de totes les condicions incloses en aquest Avís Legal.",
+    "conditionsTitle": "3. Condicions d'Ús",
+    "conditionsText": "L'usuari es compromet a fer un ús adequat dels continguts que s'ofereixen en aquest lloc web i a no emprar-los per incórrer en activitats il·lícites o contràries a la bona fe i a l'ordenament legal.",
+    "intellectualTitle": "4. Propietat Intel·lectual i Industrial",
+    "intellectualText": "Tots els continguts del lloc web, incloent-hi sense caràcter limitatiu, textos, fotografies, gràfics, imatges, icones, tecnologia, programari, així com el seu disseny gràfic i codis font, són propietat de DIVERPARK, sense que puguin entendre's cedits a l'usuari cap dels drets d'explotació reconeguts per la normativa vigent en matèria de propietat intel·lectual sobre aquests.",
+    "responsibilityTitle": "5. Limitació de Responsabilitat",
+    "responsibilityText": "DIVERPARK no es fa responsable dels danys i perjudicis que poguessin derivar-se de la utilització de la informació del lloc web o de la continguda en les xarxes socials de DIVERPARK.",
+    "jurisdictionTitle": "6. Legislació Aplicable i Jurisdicció",
+    "jurisdictionText": "Les presents condicions es regeixen per la legislació espanyola. Per a la resolució de qualsevol conflicte o discrepància relativa a la interpretació o aplicació de les presents condicions, les parts acorden sotmetre's expressament a la jurisdicció dels jutjats i tribunals de Palma de Mallorca."
+  },
+  "privacy": {
+    "title": "Política de Privacitat",
+    "intro": "A DIVERPARK ens comprometem a protegir les seves dades personals. A continuació l'informem sobre el tractament de la informació que ens facilita.",
+    "metaTitle": "Política de Privacitat - DIVERPARK",
+    "metaDescription": "Política de privacitat i protecció de dades de DIVERPARK",
+    "responsibleTitle": "1. Responsable del Tractament",
+    "responsible": "Responsable",
+    "nif": "NIF/CIF",
+    "address": "Adreça",
+    "email": "Email",
+    "phone": "Telèfon",
+    "purposeTitle": "2. Finalitat del Tractament",
+    "purposeText": "Les dades personals que ens faciliti seran tractades amb les següents finalitats:",
+    "purpose1": "Gestionar les consultes i sol·licituds d'informació sobre els nostres serveis.",
+    "purpose2": "Enviar informació comercial sobre els nostres serveis (només si n'ha donat el consentiment).",
+    "purpose3": "Gestionar la contractació dels nostres serveis de lloguer de castells inflables.",
+    "legitimationTitle": "3. Legitimació",
+    "legitimationText": "La base legal per al tractament de les seves dades és el seu consentiment, que podrà retirar en qualsevol moment.",
+    "conservationTitle": "4. Conservació de les Dades",
+    "conservationText": "Les dades es conservaran durant el temps necessari per complir amb la finalitat per a la qual es van recaptar i per determinar les possibles responsabilitats que es poguessin derivar d'aquesta finalitat i del tractament de les dades.",
+    "recipientsTitle": "5. Destinataris",
+    "recipientsText": "No es cediran dades a tercers, excepte obligació legal.",
+    "rightsTitle": "6. Drets de l'Usuari",
+    "rightsText": "Pot exercir els següents drets:",
+    "right1": "Dret d'accés a les seves dades personals.",
+    "right2": "Dret de rectificació de dades inexactes.",
+    "right3": "Dret de supressió quan les dades ja no siguin necessàries.",
+    "right4": "Dret de limitació del tractament.",
+    "right5": "Dret de portabilitat de les dades.",
+    "rightsContact": "Per exercir aquests drets, pot enviar-nos un email a {'catidiver@hotmail.com'}.",
+    "whatsappTitle": "7. Contacte per WhatsApp",
+    "whatsappText": "En contactar-nos per WhatsApp, les seves dades seran tractades per Meta (WhatsApp Ireland Limited). Li recomanem consultar la política de privacitat de WhatsApp."
+  },
+  "cookies": {
+    "title": "Política de Cookies",
+    "intro": "Utilitzem cookies per millorar la seva experiència al nostre lloc web. En aquesta pàgina li expliquem què són i com les fem servir.",
+    "metaTitle": "Política de Cookies - DIVERPARK",
+    "metaDescription": "Informació sobre l'ús de cookies a DIVERPARK",
+    "whatAreTitle": "Què són les cookies?",
+    "whatAreText": "Les cookies són petits arxius de text que s'emmagatzemen al seu navegador quan visita el nostre lloc web. Permeten que el lloc web recordi les seves accions i preferències durant un període de temps.",
+    "typesTitle": "Tipus de Cookies que Utilitzem",
+    "technicalTitle": "Cookies Tècniques (Necessàries)",
+    "technicalText": "Aquestes cookies són essencials per al funcionament del lloc web i no requereixen el seu consentiment. S'utilitzen per recordar el seu idioma preferit i les seves preferències de cookies.",
+    "analyticsTitle": "Cookies Analítiques (Opcionals)",
+    "analyticsText": "Aquestes cookies ens ajuden a entendre com interactua amb el nostre lloc web i millorar la seva experiència. Aquestes cookies requereixen el seu consentiment.",
+    "usedTitle": "Cookies que Utilitzem",
+    "cookieName": "Nom",
+    "purpose": "Finalitat",
+    "duration": "Durada",
+    "languagePurpose": "Recordar l'idioma seleccionat",
+    "consentPurpose": "Recordar la seva elecció sobre les cookies",
+    "year": "any",
+    "disableTitle": "Com Deshabilitar les Cookies",
+    "disableText": "Pot configurar el seu navegador per rebutjar cookies. Els enllaços a continuació li mostren com fer-ho en els navegadors més populars:"
+  },
+  "error": {
+    "notFound": "Pàgina no trobada",
+    "notFoundMessage": "Ho sentim, la pàgina que cerques no existeix.",
+    "general": "Alguna cosa ha anat malament",
+    "goHome": "Tornar a l'inici"
+  }
+}

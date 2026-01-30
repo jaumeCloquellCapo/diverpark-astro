@@ -1,0 +1,203 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import { t } from '../../utils/i18n';
+
+const locale = 'en';
+const title = t(locale, 'pages.contactPage.meta.title');
+const description = t(locale, 'pages.contactPage.meta.description');
+const formAction = '/en/contacto';
+const whatsappHref = 'https://wa.me/34625458704';
+
+const contactDescription = t(locale, 'home.contact.description', t(locale, 'about.rental'), t(locale, 'about.events'));
+
+const serviceOptions = [
+  { nameKey: 'nav.smallCastles', value: 'castillos-pequenos' },
+  { nameKey: 'nav.largeCastles', value: 'castillos-grandes' },
+  { nameKey: 'nav.slideCastles', value: 'castillos-tobogan' },
+  { nameKey: 'nav.waterCastles', value: 'castillos-acuaticos' },
+  { nameKey: 'nav.animations', value: 'animaciones' },
+  { nameKey: 'nav.mechanicalBull', value: 'toro-mecanico' },
+  { nameKey: 'nav.communions', value: 'comuniones' },
+  { nameKey: 'pages.waterParty.title', value: 'fiesta-agua' },
+];
+---
+
+<PageLayout title={`${title} | DIVERPARK`} description={description} wrapperClass="bg-white">
+  <section class="relative py-20 md:py-28 overflow-hidden bg-gradient-to-br from-pink-50 via-orange-50 to-yellow-50">
+    <div class="absolute top-0 left-0 w-72 h-72 bg-gradient-to-br from-pink-300/20 to-orange-300/20 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-br from-yellow-300/20 to-pink-300/20 rounded-full blur-3xl"></div>
+    <div class="container mx-auto px-4 relative z-10">
+      <div class="max-w-4xl mx-auto text-center">
+        <div class="inline-block mb-6">
+          <span class="badge-colorful badge-pink text-xs">{t(locale, 'nav.contact').toUpperCase()}</span>
+        </div>
+        <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-6 tracking-tight font-display">
+          {t(locale, 'pages.contactPage.title')}
+        </h1>
+        <p class="text-xl text-gray-700 leading-relaxed max-w-2xl mx-auto">
+          {t(locale, 'home.contact.ready')}
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 md:py-24 border-t border-gray-100">
+    <div class="container mx-auto px-4">
+      <div class="max-w-5xl mx-auto">
+        <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+          <div>
+            <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6 font-display">
+              {t(locale, 'home.contact.title')}
+            </h2>
+            <p class="text-lg text-gray-600 leading-relaxed mb-6">{contactDescription}</p>
+            <a
+              href={whatsappHref}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-whatsapp inline-flex items-center gap-3 text-lg px-10 py-4"
+            >
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+              </svg>
+              {t(locale, 'home.contact.whatsapp')}
+            </a>
+          </div>
+
+          <div class="bg-white rounded-2xl shadow-xl border border-gray-200 p-6 md:p-8">
+            <h2 class="text-xl font-bold text-gray-900 mb-6 font-display">
+              {t(locale, 'home.contact.formTitle')}
+            </h2>
+            <form
+              name="contact"
+              method="post"
+              action={formAction}
+              data-netlify="true"
+              data-netlify-honeypot="bot"
+              class="space-y-4"
+              data-sending-text={t(locale, 'home.contact.formSending')}
+              data-submit-text={t(locale, 'home.contact.formSubmit')}
+            >
+              <input type="hidden" name="form-name" value="contact" />
+              <p class="hidden">
+                <label>Don't fill: <input name="bot" type="text" /></label>
+              </p>
+              <div>
+                <label for="contact-name" class="block text-sm font-semibold text-gray-700 mb-1">{t(locale, 'home.contact.formName')}</label>
+                <input
+                  id="contact-name"
+                  type="text"
+                  name="name"
+                  required
+                  placeholder={t(locale, 'home.contact.formNamePlaceholder')}
+                  class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition"
+                />
+              </div>
+              <div>
+                <label for="contact-email" class="block text-sm font-semibold text-gray-700 mb-1">{t(locale, 'home.contact.formEmail')}</label>
+                <input
+                  id="contact-email"
+                  type="email"
+                  name="email"
+                  required
+                  placeholder={t(locale, 'home.contact.formEmailPlaceholder')}
+                  class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition"
+                />
+              </div>
+              <div>
+                <label for="contact-phone" class="block text-sm font-semibold text-gray-700 mb-1">{t(locale, 'home.contact.formPhone')}</label>
+                <input
+                  id="contact-phone"
+                  type="tel"
+                  name="phone"
+                  placeholder={t(locale, 'home.contact.formPhonePlaceholder')}
+                  class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition"
+                />
+              </div>
+              <div>
+                <label for="contact-service" class="block text-sm font-semibold text-gray-700 mb-1">{t(locale, 'home.contact.formService')}</label>
+                <select
+                  id="contact-service"
+                  name="service"
+                  class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition bg-white"
+                >
+                  <option value="">—</option>
+                  {serviceOptions.map((opt) => (
+                    <option value={opt.value}>{t(locale, opt.nameKey)}</option>
+                  ))}
+                </select>
+              </div>
+              <div>
+                <label for="contact-message" class="block text-sm font-semibold text-gray-700 mb-1">{t(locale, 'home.contact.formMessage')}</label>
+                <textarea
+                  id="contact-message"
+                  name="message"
+                  required
+                  rows="4"
+                  placeholder={t(locale, 'home.contact.formMessagePlaceholder')}
+                  class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition resize-none"
+                />
+              </div>
+              <div id="form-success" class="p-4 rounded-xl bg-green-100 text-green-800 text-sm font-medium hidden" role="status">
+                {t(locale, 'home.contact.formSuccess')}
+              </div>
+              <div id="form-error" class="p-4 rounded-xl bg-red-100 text-red-800 text-sm font-medium hidden" role="alert">
+                {t(locale, 'home.contact.formError')}
+                <a href={whatsappHref} target="_blank" rel="noopener noreferrer" class="underline ml-1">WhatsApp</a>
+              </div>
+              <button
+                type="submit"
+                id="contact-submit"
+                class="w-full btn-primary py-4 text-lg font-semibold disabled:opacity-70 disabled:cursor-not-allowed"
+              >
+                {t(locale, 'home.contact.formSubmit')}
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</PageLayout>
+
+<script>
+  const form = document.querySelector<HTMLFormElement>('form[name="contact"]');
+  if (form) {
+    const successEl = document.getElementById('form-success');
+    const errorEl = document.getElementById('form-error');
+    const submitBtn = document.getElementById('contact-submit') as HTMLButtonElement;
+    const submitText = form.dataset.submitText ?? 'Send';
+    const sendingText = form.dataset.sendingText ?? 'Sending...';
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      if (!submitBtn) return;
+      successEl?.classList.add('hidden');
+      errorEl?.classList.add('hidden');
+      submitBtn.disabled = true;
+      submitBtn.textContent = sendingText;
+
+      const formData = new FormData(form);
+      formData.set('form-name', 'contact');
+      const body = new URLSearchParams([...formData.entries()] as [string, string][]).toString();
+
+      try {
+        const res = await fetch(form.getAttribute('action') ?? window.location.pathname, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body,
+        });
+        if (res.ok) {
+          form.reset();
+          successEl?.classList.remove('hidden');
+        } else {
+          errorEl?.classList.remove('hidden');
+        }
+      } catch {
+        errorEl?.classList.remove('hidden');
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = submitText;
+      }
+    });
+  }
+</script>

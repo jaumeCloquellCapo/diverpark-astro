@@ -1,0 +1,26 @@
+---
+import Layout from './Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+interface Props {
+  title: string;
+  description?: string;
+  /** Clases adicionales para el wrapper (ej. bg-white para páginas internas) */
+  wrapperClass?: string;
+}
+
+const { title, description, wrapperClass = '' } = Astro.props;
+const locale = Astro.currentLocale ?? 'es';
+---
+
+<Layout title={title} description={description}>
+  <slot name="head" />
+  <div class={`min-h-screen flex flex-col ${wrapperClass}`.trim()}>
+    <Header locale={locale} />
+    <main class="flex-grow">
+      <slot />
+    </main>
+    <Footer locale={locale} />
+  </div>
+</Layout>
