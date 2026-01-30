@@ -6,7 +6,7 @@ interface Props {
   description?: string;
 }
 
-const { title, description = 'Alquiler de castillos hinchables en Mallorca para fiestas y comuniones.' } = Astro.props;
+const { title, description = 'Alquiler de castillos hinchables y toro mecánico en Mallorca para fiestas y comuniones.' } = Astro.props;
 const locale = Astro.currentLocale ?? 'es';
 const lang = locale === 'es' ? 'es' : locale === 'ca' ? 'ca' : 'en';
 ---
