@@ -22,8 +22,8 @@
   },
   "hero": {
     "title": "DIVERPARK",
-    "subtitle": "Lloguer de Castells Inflables a Mallorca",
-    "description": "Festes d'Espuma, Comunions i Festes d'Ajuntament | Més de 15 anys d'experiència",
+    "subtitle": "Lloguer de Castells Inflables i Toro Mecànic a Mallorca",
+    "description": "Lloguer de Castells Inflables i Toro Mecànic a Mallorca | Més de 15 anys d'experiència",
     "reserve": "Reservar Ara",
     "viewServices": "Veure Serveis"
   },
@@ -104,13 +104,15 @@
     "requestQuote": "Sol·licitar Pressupost",
     "idealFor": "Ideal per a",
     "features": "Característiques",
-    "ourGallery": "La Nostra Galeria"
+    "ourGallery": "La Nostra Galeria",
+    "viewFullGallery": "Veure galeria completa",
+    "viewGalleryButton": "Veure Galeria"
   },
   "pages": {
     "home": {
       "meta": {
-        "title": "Lloguer de castells inflables i tor mecànic a Mallorca | Diverpark",
-        "description": "Lloguer de castells inflables i tor mecànic a Mallorca per a festes i comunions. Més de 15 anys d'experiència. Reserva ara a Palma i a tota l'illa!",
+        "title": "Castells inflables i tor mecànic a Mallorca | Lloguer | Diverpark",
+        "description": "Lloguer de castells inflables i tor mecànic a Mallorca per a festes, comunions i esdeveniments. Castells inflables, tor mecànic, festes infantils i d'ajuntament. Més de 15 anys d'experiència. Reserva a Palma i a tota l'illa!",
         "keywords": "tor mecànic mallorca, lloguer tor mecànic, castells inflables mallorca, castells inflables festes, festes d'espuma mallorca, comunions mallorca, festes d'ajuntament mallorca, lloguer castells inflables comunions, festes infantils mallorca, castells inflables palma"
       }
     },
@@ -224,15 +226,15 @@
       "contactWhatsApp": "Contactar per WhatsApp"
     },
     "mechanicalBull": {
-      "title": "Toro Mecànic",
-      "subtitle": "Diversió i adrenalina per a totes les edats",
-      "intro": "El nostre toro mecànic és l'atracció perfecta per afegir emoció i diversió als teus esdeveniments a Mallorca. Ideal per a comunions, festes d'ajuntament, celebracions i tot tipus d'esdeveniments. Demostra el teu equilibri i resistència!",
+      "title": "Lloguer de Toro Mecànic Mallorca",
+      "subtitle": "L'atracció estrella per a festes i esdeveniments",
+      "intro": "Cerques el millor lloguer de toro mecànic a Mallorca? El nostre toro mecànic és l'atracció perfecta per afegir emoció i diversió als teus esdeveniments. Ideal per a comunions, noces, festes d'ajuntament, comiats i tot tipus de celebracions. Diversió i adrenalina garantides al millor preu!",
       "galleryTitle": "El Nostre Toro Mecànic",
       "mechanicalBullGalleryTitle": "Toro Mecànic",
       "surfBoardGalleryTitle": "Taula de Surf",
       "meta": {
-        "title": "Toro Mecànic a Mallorca | Lloguer per a Festes i Esdeveniments",
-        "description": "Lloguer de toro mecànic a Mallorca per a comunions, festes d'ajuntament, celebracions i esdeveniments. Diversió i adrenalina garantides."
+        "title": "Lloguer de Toro Mecànic Mallorca | Diverpark",
+        "description": "Lloguer de toro mecànic a Mallorca al millor preu. Diversió assegurada per a festes, comunions i esdeveniments. Reserva ara el teu toro mecànic!"
       }
     },
     "communions": {
@@ -324,6 +326,12 @@
       "eventsCount": "Esdeveniments",
       "castlesCount": "Castells Inflables",
       "clientsCount": "Clients"
+    },
+    "safety": {
+      "badge": "SEGURETAT PRIMER",
+      "title": "Seguretat garantida,",
+      "titleSuffix": "sempre",
+      "description": "Per a DiverPark no hi ha res més important que la seguretat, especialment treballant amb nens i menors. Per això, sotmetem els nostres **castells inflables** a estrictes revisions per garantir la qualitat i seguretat en totes les festes a Mallorca."
     },
     "services": {
       "title": "Què oferim?",

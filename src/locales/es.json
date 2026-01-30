@@ -22,8 +22,8 @@
   },
   "hero": {
     "title": "DIVERPARK",
-    "subtitle": "Alquiler de Castillos Hinchables en Mallorca",
-    "description": "Fiestas de Espuma, Comuniones y Fiestas de Ayuntamiento | Más de 15 años de experiencia",
+    "subtitle": "Alquiler de Castillos Hinchables y Toro Mecánico en Mallorca",
+    "description": "Alquiler de Castillos Hinchables y Toro Mecánico en Mallorca | Más de 15 años de experiencia",
     "reserve": "Reservar Ahora",
     "viewServices": "Ver Servicios"
   },
@@ -104,13 +104,15 @@
     "requestQuote": "Solicitar Presupuesto",
     "idealFor": "Ideal para",
     "features": "Características",
-    "ourGallery": "Nuestra Galería"
+    "ourGallery": "Nuestra Galería",
+    "viewFullGallery": "Ver galería completa",
+    "viewGalleryButton": "Ver Galería"
   },
   "pages": {
     "home": {
       "meta": {
-        "title": "Alquiler de castillos hinchables y toro mecánico en Mallorca | Diverpark",
-        "description": "Alquiler de castillos hinchables y toro mecánico en Mallorca para fiestas y comuniones. Más de 15 años de experiencia. ¡Reserva ahora en Palma y toda la isla!",
+        "title": "Castillos hinchables y toro mecánico en Mallorca | Alquiler | Diverpark",
+        "description": "Alquiler de castillos hinchables y toro mecánico en Mallorca para fiestas, comuniones y eventos. Castillos hinchables, toro mecánico, fiestas infantiles y de ayuntamiento. Más de 15 años de experiencia. ¡Reserva en Palma y toda la isla!",
         "keywords": "toro mecánico mallorca, alquiler toro mecánico, castillos hinchables mallorca, castillos hinchables fiestas, fiestas de espuma mallorca, comuniones mallorca, fiestas de ayuntamiento mallorca, alquiler castillos hinchables comuniones, fiestas infantiles mallorca, castillos hinchables palma"
       }
     },
@@ -224,15 +226,15 @@
       "contactWhatsApp": "Contactar por WhatsApp"
     },
     "mechanicalBull": {
-      "title": "Toro Mecánico",
-      "subtitle": "Diversión y adrenalina para todas las edades",
-      "intro": "Nuestro toro mecánico es la atracción perfecta para añadir emoción y diversión a tus eventos en Mallorca. Ideal para comuniones, fiestas de ayuntamiento, celebraciones y todo tipo de eventos. ¡Demuestra tu equilibrio y resistencia!",
+      "title": "Alquiler de Toro Mecánico Mallorca",
+      "subtitle": "La atracción estrella para fiestas y eventos",
+      "intro": "¿Buscas el mejor alquiler de toro mecánico en Mallorca? Nuestro toro mecánico es la atracción perfecta para añadir emoción y diversión a tus eventos. Ideal para comuniones, bodas, fiestas de ayuntamiento, despedidas y todo tipo de celebraciones. ¡Diversión y adrenalina garantizadas al mejor precio!",
       "galleryTitle": "Nuestro Toro Mecánico",
       "mechanicalBullGalleryTitle": "Toro Mecánico",
       "surfBoardGalleryTitle": "Tabla de Surf",
       "meta": {
-        "title": "Toro Mecánico en Mallorca | Alquiler para Fiestas y Eventos",
-        "description": "Alquiler de toro mecánico en Mallorca para comuniones, fiestas de ayuntamiento, celebraciones y eventos. Diversión y adrenalina garantizadas."
+        "title": "Alquiler de Toro Mecánico Mallorca | Diverpark",
+        "description": "Alquiler de toro mecánico en Mallorca al mejor precio. Diversión asegurada para fiestas, comuniones y eventos. ¡Reserva ahora tu toro mecánico!"
       }
     },
     "communions": {
@@ -324,6 +326,12 @@
       "eventsCount": "Eventos",
       "castlesCount": "Castillos Hinchables",
       "clientsCount": "Clientes"
+    },
+    "safety": {
+      "badge": "SEGURIDAD PRIMERO",
+      "title": "Seguridad garantizada,",
+      "titleSuffix": "siempre",
+      "description": "Para DiverPark no hay nada más importante que la seguridad, especialmente trabajando con niños y menores. Por ello, sometemos nuestros **castillos hinchables** a estrictas revisiones para garantizar la calidad y seguridad en todas las fiestas en Mallorca."
     },
     "services": {
       "title": "¿Qué ofrecemos?",

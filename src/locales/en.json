@@ -109,8 +109,8 @@
   "pages": {
     "home": {
       "meta": {
-        "title": "Bouncy Castle and Mechanical Bull Rental in Mallorca | Diverpark",
-        "description": "Bouncy castle and mechanical bull rental in Mallorca for parties and communions. Over 15 years of experience. Book now in Palma and across the island!",
+        "title": "Bouncy Castles and Mechanical Bull in Mallorca | Rental | Diverpark",
+        "description": "Bouncy castle and mechanical bull rental in Mallorca for parties, communions and events. Inflatable castles, mechanical bull, kids parties and town hall parties. Over 15 years of experience. Book in Palma and across the island!",
         "keywords": "mechanical bull mallorca, mechanical bull rental mallorca, bouncy castle rental mallorca, inflatable castles mallorca, kids parties mallorca, foam party mallorca, communions mallorca, town hall parties mallorca, bouncy castles palma"
       }
     },
@@ -324,6 +324,12 @@
       "eventsCount": "Events",
       "castlesCount": "Bouncy Castles",
       "clientsCount": "Clients"
+    },
+    "safety": {
+      "badge": "SAFETY FIRST",
+      "title": "Guaranteed safety,",
+      "titleSuffix": "always",
+      "description": "For DiverPark there is nothing more important than safety, especially when working with children and minors. That's why we subject our **bouncy castles** to strict inspections to guarantee quality and safety at all parties in Mallorca."
     },
     "services": {
       "title": "What do we offer?",
