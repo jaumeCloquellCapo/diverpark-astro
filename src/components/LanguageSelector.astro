@@ -1,0 +1,82 @@
+---
+interface Props {
+  locale: string;
+  languages: { code: string; name: string; flag: string }[];
+  languageUrls: Record<string, string>;
+  variant: 'desktop' | 'mobile';
+  ariaLabel?: string;
+}
+
+const { locale, languages, languageUrls, variant, ariaLabel = 'Idioma' } = Astro.props;
+const currentLang = languages.find((l) => l.code === locale) ?? languages[0];
+---
+
+{variant === 'desktop' ? (
+  <div class="relative group language-selector-desktop">
+    <button
+      type="button"
+      class="flex items-center gap-2 px-4 py-2 bg-white border-2 border-gray-200 rounded-xl hover:border-orange-400 transition-all duration-200 font-bold text-sm peer"
+      aria-label={ariaLabel}
+    >
+      <span class="text-2xl">{currentLang.flag}</span>
+      <span class="text-gray-700">{locale.toUpperCase()}</span>
+      <svg
+        class="w-4 h-4 text-gray-500 transition-transform group-hover:rotate-180"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        aria-hidden="true"
+      >
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+      </svg>
+    </button>
+    <div class="absolute top-full right-0 mt-2 w-40 bg-white rounded-2xl shadow-xl border-2 border-gray-100 overflow-hidden z-[60] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+      {languages.map((lang) => (
+        <a
+          href={languageUrls[lang.code]}
+          class={`flex items-center gap-3 px-4 py-3 hover:bg-orange-50 transition-colors text-left font-bold text-sm ${locale === lang.code ? 'bg-orange-50 text-orange-600' : 'text-gray-700'}`}
+        >
+          <span class="text-2xl">{lang.flag}</span>
+          <span>{lang.name}</span>
+        </a>
+      ))}
+    </div>
+  </div>
+) : (
+  <details class="relative language-selector-mobile group">
+    <summary
+      class="flex items-center gap-1 px-3 py-2.5 h-11 min-h-[44px] bg-white border-2 border-gray-200 rounded-xl hover:border-orange-400 active:bg-orange-50 transition-all font-bold text-sm cursor-pointer list-none [&::-webkit-details-marker]:hidden"
+      aria-label={ariaLabel}
+    >
+      <span class="text-lg leading-none" aria-hidden="true">{currentLang.flag}</span>
+      <svg
+        class="w-4 h-4 text-gray-500 transition-transform group-open:rotate-180 flex-shrink-0"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        aria-hidden="true"
+      >
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+      </svg>
+    </summary>
+    <div class="absolute top-full right-0 mt-1 w-40 bg-white rounded-xl shadow-xl border-2 border-gray-100 overflow-hidden z-[60] py-1">
+      {languages.map((lang) => (
+        <a
+          href={languageUrls[lang.code]}
+          class={`flex items-center gap-2 px-4 py-3 min-h-[48px] active:bg-orange-50 transition-colors text-left font-semibold text-sm ${locale === lang.code ? 'bg-orange-50 text-orange-600' : 'text-gray-700'}`}
+        >
+          {lang.flag} {lang.name}
+        </a>
+      ))}
+    </div>
+  </details>
+)}
+
+<style>
+  @media (max-width: 767px) {
+    .language-selector-mobile[open] summary {
+      border-color: #f97316;
+      background-color: #fffbeb;
+    }
+  }
+</style>

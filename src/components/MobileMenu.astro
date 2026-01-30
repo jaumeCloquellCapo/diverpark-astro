@@ -1,0 +1,186 @@
+---
+import { t } from '../utils/i18n';
+
+interface NavLinkSub {
+  href: string;
+  label: string;
+  color?: string;
+}
+
+interface NavLink {
+  href?: string;
+  label: string;
+  sub?: NavLinkSub[];
+}
+
+interface Props {
+  locale: string;
+  basePath: string;
+  navLinks: NavLink[];
+}
+
+const { locale, basePath, navLinks } = Astro.props;
+const menuId = 'mobile-menu-details';
+---
+
+<details id={menuId} class="relative group/menu">
+  <summary
+    class="list-none flex items-center justify-center w-11 h-11 min-h-[44px] min-w-[44px] rounded-xl bg-orange-500 hover:bg-orange-600 active:bg-orange-700 text-white cursor-pointer transition-colors [&::-webkit-details-marker]:hidden"
+    aria-label={t(locale, 'nav.menu')}
+  >
+    <svg class="w-6 h-6 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+    </svg>
+  </summary>
+
+  <!-- Overlay: click cierra el menú -->
+  <div
+    class="mobile-menu-overlay fixed inset-0 z-[100] md:hidden"
+    data-close-menu
+    aria-hidden="true"
+  >
+  </div>
+
+  <!-- Panel a pantalla completa en móvil -->
+  <div class="mobile-menu-panel fixed inset-0 z-[110] md:hidden overflow-y-auto overflow-x-hidden overscroll-contain" style="padding-top: env(safe-area-inset-top, 0);">
+    <!-- Barra superior: cerrar + título -->
+    <div class="mobile-menu-header sticky top-0 z-10 flex items-center justify-between gap-4 px-4 min-h-[3.5rem] shrink-0" style="padding-top: max(0.75rem, env(safe-area-inset-top)); padding-bottom: 0.75rem;">
+      <span class="text-lg font-bold text-gray-900">{t(locale, 'nav.mainNav')}</span>
+      <button type="button" class="mobile-menu-close flex items-center justify-center w-12 h-12 min-h-[48px] min-w-[48px] rounded-xl text-gray-600 transition-colors" data-close-menu aria-label={t(locale, 'nav.closeMenu')}>
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+    </div>
+
+    <nav class="mobile-menu-nav py-2 px-3 pb-4" aria-label={t(locale, 'nav.mainNav')}>
+      {navLinks.map((link) =>
+        link.sub ? (
+          <div class="mb-3">
+            <p class="mobile-menu-section px-4 py-2 text-sm font-bold text-orange-600 uppercase tracking-wide">
+              {t(locale, link.label)}
+            </p>
+            <div class="space-y-0.5">
+              {link.sub.map((sub) => (
+                <a
+                  href={`${basePath}${sub.href}`}
+                  class="mobile-menu-link flex items-center min-h-[48px] py-3 px-5 text-base font-medium text-gray-800 rounded-xl transition-colors"
+                  data-close-menu
+                >
+                  {t(locale, sub.label)}
+                </a>
+              ))}
+            </div>
+          </div>
+        ) : (
+          <a
+            href={link.href ? `${basePath}${link.href}` : basePath || '/'}
+            class="mobile-menu-link mobile-menu-link-main flex items-center min-h-[48px] py-3 px-5 text-base font-bold text-gray-900 rounded-xl transition-colors mb-0.5"
+            data-close-menu
+          >
+            {t(locale, link.label)}
+          </a>
+        )
+      )}
+    </nav>
+
+    <div class="mobile-menu-footer border-t border-gray-200 pt-4 pb-6 px-4 mt-2">
+      <a
+        href={`${basePath}/contacto`}
+        class="mobile-menu-cta flex items-center justify-center min-h-[52px] py-3 px-6 text-base font-bold rounded-xl text-white transition-colors w-full"
+        data-close-menu
+      >
+        {t(locale, 'nav.contact')}
+      </a>
+    </div>
+  </div>
+</details>
+
+<style>
+  .mobile-menu-overlay {
+    background: rgba(0, 0, 0, 0.4);
+  }
+
+  .mobile-menu-panel {
+    background: #ffffff;
+  }
+
+  .mobile-menu-header {
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .mobile-menu-close:hover {
+    background: #f3f4f6;
+    color: #111827;
+  }
+
+  .mobile-menu-close:active {
+    background: #e5e7eb;
+  }
+
+  .mobile-menu-section {
+    color: #ea580c;
+  }
+
+  .mobile-menu-link {
+    color: #1f2937;
+  }
+
+  .mobile-menu-link:hover,
+  .mobile-menu-link:active {
+    background: #fff7ed;
+    color: #c2410c;
+  }
+
+  .mobile-menu-link-main:hover,
+  .mobile-menu-link-main:active {
+    background: #fff7ed;
+    color: #c2410c;
+  }
+
+  .mobile-menu-footer {
+    background: #f9fafb;
+  }
+
+  .mobile-menu-cta {
+    background: linear-gradient(to right, #f97316, #ea580c);
+    box-shadow: 0 4px 14px rgba(249, 115, 22, 0.4);
+  }
+
+  .mobile-menu-cta:hover {
+    background: linear-gradient(to right, #ea580c, #c2410c);
+    box-shadow: 0 6px 20px rgba(249, 115, 22, 0.5);
+  }
+
+  .mobile-menu-cta:active {
+    background: #c2410c;
+  }
+
+  details[open].group\/menu summary svg {
+    transform: rotate(90deg);
+  }
+
+  @media (max-width: 767px) {
+    #mobile-menu-details[open] summary {
+      background-color: #ea580c;
+    }
+    body:has(#mobile-menu-details[open]) {
+      overflow: hidden;
+    }
+  }
+</style>
+
+<script define:vars={{ menuId }}>
+  document.addEventListener('DOMContentLoaded', () => {
+    const mobileMenu = document.querySelector(`#${menuId}`);
+    if (!mobileMenu) return;
+    // Cerrar al hacer clic en overlay o en cualquier enlace del menú
+    mobileMenu.querySelectorAll('[data-close-menu]').forEach((el) => {
+      el.addEventListener('click', () => mobileMenu.removeAttribute('open'));
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && mobileMenu.hasAttribute('open')) mobileMenu.removeAttribute('open');
+    });
+  });
+</script>

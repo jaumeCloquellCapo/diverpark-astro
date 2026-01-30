@@ -1,114 +1,192 @@
 ---
-import { t } from '../utils/i18n';
+import { t, getBasePath, switchLocalePath } from "../utils/i18n";
+import LanguageSelector from "./LanguageSelector.astro";
+import MobileMenu from "./MobileMenu.astro";
 
 const { locale } = Astro.props;
-const basePath = locale === 'es' ? '' : `/${locale}`;
+const basePath = getBasePath(locale);
+
+// Rutas para selector de idioma (misma página en cada locale)
+const pathname = Astro.url.pathname.replace(/\/$/, "") || "/";
+let pathWithoutLocale = "";
+if (pathname === "/") pathWithoutLocale = "";
+else if (locale === "es") pathWithoutLocale = pathname.slice(1);
+else {
+  const prefix = `/${locale}`;
+  if (pathname === prefix) pathWithoutLocale = "";
+  else if (pathname.startsWith(prefix + "/"))
+    pathWithoutLocale = pathname.slice(prefix.length + 1);
+  else pathWithoutLocale = pathname.slice(1);
+}
+
+const languageUrls = {
+  es: pathWithoutLocale === "" ? "/" : `/${pathWithoutLocale}`,
+  ca: pathWithoutLocale === "" ? "/ca" : `/ca/${pathWithoutLocale}`,
+  en: pathWithoutLocale === "" ? "/en" : `/en/${pathWithoutLocale}`,
+};
+
+const languages = [
+  { code: "es", name: "Español", flag: "🇪🇸" },
+  { code: "ca", name: "Català", flag: "🏝️" },
+  { code: "en", name: "English", flag: "🇬🇧" },
+];
+
+// Menú principal
+const navLinks = [
+  { href: "", label: "nav.home" },
+  {
+    label: "nav.castles",
+    sub: [
+      {
+        href: "/castillos-pequenos",
+        label: "nav.smallCastles",
+        color: "orange",
+      },
+      {
+        href: "/castillos-grandes",
+        label: "nav.largeCastles",
+        color: "orange",
+      },
+      {
+        href: "/castillos-tobogan",
+        label: "nav.slideCastles",
+        color: "purple",
+      },
+      {
+        href: "/castillos-acuaticos",
+        label: "nav.waterCastles",
+        color: "cyan",
+      },
+      { href: "/colchonetas", label: "pages.mats.title", color: "orange" },
+    ],
+  },
+  { href: "/toro-mecanico", label: "nav.mechanicalBull" },
+  {
+    label: "nav.services",
+    sub: [
+      { href: "/fiesta-agua", label: "nav.foamParty", color: "purple" },
+      { href: "/animaciones", label: "nav.animations", color: "purple" },
+      { href: "/comuniones", label: "nav.communions", color: "pink" },
+    ],
+  },
+  { href: "/sobre-nosotros", label: "nav.aboutUs" },
+];
 ---
 
-<header class="bg-white/95 backdrop-blur-md shadow-md sticky top-0 z-50 border-b-4 border-orange-400 pt-[env(safe-area-inset-top)]">
-  <nav class="container mx-auto px-3 max-w-7xl h-14 flex items-center justify-between">
-
-    <!-- LOGO -->
-    <a href={basePath || '/'} class="font-bold text-xl">
-      DIVERPARK
+<header
+  class="header-mobile-visible sticky top-0 z-50 min-h-[3.5rem] border-b-4 border-orange-400"
+  style="padding-top: env(safe-area-inset-top, 0);"
+>
+  <nav
+    class="container mx-auto px-3 sm:px-4 max-w-7xl h-14 md:h-auto md:py-4 flex items-center justify-between flex-nowrap gap-2"
+  >
+    <!-- Logo -->
+    <a
+      href={switchLocalePath(basePath, "")}
+      class="min-w-0 flex-1 md:flex-initial group flex items-center h-full min-h-[44px]"
+      aria-label={`DIVERPARK - ${t(locale, "nav.home")}`}
+    >
+      <span
+        class="text-xl sm:text-2xl md:text-3xl font-bold group-hover:scale-105 transition-transform font-display tracking-tight whitespace-nowrap overflow-hidden text-ellipsis max-w-[160px] sm:max-w-[200px] md:max-w-none min-h-[1.5rem]"
+        role="img"
+        aria-hidden="true"
+      >
+        <span style="color: #E5533D;">D</span><span style="color: #2C7BE5;"
+          >I</span
+        ><span style="color: #4CAF50;">V</span><span style="color: #F39C12;"
+          >E</span
+        ><span style="color: #E5533D;">R</span><span style="color: #2C7BE5;"
+          >P</span
+        ><span style="color: #4CAF50;">A</span><span style="color: #F39C12;"
+          >R</span
+        ><span style="color: #E5533D;">K</span>
+      </span>
     </a>
 
-    <!-- BOTÓN HAMBURGUESA -->
-    <details id="mobile-menu-details" class="md:hidden">
-      <summary
-        class="list-none flex items-center justify-center w-11 h-11 min-w-[44px] min-h-[44px] rounded-xl bg-orange-500 text-white cursor-pointer [&::-webkit-details-marker]:hidden"
-        aria-label="Abrir menú"
-      >
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
-      </summary>
-    </details>
+    <!-- Desktop nav -->
+    <div class="hidden md:flex items-center gap-6">
+      {
+        navLinks.map((link) =>
+          link.sub ? (
+            <div class="relative group">
+              <button
+                type="button"
+                class={`font-bold flex items-center gap-1 ${link.label === "nav.services" ? "text-purple-600 hover:text-pink-600" : "text-gray-700 hover:text-orange-500"} transition-colors`}
+              >
+                {t(locale, link.label)} <span class="text-xs">▼</span>
+              </button>
+              <div
+                class={`absolute top-full left-0 mt-2 w-56 bg-white rounded-2xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 border-2 z-50 ${link.label === "nav.services" ? "border-purple-200" : "border-orange-200"}`}
+              >
+                <div class="py-2">
+                  {link.sub.map((sub) => (
+                    <a
+                      href={switchLocalePath(basePath, sub.href)}
+                      class={`block px-4 py-3 text-gray-700 transition-colors font-semibold rounded-xl mx-2 ${sub.color === "purple" ? "hover:bg-purple-50 hover:text-purple-600" : sub.color === "pink" ? "hover:bg-pink-50 hover:text-pink-600" : sub.color === "cyan" ? "hover:bg-cyan-50 hover:text-cyan-600" : "hover:bg-orange-50 hover:text-orange-600"}`}
+                    >
+                      {t(locale, sub.label)}
+                    </a>
+                  ))}
+                </div>
+              </div>
+            </div>
+          ) : (
+            <a
+              href={switchLocalePath(basePath, link.href ?? "")}
+              class="font-bold text-gray-700 hover:text-orange-500 transition-colors"
+            >
+              {t(locale, link.label)}
+            </a>
+          ),
+        )
+      }
+      <a href={switchLocalePath(basePath, "/contacto")} class="btn-primary text-base py-3 px-6">
+        {t(locale, "nav.contact")}
+      </a>
+
+      <LanguageSelector variant="desktop" {locale} {languages} {languageUrls} ariaLabel={t(locale, "nav.language")} />
+    </div>
+
+    <!-- Mobile actions -->
+    <div class="flex items-center gap-2 md:hidden flex-shrink-0">
+      <LanguageSelector variant="mobile" {locale} {languages} {languageUrls} ariaLabel={t(locale, "nav.language")} />
+      <MobileMenu {locale} {basePath} {navLinks} />
+    </div>
   </nav>
 </header>
 
-<!-- OVERLAY -->
-<div
-  id="mobile-menu-overlay"
-  class="fixed left-0 right-0 bottom-0 bg-black/40 z-[100] hidden md:hidden"
-  style="top: calc(3.5rem + env(safe-area-inset-top, 0px));"
-></div>
+<style>
+  .header-mobile-visible {
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
+    isolation: isolate;
+  }
 
-<!-- PANEL MENÚ -->
-<ul
-  id="mobile-menu-panel"
-  class="fixed left-0 right-0 bottom-0 z-[110] hidden md:hidden flex flex-col gap-0 px-3 py-4 bg-white shadow-2xl border-t-2 border-orange-200 overflow-y-auto"
-  style="
-    top: calc(3.5rem + env(safe-area-inset-top, 0px));
-    padding-bottom: calc(1rem + env(safe-area-inset-bottom, 0px));
-  "
->
-  <li>
-    <a
-      href={basePath || '/'}
-      class="flex items-center min-h-[48px] px-4 py-3 text-base font-bold text-gray-800 rounded-xl hover:bg-orange-50"
-    >
-      {t(locale, 'nav.home')}
-    </a>
-  </li>
+  /* Desktop: fondo suave y blur */
+  @media (min-width: 768px) {
+    .header-mobile-visible {
+      background-color: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    }
+  }
 
-  <li class="border-t border-gray-100 mt-2 pt-2">
-    <p class="px-4 py-2 text-xs font-bold text-orange-600 uppercase">
-      {t(locale, 'nav.castles')}
-    </p>
+  /* Móvil: fondo blanco sólido para que siempre se vea */
+  @media (max-width: 767px) {
+    .header-mobile-visible {
+      background-color: #ffffff;
+      box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    }
 
-    <a href={`${basePath}/castillos-pequenos`}
-       class="flex items-center min-h-[48px] px-4 py-3 text-base font-semibold text-gray-700 rounded-xl hover:bg-orange-50">
-      {t(locale, 'nav.smallCastles')}
-    </a>
+    .header-mobile-visible nav {
+      min-height: 3.5rem;
+    }
 
-    <a href={`${basePath}/castillos-grandes`}
-       class="flex items-center min-h-[48px] px-4 py-3 text-base font-semibold text-gray-700 rounded-xl hover:bg-orange-50">
-      {t(locale, 'nav.largeCastles')}
-    </a>
-
-    <a href={`${basePath}/castillos-tobogan`}
-       class="flex items-center min-h-[48px] px-4 py-3 text-base font-semibold text-gray-700 rounded-xl hover:bg-orange-50">
-      {t(locale, 'nav.slideCastles')}
-    </a>
-
-    <a href={`${basePath}/castillos-acuaticos`}
-       class="flex items-center min-h-[48px] px-4 py-3 text-base font-semibold text-gray-700 rounded-xl hover:bg-orange-50">
-      {t(locale, 'nav.waterCastles')}
-    </a>
-  </li>
-
-  <li class="border-t border-gray-100 mt-2">
-    <a href={`${basePath}/toro-mecanico`}
-       class="flex items-center min-h-[48px] px-4 py-3 text-base font-bold text-gray-800 rounded-xl hover:bg-orange-50">
-      {t(locale, 'nav.mechanicalBull')}
-    </a>
-  </li>
-
-  <li class="border-t border-gray-100 mt-4">
-    <a
-      href={`${basePath}/contacto`}
-      class="flex items-center justify-center min-h-[48px] rounded-xl bg-orange-500 text-white font-bold hover:bg-orange-600"
-    >
-      {t(locale, 'nav.contact')}
-    </a>
-  </li>
-</ul>
-
-<script>
-  const details = document.getElementById('mobile-menu-details');
-  const overlay = document.getElementById('mobile-menu-overlay');
-  const panel = document.getElementById('mobile-menu-panel');
-
-  details?.addEventListener('toggle', () => {
-    const open = details.hasAttribute('open');
-    overlay.classList.toggle('hidden', !open);
-    panel.classList.toggle('hidden', !open);
-    document.body.style.overflow = open ? 'hidden' : '';
-  });
-
-  overlay?.addEventListener('click', () => {
-    details?.removeAttribute('open');
-  });
-</script>
+    .header-mobile-visible a,
+    .header-mobile-visible button,
+    .header-mobile-visible summary {
+      touch-action: manipulation;
+    }
+  }
+</style>

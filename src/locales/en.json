@@ -2,6 +2,9 @@
   "nav": {
     "home": "Home",
     "language": "Language",
+    "menu": "Open menu",
+    "mainNav": "Main navigation",
+    "closeMenu": "Close menu",
     "castles": "Castles",
     "attractions": "Attractions",
     "services": "Services",

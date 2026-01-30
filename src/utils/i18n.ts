@@ -23,3 +23,14 @@ export function t(locale: string, path: string, ...params: string[]): string {
   });
   return out;
 }
+
+/** Base path for current locale: '' for es, '/ca' for ca, '/en' for en. */
+export function getBasePath(locale: string): string {
+  return locale === 'es' ? '' : `/${locale}`;
+}
+
+/** Full path for a route in the current locale. path should be '' for home or '/contacto', etc. */
+export function switchLocalePath(basePath: string, path: string): string {
+  if (path === '/' || path === '') return basePath || '/';
+  return basePath + (path.startsWith('/') ? path : `/${path}`);
+}

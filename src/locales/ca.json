@@ -2,6 +2,9 @@
   "nav": {
     "home": "Inici",
     "language": "Idioma",
+    "menu": "Obrir menú",
+    "mainNav": "Navegació principal",
+    "closeMenu": "Tancar menú",
     "castles": "Castells",
     "attractions": "Atraccions",
     "services": "Serveis",
