@@ -4,11 +4,10 @@ import { defineConfig } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
 import sitemap from '@astrojs/sitemap';
 
-import netlify from '@astrojs/netlify';
-
 // https://astro.build/config
 export default defineConfig({
   site: 'https://diverpark.net',
+  output: 'static',
 
   i18n: {
     locales: ['es', 'ca', 'en'],
@@ -34,6 +33,4 @@ export default defineConfig({
       },
     }),
   ],
-
-  adapter: netlify(),
 });
