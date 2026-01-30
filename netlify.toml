@@ -2,3 +2,20 @@
 [build]
   command = "npm run build"
   publish = "dist"
+
+# Cabeceras para sitemaps XML (evita problemas de Content-Type)
+[[headers]]
+  for = "/*.xml"
+  [headers.values]
+    Content-Type = "application/xml; charset=utf-8"
+    X-Content-Type-Options = "nosniff"
+
+# Evitar 404 cuando se pide el sitemap con trailing slash (p. ej. Googlebot)
+[[redirects]]
+  from = "/sitemap-index.xml/"
+  to = "/sitemap-index.xml"
+  status = 301
+[[redirects]]
+  from = "/sitemap-0.xml/"
+  to = "/sitemap-0.xml"
+  status = 301

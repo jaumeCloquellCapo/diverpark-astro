@@ -31,6 +31,8 @@ export default defineConfig({
           en: 'en-US',
         },
       },
+      // lastmod en cada build para que Google use la fecha de actualización
+      lastmod: new Date(),
     }),
   ],
 });
