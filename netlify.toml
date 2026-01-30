@@ -19,3 +19,161 @@
   from = "/sitemap-0.xml/"
   to = "/sitemap-0.xml"
   status = 301
+
+# Redirecciones 301: URLs antiguas /atracciones/* → nuevas (SEO reindexación)
+# Español (sin prefijo locale)
+[[redirects]]
+  from = "/atracciones"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/atracciones/"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/atracciones/castillos-pequenos"
+  to = "/castillos-pequenos"
+  status = 301
+[[redirects]]
+  from = "/atracciones/castillos-pequeños"
+  to = "/castillos-pequenos"
+  status = 301
+[[redirects]]
+  from = "/atracciones/castillos-peque%C3%B1os"
+  to = "/castillos-pequenos"
+  status = 301
+[[redirects]]
+  from = "/atracciones/castillos-grandes"
+  to = "/castillos-grandes"
+  status = 301
+[[redirects]]
+  from = "/atracciones/castillos-agua"
+  to = "/castillos-acuaticos"
+  status = 301
+[[redirects]]
+  from = "/atracciones/toro-mecanico"
+  to = "/toro-mecanico"
+  status = 301
+[[redirects]]
+  from = "/atracciones/magos"
+  to = "/animaciones"
+  status = 301
+[[redirects]]
+  from = "/atracciones/animaciones"
+  to = "/animaciones"
+  status = 301
+[[redirects]]
+  from = "/atracciones/castillos-tobogan"
+  to = "/castillos-tobogan"
+  status = 301
+[[redirects]]
+  from = "/atracciones/fiesta-espuma"
+  to = "/fiesta-agua"
+  status = 301
+# Inglés /en/atracciones/* y /en/contact
+[[redirects]]
+  from = "/en/contact"
+  to = "/en/contacto"
+  status = 301
+[[redirects]]
+  from = "/en/contact/"
+  to = "/en/contacto"
+  status = 301
+# Inglés /en/atracciones/*
+[[redirects]]
+  from = "/en/atracciones"
+  to = "/en/"
+  status = 301
+[[redirects]]
+  from = "/en/atracciones/"
+  to = "/en/"
+  status = 301
+[[redirects]]
+  from = "/en/atracciones/castillos-pequenos"
+  to = "/en/castillos-pequenos"
+  status = 301
+[[redirects]]
+  from = "/en/atracciones/castillos-pequeños"
+  to = "/en/castillos-pequenos"
+  status = 301
+[[redirects]]
+  from = "/en/atracciones/castillos-peque%C3%B1os"
+  to = "/en/castillos-pequenos"
+  status = 301
+[[redirects]]
+  from = "/en/atracciones/castillos-grandes"
+  to = "/en/castillos-grandes"
+  status = 301
+[[redirects]]
+  from = "/en/atracciones/castillos-agua"
+  to = "/en/castillos-acuaticos"
+  status = 301
+[[redirects]]
+  from = "/en/atracciones/toro-mecanico"
+  to = "/en/toro-mecanico"
+  status = 301
+[[redirects]]
+  from = "/en/atracciones/magos"
+  to = "/en/animaciones"
+  status = 301
+[[redirects]]
+  from = "/en/atracciones/animaciones"
+  to = "/en/animaciones"
+  status = 301
+[[redirects]]
+  from = "/en/atracciones/castillos-tobogan"
+  to = "/en/castillos-tobogan"
+  status = 301
+[[redirects]]
+  from = "/en/atracciones/fiesta-espuma"
+  to = "/en/fiesta-agua"
+  status = 301
+# Catalán /ca/atracciones/* (por si existían)
+[[redirects]]
+  from = "/ca/atracciones"
+  to = "/ca/"
+  status = 301
+[[redirects]]
+  from = "/ca/atracciones/"
+  to = "/ca/"
+  status = 301
+[[redirects]]
+  from = "/ca/atracciones/castillos-pequenos"
+  to = "/ca/castillos-pequenos"
+  status = 301
+[[redirects]]
+  from = "/ca/atracciones/castillos-pequeños"
+  to = "/ca/castillos-pequenos"
+  status = 301
+[[redirects]]
+  from = "/ca/atracciones/castillos-peque%C3%B1os"
+  to = "/ca/castillos-pequenos"
+  status = 301
+[[redirects]]
+  from = "/ca/atracciones/castillos-grandes"
+  to = "/ca/castillos-grandes"
+  status = 301
+[[redirects]]
+  from = "/ca/atracciones/castillos-agua"
+  to = "/ca/castillos-acuaticos"
+  status = 301
+[[redirects]]
+  from = "/ca/atracciones/toro-mecanico"
+  to = "/ca/toro-mecanico"
+  status = 301
+[[redirects]]
+  from = "/ca/atracciones/magos"
+  to = "/ca/animaciones"
+  status = 301
+[[redirects]]
+  from = "/ca/atracciones/animaciones"
+  to = "/ca/animaciones"
+  status = 301
+[[redirects]]
+  from = "/ca/atracciones/castillos-tobogan"
+  to = "/ca/castillos-tobogan"
+  status = 301
+[[redirects]]
+  from = "/ca/atracciones/fiesta-espuma"
+  to = "/ca/fiesta-agua"
+  status = 301
