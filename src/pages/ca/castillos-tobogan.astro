@@ -5,7 +5,6 @@ import { Schema } from 'astro-seo-schema';
 import { t } from '../../utils/i18n';
 
 const locale = 'ca';
-const basePath = '/ca';
 const title = t(locale, 'pages.slideCastles.meta.title');
 const description = t(locale, 'pages.slideCastles.meta.description');
 const ogImage = 'https://diverpark.net/images/castillos-tobogan/castillo-hinchable-tobogan-robot-8.jpg';
@@ -81,7 +80,7 @@ const imagesAvailableText = t(locale, 'gallery.imagesAvailable').replace('{count
 <PageLayout title={`${title} | DIVERPARK`} description={description} wrapperClass="bg-white">
   <Fragment slot="head">
     <meta property="og:image" content={ogImage} />
-    <Schema item={schemaItem} />
+    <Schema item={schemaItem as import('schema-dts').Graph} />
   </Fragment>
   <section class="relative py-24 md:py-32 overflow-hidden">
         <div class="absolute inset-0 bg-gradient-to-br from-green-50 via-emerald-50 to-teal-50"></div>

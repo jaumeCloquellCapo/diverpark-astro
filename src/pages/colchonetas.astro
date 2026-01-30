@@ -60,7 +60,7 @@ const imagesAvailableText = t(locale, 'gallery.imagesAvailable').replace('{count
 <PageLayout title={`${title} | DIVERPARK`} description={description} wrapperClass="bg-white">
   <Fragment slot="head">
     <meta property="og:image" content={ogImage} />
-    <Schema item={schemaItem} />
+    <Schema item={schemaItem as import('schema-dts').Graph} />
   </Fragment>
   <section class="relative py-24 md:py-32 overflow-hidden">
     <div class="absolute inset-0 bg-gradient-to-br from-yellow-50 via-orange-50 to-pink-50"></div>

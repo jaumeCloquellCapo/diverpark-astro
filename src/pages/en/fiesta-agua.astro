@@ -55,7 +55,7 @@ const serviceCards = [
 <PageLayout title={`${title} | DIVERPARK`} description={description} wrapperClass="bg-white">
   <Fragment slot="head">
     <meta property="og:image" content={ogImage} />
-    <Schema item={schemaItem} />
+    <Schema item={schemaItem as import('schema-dts').Graph} />
   </Fragment>
   <section class="relative py-24 md:py-32 overflow-hidden">
     <div class="absolute inset-0 bg-gradient-to-br from-cyan-100 via-blue-100 to-purple-100"></div>
