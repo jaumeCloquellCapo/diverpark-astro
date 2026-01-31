@@ -44,3 +44,7 @@ npx astro --help
 | Castillos grandes  | `/castillos-grandes`  | `/ca/castillos-grandes`  | `/en/castillos-grandes`  |
 
 Sitemap: `dist/sitemap-index.xml` (y sitemaps por idioma si aplica).
+
+## Formulario de contacto (GitHub Pages)
+
+El formulario usa [FormSubmit.co](https://formsubmit.co) (gratis, sin registro). Los envíos llegan a **catidiver@hotmail.com**. La primera vez, FormSubmit enviará un correo de activación a ese email; hay que hacer clic en el enlace para activar el formulario.

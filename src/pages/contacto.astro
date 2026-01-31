@@ -5,7 +5,7 @@ import { t } from '../utils/i18n';
 const locale = Astro.currentLocale ?? 'es';
 const title = t(locale, 'pages.contactPage.meta.title');
 const description = t(locale, 'pages.contactPage.meta.description');
-const formAction = '/contacto';
+const formAction = 'https://formsubmit.co/catidiver@hotmail.com';
 const whatsappHref = 'https://wa.me/34625458704';
 
 const contactDescription = t(locale, 'home.contact.description', t(locale, 'about.rental'), t(locale, 'about.events'));
@@ -80,13 +80,12 @@ const serviceOptions = [
               name="contact"
               method="post"
               action={formAction}
-              data-netlify="true"
-              data-netlify-honeypot="bot"
               class="space-y-4"
               data-sending-text={t(locale, 'home.contact.formSending')}
               data-submit-text={t(locale, 'home.contact.formSubmit')}
             >
-              <input type="hidden" name="form-name" value="contact" />
+              <input type="hidden" name="_subject" value="Nuevo contacto desde DIVERPARK" />
+              <input type="hidden" name="_template" value="box" />
               <p class="hidden">
                 <label>No rellenar: <input name="bot" type="text" /></label>
               </p>
