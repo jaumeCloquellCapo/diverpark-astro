@@ -11,6 +11,9 @@ const locale = Astro.currentLocale ?? 'es';
 const lang = locale === 'es' ? 'es' : locale === 'ca' ? 'ca' : 'en';
 // Canonical: URL canónica con el dominio de producción (o el actual en dev)
 const canonicalURL = new URL(Astro.url.pathname, Astro.site ?? Astro.url.origin);
+const origin = Astro.site ?? Astro.url.origin;
+// Imagen por defecto para Open Graph (evita que redes traten la página como vídeo y muestren "no está en una página de visualización")
+const defaultOgImage = new URL('/images/castillos-grandes/castillo-hinchable-grande-avion-5.jpg', origin).href;
 ---
 
 <!doctype html>
@@ -30,6 +33,17 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site ?? Astro.url.origin)
     <link rel="sitemap" type="application/xml" title="Sitemap" href="https://diverpark.net/sitemap-index.xml" />
     <title>{title}</title>
     <slot name="head" />
+    <!-- Open Graph: og:type=website para que al compartir usen imagen (no vídeo). Las páginas pueden sobrescribir og:image desde el slot anterior. -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL.href} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={defaultOgImage} />
+    <meta property="og:locale" content={lang === 'es' ? 'es_ES' : lang === 'ca' ? 'ca_ES' : 'en_US'} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={defaultOgImage} />
   </head>
   <body class="min-h-screen bg-gray-50 text-gray-900 antialiased">
     <slot />
