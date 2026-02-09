@@ -17,6 +17,7 @@
     "mechanicalBull": "Toro Mecànic",
     "animations": "Animacions",
     "communions": "Comunions",
+    "birthdays": "Aniversaris",
     "townHallParties": "Festes Ajuntament",
     "contact": "Contactar"
   },
@@ -76,6 +77,10 @@
     "communions": {
       "title": "Comunions",
       "description": "Celebra la teva comunió amb nosaltres"
+    },
+    "birthdays": {
+      "title": "Aniversaris",
+      "description": "Festes d'aniversari per a nens i nenes"
     },
     "townHallParties": {
       "title": "Festes d'Ajuntament",
@@ -245,6 +250,16 @@
       "meta": {
         "title": "Comunions a Mallorca | Castells Inflables i Animacions",
         "description": "Servei complet per a comunions a Mallorca. Castells inflables, festes d'aigua i animacions infantils."
+      }
+    },
+    "birthdays": {
+      "title": "Festes d'Aniversari per a Nens i Nenes a Mallorca",
+      "subtitle": "Castells inflables i diversió per a l'aniversari del teu fill o filla",
+      "intro": "Cerques festes d'aniversari per a nens i nenes a Mallorca? A DiverPark oferim castells inflables petits i castells amb tobogan ideals per a aniversaris de nens i nenes petits i d'edat mitjana. Fes que la festa del teu fill o filla sigui inoblidable amb els nostres castells: muntatge professional, seguretat garantida i els millors preus a Palma i tota l'illa.",
+      "galleryTitle": "Castells per a Festes d'Aniversari",
+      "meta": {
+        "title": "Festes d'Aniversari per a Nens i Nenes a Mallorca | Castells Inflables | Diverpark",
+        "description": "Lloguer de castells inflables per a festes d'aniversari de nens i nenes a Mallorca. Castells petits i amb tobogan per a aniversaris. Festes per a nens i nenes petits i d'edat mitjana a Palma i tota l'illa. Pressupost sense compromís."
       }
     },
     "townHallParties": {

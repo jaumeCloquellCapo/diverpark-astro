@@ -17,6 +17,7 @@
     "mechanicalBull": "Mechanical Bull",
     "animations": "Animations",
     "communions": "Communions",
+    "birthdays": "Birthdays",
     "townHallParties": "Town Hall Parties",
     "contact": "Contact"
   },
@@ -76,6 +77,10 @@
     "communions": {
       "title": "Communions",
       "description": "Celebrate your communion with us"
+    },
+    "birthdays": {
+      "title": "Birthdays",
+      "description": "Birthday parties for boys and girls"
     },
     "townHallParties": {
       "title": "Town Hall Parties",
@@ -243,6 +248,16 @@
       "meta": {
         "title": "Communions in Mallorca | Bouncy Castles and Entertainment",
         "description": "Complete service for communions in Mallorca. Bouncy castles, water parties and children's entertainment."
+      }
+    },
+    "birthdays": {
+      "title": "Birthday Parties for Boys and Girls in Mallorca",
+      "subtitle": "Bouncy castles and fun for your child's birthday",
+      "intro": "Looking for birthday parties for boys and girls in Mallorca? At DiverPark we offer small bouncy castles and castles with slide, ideal for young and middle-aged children's birthday parties. Make your child's party unforgettable with our bouncy castles: professional setup, guaranteed safety and the best prices in Palma and across the island.",
+      "galleryTitle": "Castles for Birthday Parties",
+      "meta": {
+        "title": "Birthday Parties for Boys and Girls in Mallorca | Bouncy Castles | Diverpark",
+        "description": "Bouncy castle hire for boys and girls' birthday parties in Mallorca. Small castles and castles with slide for birthdays. Parties for young and middle-aged children in Palma and across the island. Free quote."
       }
     },
     "townHallParties": {

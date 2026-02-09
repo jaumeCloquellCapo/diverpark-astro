@@ -1,0 +1,20 @@
+{
+	"geolocation": {
+		"data": {
+			"city": "Muro",
+			"country": {
+				"code": "ES",
+				"name": "Spain"
+			},
+			"subdivision": {
+				"code": "IB",
+				"name": "Balearic Islands"
+			},
+			"timezone": "Europe/Madrid",
+			"latitude": 39.5664,
+			"longitude": 3.2178,
+			"postalCode": "07500"
+		},
+		"timestamp": 1769768442592
+	}
+}

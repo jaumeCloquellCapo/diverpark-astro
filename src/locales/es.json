@@ -17,6 +17,7 @@
     "mechanicalBull": "Toro Mecánico",
     "animations": "Animaciones",
     "communions": "Comuniones",
+    "birthdays": "Cumpleaños",
     "townHallParties": "Fiestas Ayuntamiento",
     "contact": "Contactar"
   },
@@ -76,6 +77,10 @@
     "communions": {
       "title": "Comuniones",
       "description": "Celebra tu comunión con nosotros"
+    },
+    "birthdays": {
+      "title": "Cumpleaños",
+      "description": "Fiestas de cumpleaños para niños y niñas"
     },
     "townHallParties": {
       "title": "Fiestas de Ayuntamiento",
@@ -245,6 +250,16 @@
       "meta": {
         "title": "Comuniones en Mallorca | Castillos Hinchables y Animaciones",
         "description": "Servicio completo para comuniones en Mallorca. Castillos hinchables, fiestas de agua y animaciones infantiles."
+      }
+    },
+    "birthdays": {
+      "title": "Fiestas de Cumpleaños para Niños y Niñas en Mallorca",
+      "subtitle": "Castillos hinchables y diversión para el cumpleaños de tu hijo o hija",
+      "intro": "¿Buscas fiestas de cumpleaños para niños y niñas en Mallorca? En DiverPark ofrecemos castillos hinchables pequeños y castillos con tobogán ideales para cumpleaños de niños y niñas pequeños y de edad media. Haz que la fiesta de tu hijo o hija sea inolvidable con nuestros castillos hinchables: montaje profesional, seguridad garantizada y los mejores precios en Palma y toda la isla.",
+      "galleryTitle": "Castillos para Fiestas de Cumpleaños",
+      "meta": {
+        "title": "Fiestas de Cumpleaños para Niños y Niñas en Mallorca | Castillos Hinchables | Diverpark",
+        "description": "Alquiler de castillos hinchables para fiestas de cumpleaños de niños y niñas en Mallorca. Castillos pequeños y con tobogán para cumpleaños. Fiestas para niños y niñas pequeños y de edad media en Palma y toda la isla. Presupuesto sin compromiso."
       }
     },
     "townHallParties": {
